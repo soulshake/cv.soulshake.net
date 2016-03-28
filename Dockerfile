@@ -1,29 +1,24 @@
-FROM debian:jessie
+# Build image with:
+# docker build -t wopr .
+FROM node
 MAINTAINER AJ Bowen <aj@soulshake.net>
 
-RUN apt-get upgrade -y
-RUN apt-get update
+RUN apt-get update && apt-get install -y git
+RUN npm install -g forever
 
-RUN apt-get install -y \
-    curl \
-    sudo
-
-RUN echo "alias ll='ls -alhF'" >> $HOME/.bashrc
-
-RUN curl -sL https://deb.nodesource.com/setup_5.x > setup
-RUN sudo -E bash setup
-RUN sudo apt-get install -y nodejs
-RUN sudo npm install -g wopr
-RUN sudo apt-get install -y \
-    console-braille \
-    git
-WORKDIR /src
-#RUN git clone https://github.com/yaronn/blessed-contrib.git
-RUN git clone https://github.com/yaronn/wopr.git
-COPY . /src
+RUN mkdir /src
+RUN git clone https://github.com/yaronn/wopr.git /src/wopr
 WORKDIR /src/wopr
-RUN npm install
-RUN ls node_modules
-EXPOSE 1337
+RUN npm install \
+    blessed@0.1.7 \
+    blessed-contrib@2.3.1 \
+    xml2js@0.4.9
+
 WORKDIR /src/wopr/server
-ENTRYPOINT ["node", "server.js"]
+
+# Launch container with:
+# docker run --rm --name wopr-server -ti --publish-all --entrypoint bash wopr
+
+# Within the container, run:
+# forever start -l forever.log server.js
+# forever logs -f server.js
