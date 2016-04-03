@@ -33,7 +33,8 @@ http.createServer(function (req, res) {
   else {
       if (req.headers["user-agent"] && req.headers["user-agent"].indexOf('curl')!=-1) {
         
-        var content = fs.readFileSync(__dirname+'/../examples/sample.xml')
+        var content = fs.readFileSync(__dirname+'/resume.xml')
+        //var content = fs.readFileSync(__dirname+'/'+process.argv[2])
         present(req, res, content, function(err) {
             if (err) console.log(new Error().stack)
             if (err) return contrib.serverError(req, res, err)
@@ -41,14 +42,14 @@ http.createServer(function (req, res) {
         return
       }
       else {
-        res.writeHead(301, {'Location': 'https://github.com/yaronn/wopr'});
+        res.writeHead(301, {'Location': 'https://github.com/soulshake/cv.soulshake.net'});
         res.end()
         return
       }
   }
     
     
-}).listen(port);
+}).listen(port, '0.0.0.0');
 
 /*in the context of web server the following code will leak:
 

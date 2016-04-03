@@ -1,0 +1,149 @@
+<document>
+
+
+   <page>
+
+      <item col="0" row="0" colSpan="6" rowSpan="3">
+  
+        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray">
+          <markdown>
+              My name is AJ and I like to code. &#10;&#10;Say hi: &#10;&#10;&#10;&#10;[https://github.com/soulshake](https://github.com/soulshake) &#10;&#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)&#10;&#10;[aj@soulshake.net](aj@soulshake.net)
+          </markdown>
+        </markdown>
+          
+      </item>
+      
+      <item col="0" row="3" colSpan="6" rowSpan="8">
+  
+        <line xPadding="5" showLegend="true" legend-width="12" border-type="line" border-fg="gray">
+          <data>
+            <m title="unicorns" style-line="red" x="09:00,09:05,09:10,09:15,09:20,09:25,09:30" y="30,50,40,40,30,40,50" />
+            <m title="ponies" style-line="blue" x="09:00,09:05,09:10,09:15,09:20,09:25,09:30" y="10,30,20,30,25, 10" />
+            <m title="sparkles" style-line="yellow" x="09:00,09:05,09:10,09:15,09:20,09:25,09:30" y="20,40,50,10,50,50,60" />
+          </data>
+        </line>
+      </item>
+      
+      <item col="6" row="3" colSpan="6" rowSpan="4">
+        <bar barWidth="4" barSpacing="3" xOffset="10" maxHeight="5" height="100%"  border-type="line" border-fg="gray" data-titles="Python,bash,GoLang,AG-EU,BCKP1" data-data="5,4,2,5,3" />
+      </item>
+      
+      <item col="6" row="7" colSpan="6" rowSpan="4">
+  
+        <donut radius="12" spacing="1"  border-type="line" border-fg="gray">
+          <data>
+            <m color="red" percent="60" label="motivation" />
+            <m color="green" percent="80" label="curiosity" />
+            <m color="blue" percent="35" label="ego" />
+          </data>
+        </donut>
+        
+      </item>
+
+      <item col="6" row="0" colSpan="6" rowSpan="3">
+  
+         <table fg="white" width="30%" height="30%"  border-type="line" border-fg="gray" columnSpacing="5" columnWidth="6,2,5,4,4,4,25" data-headers=",#,time,pass,fail,pct,status" interactive="false">
+          <data-data>
+            ,1,02:17,21,13,20%,{red-fg}fail{/red-fg}
+            ,2,02:15,33,11,25%,{blue-fg}pass{/blue-fg}
+            ,3,03:22,15,12,80%,{red-fg}fail{/red-fg}
+            ,4,05:00,11,18,12%,{red-fg}fail{/red-fg}
+            ,5,02:17,17,12,0%,{blue-fg}pass{/blue-fg}
+            ,6,01:01,23,29,80%,{red-fg}fail{/red-fg}
+          </data-data>
+         </table>
+      </item>
+    </page>
+
+    <!--
+
+ <page>
+
+      <item col="0" row="0" colSpan="5" rowSpan="2">
+  
+        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray">
+          <markdown>
+              HI! *wopr* is a markup format for rich terminal `reports`, `presentations` and `infographics`. &#10;Build the report from any language and view it locally or remotely via curl. &#10;&#10;More information: &#10;&#10;&#10;&#10;[https://github.com/soulshake](https://github.com/soulshake) &#10;&#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)
+          </markdown>
+        </markdown>
+          
+      </item>
+      
+      <item col="8" row="0" colSpan="4" rowSpan="4" >
+  
+        <map style-shapeColor="yellow">
+          <markers>
+                <m lat="37.5000" lon="-79.0000" color="magenta" />
+                <m lat="18.0000" lon="80.5000" color="magenta" />
+          </markers>
+        </map>
+          
+      </item>
+      
+      
+       <item col="0" row="3" colSpan="12" rowSpan="9" >
+  
+        <map startLon="50" endLon="110" startLat="115" endLat="140"  region="us">
+          <markers>
+             <m lat="47.61" lon="-122.33" char="61" color="white" />
+             <m lat="36.75" lon="-119.77" char="78" color="white" />
+             <m lat="36.17" lon="-115.14" char="71" color="white" />
+             <m lat="43.61" lon="-116.2" char="61" color="white" />
+             <m lat="40.76" lon="-111.89" char="55" color="white" />
+             <m lat="33.45" lon="-112.07" char="81" color="white" />
+             <m lat="45.78" lon="-108.5" char="61" color="white" />
+             <m lat="41.14" lon="-104.82" char="50" color="white" />
+             <m lat="39.74" lon="-104.98" char="48" color="white" />
+             <m lat="35.08" lon="-106.65" char="52" color="white" />
+             <m lat="46.81" lon="-100.78" char="56" color="white" />
+             <m lat="44.08" lon="-103.23" char="59" color="white" />
+             <m lat="41.26" lon="-95.94" char="67" color="white" />
+             <m lat="39.1" lon="-94.58" char="69" color="white" />
+             <m lat="35.47" lon="-97.52" char="64" color="white" />
+             <m lat="32.78" lon="-96.81" char="60" color="white" />
+             <m lat="29.76" lon="-95.36" char="67" color="white" />
+             <m lat="44.98" lon="-93.26" char="55" color="white" />
+             <m lat="41.6" lon="-93.61" char="66" color="white" />
+             <m lat="34.75" lon="-92.29" char="63" color="white" />
+             <m lat="39.73" lon="-90.23" char="57" color="white" />
+             <m lat="29.95" lon="-90.08" char="64" color="white" />
+             <m lat="43.04" lon="-87.91" char="43" color="white" />
+             <m lat="41.51" lon="-87.64" char="52" color="white" />
+             <m lat="42.33" lon="-83.05" char="40" color="white" />
+             <m lat="39.77" lon="-86.16" char="54" color="white" />
+             <m lat="38.25" lon="-85.76" char="56" color="white" />
+             <m lat="36.17" lon="-86.78" char="57" color="white" />
+             <m lat="35.15" lon="-90.05" char="64" color="white" />
+             <m lat="33.75" lon="-84.39" char="52" color="white" />
+             <m lat="28.54" lon="-81.38" char="78" color="white" />
+             <m lat="25.77" lon="-80.19" char="75" color="white" />
+             <m lat="37.41" lon="-94.7" char="57" color="white" />
+             <m lat="37.75" lon="-84.29" char="54" color="white" />
+             <m lat="38.9" lon="-77.04" char="50" color="white" />
+             <m lat="43" lon="-75.5" char="38" color="white" />
+             <m lat="42.36" lon="-71.06" char="32" color="white" />
+          </markers>
+        </map>
+          
+      </item>
+      
+      
+    </page>
+
+    
+    <page>
+        
+        <item col="4" row="6" colSpan="5" rowSpan="2">
+  
+            <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green">
+              <markdown>
+                  *Thank you!*&#10;&#10;&#10;&#10;More information: &#10;&#10;[https://github.com/soulshake](https://github.com/soulshake)&#10;&#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)&#10;&#10;&#10;&#10;created by @s0ulshake
+              </markdown>
+            </markdown>
+          
+      </item>
+    </page>
+    -->
+    
+</document>
+
