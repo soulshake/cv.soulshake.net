@@ -1,6 +1,5 @@
 <document>
 
-
    <page>
 
       <item col="0" row="0" colSpan="6" rowSpan="3">
@@ -25,7 +24,7 @@
       </item>
       
       <item col="6" row="3" colSpan="6" rowSpan="4">
-        <bar barWidth="4" barSpacing="3" xOffset="10" maxHeight="5" height="100%"  border-type="line" border-fg="gray" data-titles="Python,bash,GoLang,AG-EU,BCKP1" data-data="5,4,2,5,3" />
+        <bar barWidth="4" barSpacing="15" xOffset="10" maxHeight="5" height="100%"  border-type="line" border-fg="gray" data-titles="Python,bash,GoLang,AG-EU,BCKP1" data-data="5,4,2,5,3" />
       </item>
       
       <item col="6" row="7" colSpan="6" rowSpan="4">
@@ -41,15 +40,15 @@
       </item>
 
       <item col="6" row="0" colSpan="6" rowSpan="3">
-  
-         <table fg="white" width="30%" height="30%"  border-type="line" border-fg="gray" columnSpacing="5" columnWidth="6,2,5,4,4,4,25" data-headers=",#,time,pass,fail,pct,status" interactive="false">
+
+         <table fg="white" width="30%" height="30%"  border-type="line" border-fg="gray" columnSpacing="8" columnWidth="6,8,5,12,4,25" data-headers=",Language,time,DuoLingo Lvl,ease,status" interactive="false">
           <data-data>
-            ,1,02:17,21,13,20%,{red-fg}fail{/red-fg}
-            ,2,02:15,33,11,25%,{blue-fg}pass{/blue-fg}
-            ,3,03:22,15,12,80%,{red-fg}fail{/red-fg}
-            ,4,05:00,11,18,12%,{red-fg}fail{/red-fg}
-            ,5,02:17,17,12,0%,{blue-fg}pass{/blue-fg}
-            ,6,01:01,23,29,80%,{red-fg}fail{/red-fg}
+            ,English,>10y,99,99%,{green-fg}native speaker
+            ,French,>10y,33,95%,{green-fg}fully fluent
+            ,Deutsch,2 mo,12,18%,{yellow-fg}rather clumsy
+            ,Spanish,n/a,17,20%,{blue-fg}passive
+            ,Russian,1 mo,5,12%,{red-fg}caveperson
+            ,Arabic,n/a,23,2%,{red-fg}don't ask
           </data-data>
          </table>
       </item>

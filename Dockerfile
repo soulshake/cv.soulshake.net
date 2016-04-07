@@ -5,11 +5,10 @@ RUN apt-get update && apt-get install -y git
 RUN npm install -g forever
 
 RUN mkdir /src
-WORKDIR /src
-RUN git clone https://github.com/soulshake/cv.soulshake.net.git
-WORKDIR /src/wopr
+COPY . /src/cv.soulshake.net
+WORKDIR /src/cv.soulshake.net
 RUN npm install
 
-WORKDIR /src/wopr/server
+WORKDIR /src/cv.soulshake.net/server
 EXPOSE 1337
 ENTRYPOINT ["../entrypoint.sh"]
