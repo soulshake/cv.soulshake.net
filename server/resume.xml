@@ -6,7 +6,7 @@
   
         <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray">
           <markdown>
-              My name is AJ and I like to code. &#10;&#10;Say hi: &#10;&#10;[https://github.com/soulshake](https://github.com/soulshake) &#10;&#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)&#10;[aj@soulshake.net](aj@soulshake.net) &#10;&#10;For more info, see http://blog.soulshake.net/2016/04/command-line-resume/
+              My name is AJ and I like to code. &#10;&#10;Say hi: &#10;&#10;[https://github.com/soulshake](https://github.com/soulshake) &#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)&#10;[aj@soulshake.net](aj@soulshake.net) &#10;&#10;For more info, see http://blog.soulshake.net/2016/04/command-line-resume/
           </markdown>
         </markdown>
           
