@@ -6,7 +6,9 @@
   
         <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray">
           <markdown>
-              My name is AJ and I like to code. &#10;&#10;Say hi: &#10;&#10;[https://github.com/soulshake](https://github.com/soulshake) &#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)&#10;[aj@soulshake.net](aj@soulshake.net) &#10;&#10;For more info, see http://blog.soulshake.net/2016/04/command-line-resume/
+              My name is AJ and I like to code.
+              
+              Say hi: &#10;&#10;[https://github.com/soulshake](https://github.com/soulshake) &#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)&#10;[aj@soulshake.net](aj@soulshake.net) &#10;&#10;For more info, see http://blog.soulshake.net/2016/04/command-line-resume/
           </markdown>
         </markdown>
           
@@ -24,7 +26,7 @@
       </item>
       
       <item col="6" row="3" colSpan="6" rowSpan="4">
-        <bar barWidth="4" barSpacing="15" xOffset="10" maxHeight="5" height="100%"  border-type="line" border-fg="gray" data-titles="Python,bash,GoLang,AG-EU,BCKP1" data-data="5,4,2,5,3" />
+        <bar barWidth="4" barSpacing="15" xOffset="10" maxHeight="5" height="100%"  border-type="line" border-fg="gray" data-titles="Python,bash,GoLang,Docker,DNS" data-data="5,4,2,3,4" />
       </item>
       
       <item col="6" row="7" colSpan="6" rowSpan="4">

@@ -5,9 +5,12 @@ RUN apt-get update && apt-get install -y git
 RUN npm install -g forever
 
 RUN mkdir /src
-COPY . /src/cv.soulshake.net
+COPY package.json /src/cv.soulshake.net/package.json
+
 WORKDIR /src/cv.soulshake.net
 RUN npm install
+COPY . /src/cv.soulshake.net
+ENV VIRTUAL_HOST "cv.soulshake.net"
 
 WORKDIR /src/cv.soulshake.net/server
 EXPOSE 1337

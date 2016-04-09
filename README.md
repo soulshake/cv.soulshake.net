@@ -20,19 +20,26 @@ Created by AJ Bowen ([@s0ulshake](https://twitter.com/s0ulshake))
 
 **Pages**
 
-When viewing a report with the local viewer you can advance slides with the Return or Space keys.
-When using the online viewer you have 2 options:
+When viewing my resume using the online viewer you have 3 options:
 
-**Option 1:** Manually advance slides with Return or Space:
+**Option 1:** View slides one at a time:
 
 `````bash
-p=0; while true; do curl tty.zone/$((p++))\?cols=$((COLUMNS)); read; done
+
+curl cv.soulshake.net/0\&cols=$((COLUMNS))
+curl cv.soulshake.net/1
+curl cv.soulshake.net/2
 `````
 
-**Option 2:** Slides advance automatically every 5 seconds:
+**Option 2:** Manually advance slides with Return or Space:
 
 `````bash
-curl -N tty.zone/
+p=0; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done
+`````
+
+**Option 3:** Slides advance automatically every 5 seconds:
+
+`````bash
 curl -N cv.soulshake.net/\[0-2\]\?auto\&cols=$((COLUMNS))
 `````
 
