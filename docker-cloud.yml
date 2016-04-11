@@ -1,0 +1,4 @@
+wopr:
+  image: 'soulshake/cv.soulshake.net:latest'
+  ports:
+    - '1337'

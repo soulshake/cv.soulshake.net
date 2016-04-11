@@ -1,0 +1,8 @@
+wopr:
+    #image: soulshake/cv.soulshake.net:latest
+    build: .
+    volumes:
+    - ./server/resume.xml:/src/cv.soulshake.net/server/resume.xml
+    ports:
+    - 1337
+
