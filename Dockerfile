@@ -15,8 +15,8 @@ COPY entrypoint.sh /entrypoint.sh
 ENV LANG=en_US.utf8
 ENV TERM=xterm-256color
 
-#RUN mkdir /data
-#COPY data /data
+RUN mkdir /data
+COPY data /data
 
 WORKDIR /wopr/server
 ENTRYPOINT /entrypoint.sh
