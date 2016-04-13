@@ -1,8 +1,8 @@
-wopr:
-    #image: soulshake/cv.soulshake.net:latest
-    build: .
+cv:
+    image: soulshake/cv.soulshake.net:latest
     volumes:
-    - ./server/resume.xml:/src/cv.soulshake.net/server/resume.xml
+        - ./data:/data
     ports:
-    - 1337
-
+        - '80:1337'
+#    entrypoint:
+#        - /entrypoint.sh

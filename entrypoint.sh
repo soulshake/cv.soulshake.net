@@ -1,4 +1,10 @@
 #!/bin/bash
 
-forever start --debug --verbose  --watch --watch --watchDirectory /src/cv.soulshake/net/server/ --append -l out.log server.js
+# in wopr/server/server.js, this line is problematic:
+# var content = fs.readFileSync(__dirname+'/../examples/sample.xml')
+# So, replace the hardcoded filename with our own
+OUR_FILE="/data/resume.xml"
+sed -i "s;__dirname+'/../examples/sample.xml';'$OUR_FILE';" /wopr/server/server.js
+
+forever start --debug --verbose  --watch --watchDirectory /data --append -l out.log server.js
 forever logs -f server.js
