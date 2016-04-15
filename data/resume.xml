@@ -1,220 +1,124 @@
 <document>
+<page>
+<item col="0" row="0" colSpan="8" rowSpan="8">
+       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray"> 
 
-   <page>
 
-      <item col="0" row="0" colSpan="6" rowSpan="3">
-  
-        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray">
-          <markdown>
-              My name is AJ, and I like to code. &#10;&#10;Say hi: &#10;&#10;[https://github.com/soulshake](https://github.com/soulshake) &#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)&#10;[aj@soulshake.net](aj@soulshake.net) &#10;&#10;For more info, see http://blog.soulshake.net/2016/04/command-line-resume/
-          </markdown>
+	<markdown>
+
+		. &#10; ╒══════════════════ Welcome to the professional resume of A.J. Bowen ══════════════════════╕ &#10; │                                                                                          │ &#10; │  0. This screen                                                                          │ &#10; │  1. Skills                                                                               │ &#10; │  2. Experience                                                                           │ &#10; │  3. Languages                                                                            │ &#10; │  4. About me                                                                             │ &#10; │                                                                                          │ &#10; │  To view all slides (press enter to move to next slide; press Ctrl+C to exit)            │ &#10; │                                                                                          │ &#10; │    $ p=0; while true; do curl localhost/$((p++))\?cols=$((COLUMNS)); read; done          │ &#10; │                                                                                          │ &#10; │  To view a specific slide:                                                               │ &#10; │                                                                                          │ &#10; │    $ curl -N cv.soulshake/3                                                              │ &#10; │                                                                                          │ &#10; │  Options (URL paramters):                                                                │ &#10; │                                                                                          │ &#10; │   \?auto                 Advance through slides automatically (5 seconds each)           │ &#10; │   \&amp;cols=$((COLUMNS))    Specify number of rows                                          │ &#10; │   \&amp;rows=$((LINES))      Specify number of columns                                       │ &#10; │   \&amp;terminal=xterm       Specify your terminal                                           │ &#10; │                                                                                          │ &#10; │  You can infer them automatically from your environment:                                 │ &#10; │                                                                                          │ &#10; │    $ curl -N cv.soulshake.net\?\&amp;cols=$((COLUMNS))\&amp;rows=$((LINES-5))\&amp;terminal=${TERM}  │ &#10; │                                                                                          │ &#10; │                                                                                          │ &#10; ╘══════════════════════════════════════════════════════════════════════════════════════════╛
+
+
         </markdown>
-          
-      </item>
-      
-      <item col="0" row="3" colSpan="6" rowSpan="8">
-  
-        <line xPadding="5" showLegend="true" legend-width="12" border-type="line" border-fg="gray">
-          <data>
-            <m title="penguins" style-line="red" x="09:00,09:05,09:10,09:15,09:20,09:25,09:30" y="30,50,40,40,30,40,50" />
-            <m title="ponies" style-line="blue" x="09:00,09:05,09:10,09:15,09:20,09:25,09:30" y="10,30,20,30,25, 10" />
-            <m title="sparkles" style-line="yellow" x="09:00,09:05,09:10,09:15,09:20,09:25,09:30" y="20,40,50,10,50,50,60" />
-          </data>
-        </line>
-      </item>
-      
-      <item col="6" row="3" colSpan="6" rowSpan="4">
-        <bar barWidth="4" barSpacing="15" xOffset="10" maxHeight="5" height="100%"  border-type="line" border-fg="gray" data-titles="Python,bash,GoLang,Docker,DNS" data-data="5,4,2,3,4" />
-      </item>
-      
-      <item col="6" row="7" colSpan="6" rowSpan="4">
-  
-        <donut radius="12" spacing="1"  border-type="line" border-fg="gray">
-          <data>
-            <m color="red" percent="60" label="motivation" />
-            <m color="green" percent="80" label="curiosity" />
-            <m color="blue" percent="35" label="ego" />
-          </data>
-        </donut>
-        
-      </item>
 
-      <item col="6" row="0" colSpan="6" rowSpan="3">
+</markdown>
 
-         <table fg="white" width="30%" height="30%"  border-type="line" border-fg="gray" columnSpacing="8" columnWidth="6,8,5,12,4,25" data-headers=",Language,time,DuoLingo Lvl,ease,status" interactive="false">
-          <data-data>
-            ,English,>10y,99,99%,{green-fg}native speaker
-            ,French,>10y,33,95%,{green-fg}fully fluent
-            ,Deutsch,2 mo,12,18%,{yellow-fg}rather clumsy
-            ,Spanish,n/a,17,20%,{blue-fg}passive
-            ,Russian,1 mo,5,12%,{red-fg}caveperson
-            ,Arabic,n/a,23,2%,{red-fg}don't ask
-          </data-data>
+    </item>
+</page>
+
+<page>
+<item col="0" row="0" colSpan="8" rowSpan="8">
+       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray"> 
+
+
+	<markdown>
+
+		  . &amp;#10;                    90    100                          90    100  &amp;#10;               80  \           110                80              110 &amp;#10;                    \  &amp;#10;           70        \             120        70                      120 &amp;#10;                      \  &amp;#10;         60            \             130    60                          130 &amp;#10;                        O                                  O &amp;#10;         50                          140    50              \           140 &amp;#10;                                                             \  &amp;#10;          40                        150      40               \        150 &amp;#10;                       mph                                mph  \  &amp;#10;             30                  160            30              \   160 &amp;#10;           This is your CV on LinkedIn     This is your CV on the command line
+
+
+        </markdown>
+
+</markdown>
+
+    </item>
+</page>
+
+<page>
+<item col="0" row="0" colSpan="8" rowSpan="8">
+           <table fg="white" width="30%" height="30%" border-type="line" border-fg="gray" columnSpacing="8" columnWidth="8,4,14,4,25" data-headers="Language,time,DuoLingo level,ease,status" interactive="false"> 
+            <data-data>
+            English,>10y,99,99%,{green-fg} native speaker
+            French,>10y,82,89%,{green-fg} fluent
+            German,2 mo,18,39%,{yellow-fg} rather clumsy
+            Spanish,n/a,17,29%,{blue-fg} passive
+            Russian,1 mo,11,15%,{red-fg} caveperson
+            Arabic,n/a,8,3%,{red-fg} don't ask
+            </data-data>
          </table>
-      </item>
-    </page>
+     </item>
+</page>
 
- <page>
+<page>
+<item col="0" row="0" colSpan="8" rowSpan="8">
+<bar barWidth="1" barSpacing="1" xOffset="10" maxHeight="5" height="100%"  border-type="line" border-fg="gray" data-titles="Python,bash,GoLang,DNS,Docker,Linux" data-data="5,4,2,4,3,3" />
 
-      <item col="0" row="0" colSpan="5" rowSpan="2">
-  
-        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray">
-          <markdown>
-              HI! *wopr* is a markup format for rich terminal `reports`, `presentations` and `infographics`. &#10;Build the report from any language and view it locally or remotely via curl. &#10;&#10;More information: &#10;&#10;&#10;&#10;[https://github.com/soulshake](https://github.com/soulshake) &#10;&#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)
-          </markdown>
+
+
+
+    </item>
+</page>
+
+<page>
+<item col="0" row="0" colSpan="8" rowSpan="8">
+       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray"> 
+
+
+	<markdown>
+
+		[32m[1m# Experience[0m &#10;  &#10; ---------- &#10; [1m## [1mChief of Counter-bullshit operations, Gandi.net[0m (February 2012 to December 2015, San Francisco)[0m &#10;  &#10; AKA developer advocate, technical community manager, support automation specialist, chaos monkey &#10;  &#10; I interacted with various tech communities, online and at industry events, letting developers know we exist, helping them make the most of Gandi's domain, SSL and hosting APIs, and communicating their feedback to our technical team. Internally, I worked with engineers, product managers and support to improve Gandi's APIs, web interface, documentation and open source presence. &#10;  &#10; Job responsibilities included: &#10;  &#10; * [1mSpecial projects[0m: being ready for anything that comes up &#10; * [1mOutreach[0m, both online and in person (at tech conferences and industry events), helping existing and prospective customers to make the most of Gandi's products (domain names, SSL certs, hosting, and the corresponding APIs); &#10; * [1mLocalization[0m: technical and marketing communications (product releases, newsletters, announcement, outages); &#10; * [1mDocumentation[0m: creating and editing tutorials and docs &#10; * [1mCommunication[0m: Helping shape Gandi's voice our blog posts, newsletters and social media interactions, organize events and manage our supported projects. &#10; * [1mCommunity[0m: Cultivating a [thriving and enthusiastic community](https://twitter.com/gandibar/favorites). &#10; * [1mSocial media[0m: managing Gandi's presence (initially a French brand) on US and English-speaking channels; &#10;  &#10; [1m## [1mSupport representative, Gandi.net[0m[0m &#10;  &#10; My original role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain names, DNS, SSL certificates and basic hosting. My curiosity and interest in this role led me to specialize in more technical hosting issues, while helping to hire, train and mentor new employees. My French language and community-related skills led me to move to San Francisco to take on an official evangelism role in 2013. &#10;  &#10; [1mPrevious positions[0m: See LinkedIn profile &#10;         
+
+
         </markdown>
-          
-      </item>
-      
-      <item col="8" row="0" colSpan="4" rowSpan="4" >
-  
-        <map style-shapeColor="yellow">
-          <markers>
-                <m lat="37.5000" lon="-79.0000" color="magenta" />
-                <m lat="18.0000" lon="80.5000" color="magenta" />
-          </markers>
-        </map>
-          
-      </item>
-      
-      
-       <item col="0" row="3" colSpan="12" rowSpan="9" >
-  
-        <map startLon="50" endLon="110" startLat="115" endLat="140"  region="us">
-          <markers>
-             <m lat="47.61" lon="-122.33" char="61" color="white" />
-             <m lat="36.75" lon="-119.77" char="78" color="white" />
-             <m lat="36.17" lon="-115.14" char="71" color="white" />
-             <m lat="43.61" lon="-116.2" char="61" color="white" />
-             <m lat="40.76" lon="-111.89" char="55" color="white" />
-             <m lat="33.45" lon="-112.07" char="81" color="white" />
-             <m lat="45.78" lon="-108.5" char="61" color="white" />
-             <m lat="41.14" lon="-104.82" char="50" color="white" />
-             <m lat="39.74" lon="-104.98" char="48" color="white" />
-             <m lat="35.08" lon="-106.65" char="52" color="white" />
-             <m lat="46.81" lon="-100.78" char="56" color="white" />
-             <m lat="44.08" lon="-103.23" char="59" color="white" />
-             <m lat="41.26" lon="-95.94" char="67" color="white" />
-             <m lat="39.1" lon="-94.58" char="69" color="white" />
-             <m lat="35.47" lon="-97.52" char="64" color="white" />
-             <m lat="32.78" lon="-96.81" char="60" color="white" />
-             <m lat="29.76" lon="-95.36" char="67" color="white" />
-             <m lat="44.98" lon="-93.26" char="55" color="white" />
-             <m lat="41.6" lon="-93.61" char="66" color="white" />
-             <m lat="34.75" lon="-92.29" char="63" color="white" />
-             <m lat="39.73" lon="-90.23" char="57" color="white" />
-             <m lat="29.95" lon="-90.08" char="64" color="white" />
-             <m lat="43.04" lon="-87.91" char="43" color="white" />
-             <m lat="41.51" lon="-87.64" char="52" color="white" />
-             <m lat="42.33" lon="-83.05" char="40" color="white" />
-             <m lat="39.77" lon="-86.16" char="54" color="white" />
-             <m lat="38.25" lon="-85.76" char="56" color="white" />
-             <m lat="36.17" lon="-86.78" char="57" color="white" />
-             <m lat="35.15" lon="-90.05" char="64" color="white" />
-             <m lat="33.75" lon="-84.39" char="52" color="white" />
-             <m lat="28.54" lon="-81.38" char="78" color="white" />
-             <m lat="25.77" lon="-80.19" char="75" color="white" />
-             <m lat="37.41" lon="-94.7" char="57" color="white" />
-             <m lat="37.75" lon="-84.29" char="54" color="white" />
-             <m lat="38.9" lon="-77.04" char="50" color="white" />
-             <m lat="43" lon="-75.5" char="38" color="white" />
-             <m lat="42.36" lon="-71.06" char="32" color="white" />
-          </markers>
-        </map>
-          
-      </item>
-      
-      
-    </page>
 
-    <page>
-      <item col="1" row="1" colSpan="7" rowSpan="17">
-  
-        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray">
-     
-          <markdown>
-# Experience
-----------
-
-## **Technical community manager, Gandi.net**
-
-Job responsibilities included:
-
-* **evangelism**: online and in person (at tech conferences and industry events), help existing and prospective
-  customers to make the most of Gandi's products (domain names, SSL certs, hosting, and the corresponding APIs);
-* **social media**: managing Gandi's presence (initially a French brand) on US and English-speaking channels;
-* **localization**: technical and marketing communications (product releases, newsletters, announcement, outages);
-* **documentation**: tutorials and docs
-* **special projects**: be ready for anything that comes up
-
-Interact with various tech communities, online and at industry events, letting developers know we exist,
-helping them make the most of Gandi's domain, SSL and hosting APIs, and communicating their feedback
-to our technical team. Internally, I work with engineers, product managers and support to improve Gandi's
-APIs, web interface, documentation and open source presence.
-
-Help shape Gandi's voice our blog posts, newsletters and social media interactions, organize events
-and manage our supported projects.
-
-* Cultivated a [thriving and enthusiastic community](https://twitter.com/gandibar/favorites).
-
-## **Support representative, Gandi.net**
-
-My original role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain names, DNS, SSL certificates and basic hosting. My curiosity and interest in this role led me to specialize in more technical hosting issues, while helping to hire, train and mentor new employees. My French language and community-related skills led me to move to San Francisco to take on an official evangelism rolein 2013.
-
-**Previous positions**
-
-* Teacher and tutor
-* Federal Student Aid specialist
-* Office manager
 </markdown>
-</markdown>
-</item>
 
-    </page>
-    
-    <page>
-        
-        <!--
-        <item col="4" row="6" colSpan="5" rowSpan="2">
-  
-            <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green">
-              <markdown>
-                  *Thank you!*&#10;&#10;&#10;&#10;More information: &#10;&#10;[https://github.com/soulshake](https://github.com/soulshake)&#10;&#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)&#10;&#10;&#10;&#10;created by @s0ulshake
-              </markdown>
-            </markdown>
-          
-      </item>
-      -->
+    </item>
+</page>
 
-      <!-- <item col="0" row="0" colSpan="6" rowSpan="3"> -->
-      <item col="3" row="3" colSpan="5" rowSpan="5">
-  
-        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray">
-     
-          <markdown>
-            AJ Bowen
-            ========
-             
-            -------------------     ----------------------------
-            Current city:                       aj@soulshake.net
-            Berlin, Germany                           @s0ulshake
-            -------------------     ----------------------------
+<page>
+<item col="0" row="0" colSpan="8" rowSpan="8">
+       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray"> 
 
-              &#10;&#10;Say hi: &#10;&#10;[https://github.com/soulshake](https://github.com/soulshake) &#10;[https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)&#10;[aj@soulshake.net](aj@soulshake.net) &#10;&#10;# For more info, see: &#10;http://blog.soulshake.net/2016/04/command-line-resume/
-          </markdown>
+
+	<markdown>
+
+		My name is AJ, and I like to code. &amp;#10;  &amp;#10; Say hi: &amp;#10; - [https://github.com/soulshake](https://github.com/soulshake)  &amp;#10; - [https://twitter.com/s0ulshake](https://twitter.com/s0ulshake) &amp;#10; - [aj@soulshake.net](aj@soulshake.net) &amp;#10; - [https://www.linkedin.com/in/ajbowen](https://www.linkedin.com/in/ajbowen) &amp;#10;  &amp;#10; For more info, see http://blog.soulshake.net/2016/04/command-line-resume/
+
+
         </markdown>
-          
-      </item>
-    </page>
 
-    
-    <page>
-      <item col="1" row="1" colSpan="6" rowSpan="4">
-        <bar barWidth="4" barSpacing="15" xOffset="10" maxHeight="5" height="100%"  border-type="line" border-fg="gray" data-titles="Python,bash,GoLang,Docker,DNS" data-data="5,4,2,3,4" />
-      </item>
+</markdown>
+
+    </item>
+</page>
+
+<page>
+<item col="0" row="0" colSpan="8" rowSpan="8">
+       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" border-fg="gray"> 
 
 
+	<markdown>
 
-    </page>
+		[31m &amp;#10;     Things I love entirely too much: &amp;#10;  &amp;#10;       .....           ..... &amp;#10;   ,ad8PPPP88b,     ,d88PPPP8ba, &amp;#10;  d8P"      "Y8b, ,d8P"      "Y8b &amp;#10; dP'           "8a8"           `Yd &amp;#10; 8(   APIs       "    CLIs      )8 &amp;#10; I8                             8I &amp;#10;  Yb,   humans     squirrels  ,dP &amp;#10;   "8a,                     ,a8" &amp;#10;     "8a,     ASCII       ,a8" &amp;#10;       "Yba     (obvs)  adP" &amp;#10;         'Y8a         a8P' &amp;#10;           '88,     ,88' &amp;#10;             "8b   d8" &amp;#10;              "8b d8" &amp;#10;               '888' &amp;#10;                 " &amp;#10;     [0m[2m &amp;#10;  JK. One can never love these things too much.[0m
+
+
+        </markdown>
+
+</markdown>
+
+    </item>
+</page>
+
+<page>
+    <item col="0" row="0" colSpan="0" rowSpan="0">
+        <line xPadding="5" showLegend="true" legend-width="12" border-type="line" border-fg="gray">
+            <data>
+                <m title="social media" style-line="yellow" x="2011,2012,2013,2014,2015,2016,2017" y="30,50,40,40,30,40,50" />
+                <m title="development" style-line="green" x="09:00,09:05,09:10,09:15,09:20,09:25,09:30" y="10,30,20,30,25, 10" />
+                <m title="mraaaaaa" style-line="blue" x="09:00,09:05,09:10,09:15,09:20,09:25,09:30" y="20,40,50,10,50,50,60" />
+            </data>
+        </line>
+    </item>
+</page>
+
 </document>
-
