@@ -1,247 +1,634 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# how would i describe myself: http://bashooka.com/inspiration/30-great-examples-of-creative-cv-resume-design/
-import snippets
-from snippets import *
+
+from __future__ import print_function
+import sys
 import click
-from tabulate import tabulate
+"""
+This library is intended to generate XML suitable for being served by a wopr server.
+# Error: no such widget: undefined --> forgot to specify item colSpan etc
+"""
 
-def contact_info():
-    # Is this thing on?
-    # blog, twitter, email, current location
-    pass
-
-def awards():
-    # 10th grade hardest worker at track ^_^
-    pass
-
-def things_i_love():
-    # things i love entirely too much
-    # hat tip to Norman Veilleux/Ryan Harding for the heart
-    heart = """
-    Things I love entirely too much:
-
-      .....           .....
-  ,ad8PPPP88b,     ,d88PPPP8ba,
- d8P"      "Y8b, ,d8P"      "Y8b
-dP'           "8a8"           `Yd
-8(   APIs       "    CLIs      )8
-I8                             8I
- Yb,   humans     squirrels  ,dP
-  "8a,                     ,a8"
-    "8a,     ASCII       ,a8"
-      "Yba     (obvs)  adP"
-        'Y8a         a8P'
-          '88,     ,88'
-            "8b   d8"
-             "8b d8"
-              '888'
-                "
+class Document:
     """
-    heart = click.style(heart, fg='red')
-    heart += click.style("\n JK. One can never love these things too much.", dim=True)
-    ret = Markdown(colSpan=3, rowSpan=7, data=heart, col=0, row=0)
-    return ret
+    A Document is a series of pages. Documents are structured as follows:
 
-def skills_line_chart():
-    # abilities vs interests
+    <document>
+        <page>
+            <item col="n", row="n", colSpan="n", rowSpan="n">
+                <WIDGET_TYPE>
+                </WIDGET_TYPE>
+            </item>
+        </page>
+    </document>
+    """
+    def __init__(self, pages):
+        self.pages = pages
 
-    skills = LineChart(xPadding=5, col=0, row=0, colSpan=8, rowSpan=10)
-    skills.add_line(title="social media",
-                    style_line="yellow",
-                    x="2011,2012,2013,2014,2015,2016,2017",
-                    y="30,50,40,40,30,40,50",
-                    )
-    skills.add_line(title="development",
-                    style_line="green",
-                    x="09:00,09:05,09:10,09:15,09:20,09:25,09:30",
-                    y="10,30,20,30,25, 10"
-                    )
+    @property
+    def content(self):
+        ret = []
+        ret.append("<document>")
+        for page in self.pages:
+        #    print(self.pages[page].grid)
+            ret.append(self.pages[page].content)
+        ret.append("</document>")
 
-    skills.add_line(title="mraaaaaa",
-                    style_line="blue",
-                    x="09:00,09:05,09:10,09:15,09:20,09:25,09:30",
-                    y="20,40,50,10,50,50,60",
-                    )
-    return skills
+        return "\n".join(ret)
 
 
-def skills_bar_chart():
-    barchart = BarChart(col=1, row=1, colSpan=4, rowSpan=4)
-    skill_names = ["Python", "bash", "GoLang", "DNS", "Docker"]
-    skill_levels = [7, 4, 2, 5, 5]
+class Page:
+    """
+    A page is a 12x12 grid in which you can position different widgets (within <item> tags).
+    """
+    def __init__(self):
+        self.widgets = []
 
-    chart_attributes = {
-        "barWidth": 4,
-        "barSpacing": 15,
-        "xOffset": 10,
-        "maxHeight": 5,
-        "height": "100%",
-        "border_type": "line",
-        "border_fg": "gray",
-        "data_titles": skill_names,
-        "data_data": skill_levels,
-        }
+    def add_widget(self, widget):
+        self.widgets.append(widget)
 
-    barchart.add_bar(title="Python", data=5)
-    barchart.add_bar(title="bash", data=4)
-    barchart.add_bar(title="GoLang", data=2)
-    barchart.add_bar(title="DNS", data=4)
-    barchart.add_bar(title="Docker", data=3)
-    barchart.add_bar(title="Linux", data=3)
-    return barchart
+    @property
+    def grid(self):
+        ret = []
+        for widget in self.widgets:
+            ret.append(((widget.col, widget.row), (widget.colSpan, widget.rowSpan)))
+        return ret
 
-def languages_table():
-    languages = Table(col=2, row=2, colSpan=4, rowSpan=3)
-    languages.add_columns(["Language", "time", "DuoLingo level", "ease", "status"])
-    rows = [
-            ["English", ">10y", 99, "99%", "{green-fg} native speaker"],
-            ["French", ">10y", 82, "89%", "{green-fg} fluent"],
-            ["German", "2 mo", 18, "39%", "{yellow-fg} rather clumsy"],
-            ["Spanish", "n/a", 17, "29%", "{blue-fg} passive"],
-            ["Russian", "1 mo", 11, "15%", "{red-fg} caveperson"],
-            ["Arabic", "n/a", 8, "3%", "{red-fg} don't ask"],
-            ]
-    for row in rows:
-        languages.add_row(row)
-    return languages
+    @property
+    def content(self):
+        ret = []
+        ret.append("<page>")
+        for widget in self.widgets:
+            ret.append(widget.content)
+        ret.append("</page>")
+        ret.append("")
+        return "\n".join(ret)
 
-def about_me():
-    about_me = ([
-              "My name is AJ, and I like to code.",
-              "",
-              "Say hi:",
-                "- [https://github.com/soulshake](https://github.com/soulshake) ",
-                "- [https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)",
-                "- [aj@soulshake.net](aj@soulshake.net)",
-                "- [https://www.linkedin.com/in/ajbowen](https://www.linkedin.com/in/ajbowen)",
-                "",
-              "For more info, see http://blog.soulshake.net/2016/04/command-line-resume/",
-              ])
+class Widget(object):
+    """A wopr widget, the content of which is rendered in XML as follows:
 
-    about_me = "\n".join(about_me)
-    about = Markdown(colSpan=6, rowSpan=4, data=about_me, col=3, row=3)
-    return about
+    <item col="5" row="9" colSpan="1" rowSpan="1">
+        WIDGET_CONTENT
+    </item>
 
-def experience():
-    blurb = [click.style("# Experience", bold=True, fg="green")]
-    blurb += """
-----------
-## **Chief of Counter-bullshit operations, Gandi.net** (February 2012 to December 2015, San Francisco)
+    In theory, the available widgets are the ones that exist in the blessed and
+    blessed-contrib projects; not all have been implemented here:
+        [x] Line Chart
+        [x] Markdown
+        [x] Bar Chart
+        [ ] Table
+        [x] Donut
+        [?] Stacked Bar Chart
+        [ ] Map
+        [ ] Gauge
+        [ ] Stacked Gauge
+        [ ] LCD Display
+        [ ] Picture
+        [ ] Sparkline
+        [ ] Tree
 
-AKA developer advocate, technical community manager, support automation specialist, chaos monkey
+    Not applicable because animated:
+        [ ] Rolling Log
+    """
+    def __init__(self, col=0, row=0, colSpan=0, rowSpan=0, data=None, label=None):
+        self.data = data or []
+        self.col = col
+        self.row = row
+        self.colSpan = colSpan
+        self.rowSpan = rowSpan
+        self.label = label
 
-I interacted with various tech communities, online and at industry events, letting developers know we exist, helping them make the most of Gandi's domain, SSL and hosting APIs, and communicating their feedback to our technical team. Internally, I worked with engineers, product managers and support to improve Gandi's APIs, web interface, documentation and open source presence.
+    def make_markdown(self):
+        return self.markdown.content()
+        
 
-Job responsibilities included:
+    @property
+    def content(self):
+        ret = []
+        ret.append('    <item col="{col}" row="{row}" colSpan="{colSpan}" rowSpan="{rowSpan}" label="{label}" >'.format(
+            col=self.col,
+            row=self.row,
+            colSpan=self.colSpan,
+            rowSpan=self.rowSpan,
+            label=self.label,
+            ))
+        if self.data:
+            ret.append(self.data)
+        #ret.append(self.make_markdown())
+        ret.append("    </item>\n")
+        return "\n".join(ret).encode()
 
-* **Special projects**: being ready for anything that comes up
-* **Outreach**, both online and in person (at tech conferences and industry events), helping existing and prospective customers to make the most of Gandi's products (domain names, SSL certs, hosting, and the corresponding APIs);
-* **Localization**: technical and marketing communications (product releases, newsletters, announcement, outages);
-* **Documentation**: creating and editing tutorials and docs
-* **Communication**: Helping shape Gandi's voice our blog posts, newsletters and social media interactions, organize events and manage our supported projects.
-* **Community**: Cultivating a [thriving and enthusiastic community](https://twitter.com/gandibar/favorites).
-* **Social media**: managing Gandi's presence (initially a French brand) on US and English-speaking channels;
 
-## **Support representative, Gandi.net**
+class Line:
+    def __init__(self, title=None, style_line="red", x=[], y=[]):
+        self.title = title
+        self.style_line = style_line
+        self.x = x
+        self.y = y
 
-My original role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain names, DNS, SSL certificates and basic hosting. My curiosity and interest in this role led me to specialize in more technical hosting issues, while helping to hire, train and mentor new employees. My French language and community-related skills led me to move to San Francisco to take on an official evangelism role in 2013.
+    def get_x(self):
+        return ",".join(self.x)
+    def get_y(self):
+        return ",".join(self.y)
 
-**Previous positions**: See LinkedIn profile
-        """.split("\n")
-    blurb = Markdown(colSpan=8, rowSpan=11, data=blurb, col=0, row=0)
-    return blurb
+    @property
+    def content(self):
+        ret = '<m title="{title}" style-line="{style_line}" x="{x}" y="{y}" />'.format(
+            title = self.title,
+            style_line = self.style_line,
+            x = self.x,
+            y = self.y,
+            )
+        return ret
 
-def spedometer():
-    ret = Spedometer().content
-    ret = Markdown(colSpan=5, rowSpan=5, data=ret, col=0, row=0)
-    return ret
 
-def toc():
+class DonutChart(Widget):
+    """A widget consisting of a collection of donuts."""
+    def __init__(self,
+                 arcWidth = 3,
+                 border_type="line",
+                 border_fg="gray",
+                 data=None,
+                 fill="white",
+                 label=None,
+                 radius=20,
+                 remainColor="cyan",
+                 spacing=1,
+                 stroke="magenta",
+                 yPadding=5,
+                 col=None, row=None, colSpan=None, rowSpan=None):
 
-    ret = [
-        ".",
-        u"╒══════════════════ Welcome to the professional resume of A.J. Bowen ══════════════════════╕",
-        u"│                                                                                          │",
-        u"│  0. This screen                                                                          │",
-        u"│  1. Skills                                                                               │",
-        u"│  2. Experience                                                                           │",
-        u"│  3. Languages                                                                            │",
-        u"│  4. About me                                                                             │",
-        u"│                                                                                          │",
-        u"│  To view all slides (press enter to move to next slide; press Ctrl+C to exit)            │",
-        u"│                                                                                          │",
-        u"│    $ p=0; while true; do curl localhost/$((p++))\?cols=$((COLUMNS)); read; done          │",
-        u"│                                                                                          │",
-        u"│  To view a specific slide:                                                               │",
-        u"│                                                                                          │",
-        u"│    $ curl -N cv.soulshake/3                                                              │",
-        u"│                                                                                          │",
-        u"│  Options (URL paramters):                                                                │",
-        u"│                                                                                          │",
-        u"│   \?auto                 Advance through slides automatically (5 seconds each)           │",
-        u"│   \&cols=$((COLUMNS))    Specify number of rows                                          │",
-        u"│   \&rows=$((LINES))      Specify number of columns                                       │",
-        u"│   \&terminal=xterm       Specify your terminal                                           │",
-        u"│                                                                                          │",
-        u"│  You can infer them automatically from your environment:                                 │",
-        u"│                                                                                          │",
-        u"│    $ curl -N cv.soulshake.net\?\&cols=$((COLUMNS))\&rows=$((LINES-5))\&terminal=${TERM}  │",
-        u"│                                                                                          │",
-        u"│                                                                                          │",
-        u"╘══════════════════════════════════════════════════════════════════════════════════════════╛"]
+        Widget.__init__(self, col, row, colSpan, rowSpan, label=label)
+        self.arcWidth = arcWidth
+        self.border_type = border_type
+        self.border_fg = border_fg
+        self.data = data
+        self.radius = radius
+        self.remainColor = remainColor
+        self.spacing = spacing
+        self.yPadding = yPadding
 
-    ret = Markdown(data=ret)
-    return ret
+    @property
+    def content(self):
+        ret = []
 
-def title(text, **kwargs):
-    title = "\n".join(ret)
-    ret = Markdown(colSpan=8, rowSpan=6, data=ret, col=0, row=0)
-    
-if __name__ == "__main__":
+        ret.append('    <item col="{col}" row="{row}" colSpan="{colSpan}" rowSpan="{rowSpan}" label="{label}" >'.format(
+                    col=self.col,
+                    row=self.row,
+                    colSpan=self.colSpan,
+                    rowSpan=self.rowSpan,
+                    label=self.label,
+                    ))
 
-    #languages_title = title("Human languages")
+        # These are the attributes of the whole donut block
+        donut = ['<donut ']
+        donut.append('arcWidth="{}"'.format(self.arcWidth))
+        donut.append('border-type="{}"'.format(self.border_type))
+        donut.append('border-fg="{}"'.format(self.border_fg))
+        donut.append('label="{}"'.format(self.label))
+        donut.append('radius="{}"'.format(self.radius))
+        donut.append('yPadding="{}"'.format(self.yPadding))
+        donut.append('remainColor="{}"'.format(self.remainColor))   # doesn't work?
+        donut.append('spacing="{}"'.format(self.spacing))
+        donut.append('>')
+        ret.append(" ".join(donut))
 
-    spedometer = spedometer()
-    #spedometer.auto_adjust()
-    toc = toc()
-    skills = skills_line_chart()
-    about = about_me()
-    languages = languages_table()
-    #languages.auto_adjust()
-    #import ipdb; ipdb.set_trace()
+        # These are the attributes of the individual donuts
+        ret.append("<data>")
+        for donut in self.data:
+            line = ['<m']
+            line.append('label="{}"'.format(donut))
+            line.append('percent="{}"'.format(self.data[donut][0]))
+            line.append('color="{}"'.format(self.data[donut][1]))
+            #line.append('remainColor="{}"'.format("cyan"))
+            #line.append('stroke="{}"'.format("cyan"))
+            #line.append('fill="{}"'.format("cyan"))
+            #line.append('radius="{}"'.format("cyan"))
+            #line.append('spacing="{}"'.format("cyan"))
+            line.append('/> ')
+            line = " ".join(line)
+            ret.append(line)
 
-    more_skills = skills_bar_chart()
-    experience = experience()
-    love = things_i_love()
+        ret.append("</data>")
+        ret.append("</donut>")
+        ret.append("</item>")
+        return "\n".join(ret)
 
-    # Specify which page/toc
-    widgets = {
-        0: [[toc]],
-        1: [[spedometer]],
-        2: [[languages]],
-        3: [[more_skills]],
-        4: [[experience]],
-        5: [[about]],
-        6: [[love]],
-        7: [[skills]],
-    }
 
-    pages = {}
-    for i in widgets:
-        pages[i] = Page()
-        x = 0
-        y = 0
-        for row in widgets[i]:
-            x = 0
-            for widget in row:
-                #x = 0
-                widget.col = x
-                widget.row = y
-                pages[i].add_widget(widget)
-                x = x + widget.colSpan
-            y = y + widget.rowSpan
+class BarChart(Widget):
+    """A bar chart."""
+    def __init__(self,
+                 barWidth=9,
+                 barSpacing=1,
+                 xOffset=10,
+                 maxHeight=9, height="100%",
+                 border_type="line", border_fg="gray",
+                 data=None,
+                 label=None,
+                 col=None, row=None, colSpan=None, rowSpan=None):
 
-    doc = Document(pages)
-    print(doc.content).encode('utf-8')
+        Widget.__init__(self, col, row, colSpan, rowSpan, label=label)
+
+        self.barWidth = barWidth
+        self.barSpacing = barSpacing
+        self.xOffset = xOffset
+        self.maxHeight = maxHeight
+        self.height = height
+        self.border_type = border_type
+        self.border_fg = border_fg
+        self.data = data
+
+    @property
+    def content(self):
+        ret = []
+        ret.append('<item col="{col}" row="{row}" colSpan="{colSpan}" rowSpan="{rowSpan}">'.format(
+                    col=self.col,
+                    row=self.row,
+                    colSpan=self.colSpan,
+                    rowSpan=self.rowSpan,
+                    ))
+
+
+        ret.append("".join([
+            '<bar barWidth="{}" '.format(self.barWidth),
+            'label="{}" '.format(self.label),
+            'barSpacing="{}" '.format(self.barSpacing),
+            'xOffset="{}" '.format(self.xOffset),
+            'maxHeight="{}" '.format(self.maxHeight),
+            'height="{}"  '.format(self.height),
+            'border-type="{}" '.format(self.border_type),
+            'border-fg="{}" '.format(self.border_fg),
+            'data-titles="{}" '.format(",".join(self.data.keys())),
+            'data-data="{}" />'.format(",".join([str(x) for x in self.data.values()])),
+            ]))
+
+        ret.append("\n\n")
+        ret.append("    </item>")
+        return "\n".join(ret)
+
+class LineChart(Widget):
+    """A line chart widget."""
+
+    def __init__(self, xPadding=5, showLegend="true", legend_width=12, border_type="line", border_fg="gray", label=None,
+                 col=None, row=None, colSpan=None, rowSpan=None):
+
+        Widget.__init__(self, col, row, colSpan, rowSpan, label=label)
+        self.xPadding = xPadding
+        self.showLegend = showLegend
+        self.legend_width = legend_width
+        self.border_type = border_type
+        self.border_fg = border_fg
+        self.lines = []
+
+    def add_row(self, *args):
+        new_row = Row(*args)
+        self.rows.append(new_row)
+        self.rowSpan = max(self.rowSpan, len(self.rows))
+        self.colSpan = max(self.colSpan, len(self.y))
+
+    def add_line(self, *args, **kwargs):
+        new_line = Line(*args, **kwargs)
+        self.lines.append(new_line)
+
+    @property
+    def content(self):
+        ret = []
+        ret.append('    <item col="{col}" row="{row}" colSpan="{colSpan}" rowSpan="{rowSpan}">'.format(
+                    col=self.col,
+                    row=self.row,
+                    colSpan=self.colSpan,
+                    rowSpan=self.rowSpan,
+                    ))
+
+        ret.append('        <line xPadding="{xPadding}" showLegend="{showLegend}" legend-width="{legend_width}" border-type="{border_type}" border-fg="{border_fg}">'.format(
+            xPadding=self.xPadding,
+            showLegend=self.showLegend,
+            legend_width=self.legend_width,
+            border_type=self.border_type,
+            border_fg=self.border_fg,
+            ))
+        ret.append("            <data>")
+        # Add lines
+        for line in self.lines:
+            ret.append("                " + line.content)
+        ret.append("            </data>")
+        ret.append("        </line>")
+        ret.append("    </item>")
+        return "\n".join(ret)
+
+
+class Markdown(Widget):
+    """A Markdown object."""
+    def __init__(self, data=None, style_paragraph="chalk.white",
+                 style_strong = "chalk.cyan.underline",
+                 style_em = "chalk.green",
+                 border_type = "line",
+                 border_fg = "gray",
+                 label = None,
+                 col=None, row=None, colSpan=None, rowSpan=None):
+
+        Widget.__init__(self, col, row, colSpan, rowSpan, label=label)
+
+        # markdown styles
+        self.style_paragraph = style_paragraph
+        self.style_strong = style_strong
+        self.style_em = style_em
+        self.border_type = border_type
+        self.border_fg = border_fg
+        self.data = self.escape(data)
+        self.label = label
+
+    def escape(self, data):
+        if '&' in data:
+            data = data.replace('&', '&amp;')
+        if '<' in data:
+            data = data.replace('<', '&amp;')
+        if '>' in data:
+            data = data.replace('>', '&amp;')
+        return data
+
+    def stylize(self, line):
+        """Apply some colors to Markdown text."""
+        if line.startswith('##'):
+            line = click.style(line, bold=True)
+        if line.startswith('# '):
+            line = click.style(line, bold=True)
+
+        if line.count('**') == 2:
+            line = line.split('**')
+            line = line[0] + click.style(line[1], bold=True) + line[2]
+        if line.count('_') == 2:
+            line = line.split('_')
+            line = line[0] + click.style(line[1], underline=True) + line[2]
+        return line
+
+    @property
+    def content(self):
+        if isinstance(self.data, list):
+            self.data = [self.stylize(line) for line in self.data]
+            self.data = "\n".join(self.data)
+        if self.data:
+            self.data = self.data.replace('\n', u' &#10; ')
+
+        ret = []
+        ret.append('<item col="{col}" row="{row}" colSpan="{colSpan}" rowSpan="{rowSpan}">'.format(
+                    col=self.col,
+                    row=self.row,
+                    colSpan=self.colSpan,
+                    rowSpan=self.rowSpan,
+                    ))
+
+        ret.append("".join([
+            '       <markdown style-paragraph="{style_paragraph}" '.format(style_paragraph = self.style_paragraph),
+            'style-strong="{style_strong}" '.format(style_strong = self.style_strong),
+            'style-em="{style_em}" '.format(style_em = self.style_em),
+            'border-type="{border_type}" '.format(border_type = self.border_type),
+            'label="{label}" '.format(label = self.label),
+            'border-fg="{border_fg}"> '.format(border_fg = self.border_fg),
+        ]))
+
+        ret.append("\n")
+        ret.append("\t<markdown>\n")
+        ret.append("\t\t" + self.data)
+        ret.append("\n")
+        ret.append("        </markdown>\n")
+        ret.append("</markdown>\n")
+        ret.append("    </item>")
+        return "\n".join(ret)
+
+
+class Row:
+    """A row in a table object."""
+    def __init__(self, items):
+        self.items = items
+
+    @property
+    def content(self):
+        return ",".join([str(x) for x in self.items])
+
+class Gauge(Widget):
+    """A progress gauge."""
+       #var gauge = contrib.gauge({label: 'Progress', stroke: 'green', fill: 'white'})
+       #gauge.setPercent(25)
+    def __init__(self, label = None,
+                 stroke = "green", fill = "white", percent = 50,
+                 border={"type": "line", "fg": "cyan"},
+                 border_type="line", border_fg="gray",
+                 col=None, row=None, colSpan=None, rowSpan=None):
+
+        Widget.__init__(self, col, row, colSpan, rowSpan, label=label)
+        self.stroke = stroke
+        self.fill = fill
+        self.percent = percent
+        self.border = border
+        self.border_type = border_type
+        self.border_fg = border_fg
+
+    @property
+    def content(self):
+        ret = []
+        ret.append('<item col="{col}" row="{row}" colSpan="{colSpan}" rowSpan="{rowSpan}" >'.format(
+                    col=self.col,
+                    row=self.row,
+                    colSpan=self.colSpan,
+                    rowSpan=self.rowSpan,
+                    ))
+        ret.append("".join([
+            '<gauge percent="{}" ',
+            'label="{}" ',
+            'stroke="{}" ',
+            #'border="{}" ',
+            'border-type="{}" ',
+            'border-fg="{}" ',
+            '>',
+            ]).format(
+                self.percent,
+                self.label,
+                self.stroke,
+                #self.border,
+                self.border_type,
+                self.border_fg,
+                ))
+
+        ret.append("foo")
+        ret.append("</gauge>")
+        ret.append("</item>")
+        return "\n".join(ret)
+
+
+class Table(Widget):
+    """A table object."""
+
+    def __init__(self, fg="white",
+                 width="30%", height="30%",
+                 border={"type": "line", "fg": "cyan"},
+                 border_type="line", border_fg="gray",
+                 columnSpacing=8,
+                 columnWidth=None,
+                 interactive="false",
+                 label = None,
+                 selectedFg = None,
+                 selectedBg = None,
+                 keys = False,
+                 data = {},
+                 col=None, row=None, colSpan=None, rowSpan=None):
+
+        Widget.__init__(self, col, row, colSpan, rowSpan, label=label)
+        self.fg = fg
+        self.keys = keys
+        self.width = width
+        self.height = height
+        self.border = border
+        self.border_type = border_type
+        self.border_fg = border_fg
+        self.columnSpacing = columnSpacing
+        self.interactive = interactive
+        self.selectedFg = selectedFg
+        self.selectedBg = selectedBg
+        self.data = data
+        self.rows = data["rows"]
+        self.headers = data["headers"]
+
+    @property
+    def data_headers(self):
+        """Return the table headers."""
+        headers = self.data["headers"]
+        return ",".join(headers)
+
+    def fill_rows(self):
+        """Fill rows with empty strings to avoid annoying "RangeError: Invalid array length" error."""
+        # FIXME: this doesn't work...
+        maxlen = max([len(row) for row in self.rows])
+        maxlen = max(maxlen, len(self.headers))
+        for row in self.rows:
+            while len(row) < maxlen:
+                row.append(" ")
+            #print(row, file=sys.stderr)
+        while len(self.headers) < maxlen:
+            self.headers.append(" ")
+        #print(self.data_headers, file=sys.stderr)
+        #print(self.headers, file=sys.stderr)
+        #print(maxlen, file=sys.stderr)
+        assert len(self.headers) == maxlen
+
+    @property
+    def columnWidth(self):
+        """Return the width of each column."""
+        widths = [len(header) for header in self.headers]
+        for row in self.rows:
+            row_widths = [len(str(x)) for x in row]
+            widths = [max(x, y) for (x, y) in zip (widths, row_widths)]
+        return ",".join([str(x) for x in widths])
+
+    @property
+    def content(self):
+        ret = []
+        ret.append('<item col="{col}" row="{row}" colSpan="{colSpan}" rowSpan="{rowSpan}" >'.format(
+                    col=self.col,
+                    row=self.row,
+                    colSpan=self.colSpan,
+                    rowSpan=self.rowSpan,
+                    ))
+
+        ret.append((
+                '           <table '
+                'border-type="{border_type}" border-fg="{border_fg}" '
+                'columnSpacing="{columnSpacing}" columnWidth="{columnWidth}" '
+                'data-headers="{data_headers}" '
+                'fg="{fg}" '
+                'height="{height}" '
+                'interactive="{interactive}" '
+                'keys="{keys}" '
+                'label="{label}" '
+                'width="{width}" '
+                'selectedBg="{selectedBg}" '
+                'selectedFg="{selectedFg}" '
+                '> '
+                    .format(
+                            border_type=self.border_type,
+                            border_fg=self.border_fg,
+                            columnSpacing=self.columnSpacing,
+                            columnWidth=self.columnWidth,
+                            data_headers=self.data_headers,
+                            fg=self.fg,
+                            height=self.height,
+                            interactive=self.interactive,
+                            keys=self.keys,
+                            label=self.label,
+                            selectedBg=self.selectedBg,
+                            selectedFg=self.selectedFg,
+                            width=self.width,
+                        )))
+
+        ret.append("            <data-data>")
+        self.fill_rows()
+        assert len(self.headers) == len(self.rows[0])
+        for row in self.rows:
+            ret.append("            " + ",".join([str(x) for x in row]))
+        ret.append("            </data-data>")
+        ret.append("         </table>")
+        ret.append("     </item>")
+
+        return "\n".join(ret)
+
+class Spedometer(Widget):
+    """
+    This is a made-up class but I like it.
+    """
+    fancy_grid = [
+        "╒", "═", "╤", "═", "╕",
+        "│", " ", "╪", " ", "│",
+        "╞", " ", "╪", " ", "╡",
+        "╘", "═", "╧", "═", "╛"
+        ]
+
+    toc = [
+        "╒══════════════ Welcome to the professional resume of A.J. Bowen ══════════════════════╕",
+        "│                                                                                          │",
+        "│  1. This screen                                                                          │",
+        "│  2. Skills                                                                               │",
+        "│  3. Experience                                                                           │",
+        "│  4. Languages                                                                            │",
+        "│                                                                                          │",
+        "│  To view all slides (press enter to move to next slide; press Ctrl+C to exit)            │",
+        "│                                                                                          │",
+        "│    $ p=0; while true; do curl localhost/$((p++))\?cols=$((COLUMNS)); read; done          │",
+        "│                                                                                          │",
+        "│  To view a specific slide:                                                               │",
+        "│                                                                                          │",
+        "│    $ curl -N cv.soulshake/3                                                              │",
+        "│                                                                                          │",
+        "│  Options (URL paramters):                                                                │",
+        "│                                                                                          │",
+        "│   \?auto                 Advance through slides automatically (5 seconds each)           │",
+        "│   \&cols=$((COLUMNS))    Specify number of rows                                          │",
+        "│   \&rows=$((LINES))      Specify number of columns                                       │",
+        "│   \&terminal=xterm       Specify your terminal                                           │",
+        "│                                                                                          │",
+        "│  You can infer them automatically from your environment:                                 │",
+        "│                                                                                          │",
+        "│    $ curl -N cv.soulshake.net\?\&cols=$((COLUMNS))\&rows=$((LINES-5))\&terminal=${TERM}  │",
+        "│                                                                                          │",
+        "│                                                                                          │",
+        "╘══════════════════════════════════════════════════════════════════════════════════════════╛"]
+
+    @property
+    def content(self):
+        ret = [
+        "  .",
+"                   90    100                          90    100 ",
+"              80  \           110                80              110",
+"                   \ ",
+"          70        \             120        70                      120",
+"                     \ ",
+"        60            \             130    60                          130",
+"                       O                                  O",
+"        50                          140    50              \           140",
+"                                                            \ ",
+"         40                        150      40               \        150",
+"                      mph                                mph  \ ",
+"            30                  160            30              \   160",
+"          This is your CV on LinkedIn     This is your CV on the command line"]
+
+        return "\n".join(ret)
 

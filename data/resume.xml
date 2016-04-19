@@ -31,7 +31,7 @@
 </page>
 
 <page>
-<item col="0" row="0" colSpan="3" rowSpan="4">
+<item col="0" row="0" colSpan="4" rowSpan="4">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="[37mOverview[0m" border-fg="gray"> 
 
 
@@ -45,7 +45,7 @@
 </markdown>
 
     </item>
-<item col="3" row="0" colSpan="3" rowSpan="4">
+<item col="4" row="0" colSpan="4" rowSpan="4">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Weapons" border-fg="gray"> 
 
 
@@ -59,7 +59,7 @@
 </markdown>
 
     </item>
-<item col="0" row="4" colSpan="3" rowSpan="4">
+<item col="0" row="4" colSpan="4" rowSpan="4">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Attributes" border-fg="gray"> 
 
 
@@ -73,13 +73,13 @@
 </markdown>
 
     </item>
-<item col="3" row="4" colSpan="3" rowSpan="4">
+<item col="4" row="4" colSpan="4" rowSpan="4">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Awards" border-fg="gray"> 
 
 
 	<markdown>
 
-		[37m [0m &#10; Global Awareness Certification: 2010 &#10; Harley S Nelson scholar: 2009 &#10; Undergraduate Research Award (grant): 2009 &#10; Award for excellence in French 450: 2009 &#10; KU Honor Roll: Fall 2007, Fall 2008, Spring 2009 &#10; Teaching grant (Haiti): Spring 2008 &#10; Topeka Credit Union Scholarship: 2004 &#10; Mater Dei scholarship: 2004, 2005, 2006 &#10; Hardest worker, Shawnee Heights Track team: 2000
+		[37m [0m &#10; Global Awareness Certification: 2010 &#10; Harley S Nelson scholar: 2009 &#10; Undergraduate Research Award: 2009 &#10; Award for excellence in FREN 450: 2009 &#10; KU Honor Roll: 2007, 2008, 2009 &#10; Teaching grant (Haiti): Spring 2008 &#10; Topeka Credit Union Scholarship: 2004 &#10; Mater Dei scholarship: 2004, 2005, 2006 &#10; Hardest worker, SHHS Track team: 2000
 
 
         </markdown>
@@ -112,13 +112,13 @@ foo
 
 <page>
 <item col="0" row="0" colSpan="5.38461538462" rowSpan="4">
-<bar barWidth="9" label="Computery Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="Python,Automation,GoLang,DNS,Linux,Docker,Bash" data-data="8.5,8,2,6,4,7,5.5" />
+<bar barWidth="9" label="Computery Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="Python,Bash,GoLang,DNS,Docker,Linux,Automation" data-data="8.5,5.5,2,6,7,4,8" />
 
 
 
     </item>
 <item col="0" row="4" colSpan="4" rowSpan="4">
-<bar barWidth="9" label="Other Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="Lockpicking,Learning,People" data-data="3,7,8" />
+<bar barWidth="9" label="Other Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="People,Learning,Singing,Chaos,Lockpicking" data-data="8,7,1,6,3" />
 
 
 
@@ -127,13 +127,13 @@ foo
 
 <page>
     <item col="0" row="0" colSpan="15" rowSpan="6" label="Human languages" >
-<donut radius="14" spacing="2"  border-type="line" border-fg="gray" label="Human languages" >
+<donut  arcWidth="3" border-type="line" border-fg="gray" label="Human languages" radius="20" yPadding="5" remainColor="cyan" spacing="1" >
 <data>
-<m color="red" percent="10" label="Russian" /> 
-<m color="yellow" percent="24" label="German" /> 
-<m color="green" percent="99" label="English" /> 
-<m color="blue" percent="89" label="French" /> 
-<m color="magenta" percent="60" label="Spanish" /> 
+<m label="Russian" percent="10" color="red" /> 
+<m label="German" percent="24" color="yellow" /> 
+<m label="English" percent="99" color="green" /> 
+<m label="French" percent="89" color="blue" /> 
+<m label="Spanish" percent="60" color="magenta" /> 
 </data>
 </donut>
 </item>
