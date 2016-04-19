@@ -94,7 +94,7 @@ def languages_donuts():
     data["French"] = [89, "blue"]
     data["Spanish"] = [60, "magenta"]
 
-    ret = DonutChart(col=0, row=0, colSpan=15, rowSpan=6, label='Human languages', data=data)
+    ret = DonutChart(col=0, row=0, colSpan=15, rowSpan=5, label='Human languages', data=data)
     return ret
 
 def languages_table():
@@ -106,7 +106,6 @@ def languages_table():
                 ["English", ">10y", 99, "99%", "{green-fg} native speaker"],
                 ["French", ">10y", 82, "89%", "{blue-fg} fluent"],
                 ["Spanish", "n/a", 10, "60%", "{magenta-fg} passive"],
-                #["Arabic", "n/a", 8, "3%", "{red-fg} don't ask"],
                 ],
         }
 
@@ -115,24 +114,32 @@ def languages_table():
     }
 
     languages = Table(col=2, row=2, colSpan=5, rowSpan=3, data=data, **table)
-    #for row in rows:
-        #languages.add_row(row)
     return languages
 
 
 def contact():
+    rows = []
+    rows.append([click.style("Site", fg='red'), "soulshake.net"])
+    rows.append([click.style("Email", fg='yellow'), "aj@soulshake.net"])
+    rows.append([click.style("Github", fg='green'), "https://github.com/soulshake"])
+    rows.append([click.style("Twitter", fg='blue'), "https://twitter.com/s0ulshake"])
+    rows.append([click.style("LinkedIn", fg='magenta'), "https://www.linkedin.com/in/ajbowen"])
+
+    rows = [[row[0].rjust(30), click.style(row[1], fg='cyan')] for row in rows]
+    rows = ["  ".join(row) for row in rows]
+    table = "\n".join(rows)
+
     contact = ([
               placeholder,
-              "My name is AJ, and I like to code.".format(click.style("AJ", fg='green')),
+              "My name is AJ, and I like to code.",
               "",
               "Say hi:",
-                "- [aj@soulshake.net](aj@soulshake.net)",
-                "- [https://github.com/soulshake](https://github.com/soulshake) ",
-                "- [https://twitter.com/s0ulshake](https://twitter.com/s0ulshake)",
-                "- [https://www.linkedin.com/in/ajbowen](https://www.linkedin.com/in/ajbowen)",
+              table,
                 "",
               "For more info, see:",
               "http://blog.soulshake.net/2016/04/command-line-resume/",
+                "",
+                "Thanks!",
               ])
     contact = "\n".join(contact)
     label = "Is this thing on?"
@@ -144,7 +151,7 @@ def overview():
     about_me = ([
         placeholder,
         "Name".ljust(20) + click.style("AJ Bowen", fg='green', bold=True),
-        "Location".ljust(20) + click.style("Berlin, Germany", fg='green'),
+        "Location".ljust(20) + click.style("Berlin", fg='green'),
         "Employment State".ljust(20) + click.style("INACTIVE", dim=True, fg='yellow', reverse=True),
         "Employment Status".ljust(20) + click.style("Search in progress...", dim=True, fg='yellow'),
         "Mobility".ljust(20) + click.style("Flexible", fg='green'),
@@ -226,11 +233,13 @@ def other_experience():
     label = "Unprofessional Experience"
     blurb = [
         placeholder,
-        "I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've seen the inside of several jail cells. I tried to burn a bra once but it wouldn't catch.",
-        "I've organized underground newspapers, backyard boxing leagues and protests, as well as several successful dinner parties.",
-        "If working for your company will help me expand this section, please reach out ASAP.",
+"I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've ",
+"seen the inside of several jail cells. I tried to burn a bra once but it wouldn't catch.\n",
+"I've organized underground newspapers, backyard boxing leagues and protests, ",
+"as well as several successful dinner parties.\n",
+"If working for your company will help me expand this section, please reach out ASAP.",
     ]
-    other_exp = Markdown(colSpan=6, rowSpan=3, data="\n\n".join(blurb), col=3, row=3, label=label)
+    other_exp = Markdown(colSpan=6, rowSpan=3, data="\n".join(blurb), col=3, row=3, label=label)
     return other_exp
 
 def professional_experience():
@@ -244,7 +253,6 @@ def professional_experience():
         ["Federal Student Aid question answerer", "Vangent, Inc", "2010", "2011", "Lawrence, KS"],
     ]
 
-    #print(tabulate(positions, tablefmt="fancy_grid"), file=sys.stderr)
     for position in positions:
         position[0] = position[0].rjust(20)
         blurb.append("{} @{}: {} - {} ({})".format(
@@ -256,9 +264,8 @@ def professional_experience():
         ))
 
     blurb.append("\n")
-    blurb.append(click.style("Previous positions", fg='magenta') + ": See LinkedIn profile")
-    blurb.append("\n")
-    blurb.append(click.style("See next slide for details on my most recent position.", fg='green'))
+    blurb.append(click.style("Previous positions", fg='blue') + ": See LinkedIn profile")
+    blurb.append(click.style("Details on most recent position", fg='blue') + ": See next slide")
     blurb = Markdown(colSpan=6, rowSpan=3, data=blurb, col=0, row=0, label=label)
     return blurb
 
@@ -446,15 +453,16 @@ week.\n\n
 
 def skills_bar_chart():
     data = OrderedDict()
-    data["Python"] = 8.5
+    data["Python"] = 9.5
     data["Bash"] = 5.5
     data["GoLang"] = 2
     data["DNS"] = 6
     data["Docker"] = 7
     data["Linux"] = 4
     data["Automation"] = 8
-    colSpan = len(data) / 1.3
-    barchart = BarChart(col=1, row=1, colSpan=colSpan, rowSpan=4, label="Computery Skills", data=data)
+    colSpan = 6
+    rowSpan = 4
+    barchart = BarChart(col=1, row=1, colSpan=colSpan, rowSpan=rowSpan, label="Computery Skills", data=data)
     return barchart
 
 def skills_other_bar_chart():
@@ -463,8 +471,11 @@ def skills_other_bar_chart():
     data["Learning"] = 7
     data["Singing"] = 1
     data["Chaos"] = 6
+    data["Coloring"] = 5
+    data["Genealogy"] = 9
     data["Lockpicking"] = 3
-    colSpan = 4
+
+    colSpan = 6
     rowSpan = 4
 
     ret = BarChart(col=1, row=1, colSpan=colSpan, rowSpan=rowSpan, label="Other Skills", data=data)

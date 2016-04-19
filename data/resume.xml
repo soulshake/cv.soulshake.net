@@ -37,7 +37,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mBerlin, Germany[0m &#10; Employment State    [33m[2m[7mINACTIVE[0m &#10; Employment Status   [33m[2mSearch in progress...[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
+		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mBerlin[0m &#10; Employment State    [33m[2m[7mINACTIVE[0m &#10; Employment Status   [33m[2mSearch in progress...[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
 
 
         </markdown>
@@ -111,14 +111,14 @@ foo
 </page>
 
 <page>
-<item col="0" row="0" colSpan="5.38461538462" rowSpan="4">
-<bar barWidth="9" label="Computery Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="Python,Bash,GoLang,DNS,Docker,Linux,Automation" data-data="8.5,5.5,2,6,7,4,8" />
+<item col="0" row="0" colSpan="6" rowSpan="4">
+<bar barWidth="9" label="Computery Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="Python,Bash,GoLang,DNS,Docker,Linux,Automation" data-data="9.5,5.5,2,6,7,4,8" />
 
 
 
     </item>
-<item col="0" row="4" colSpan="4" rowSpan="4">
-<bar barWidth="9" label="Other Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="People,Learning,Singing,Chaos,Lockpicking" data-data="8,7,1,6,3" />
+<item col="0" row="4" colSpan="6" rowSpan="4">
+<bar barWidth="9" label="Other Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="People,Learning,Singing,Chaos,Coloring,Genealogy,Lockpicking" data-data="8,7,1,6,5,9,3" />
 
 
 
@@ -126,7 +126,7 @@ foo
 </page>
 
 <page>
-    <item col="0" row="0" colSpan="15" rowSpan="6" label="Human languages" >
+    <item col="0" row="0" colSpan="15" rowSpan="5" label="Human languages" >
 <donut  arcWidth="3" border-type="line" border-fg="gray" label="Human languages" radius="20" yPadding="5" remainColor="cyan" spacing="1" >
 <data>
 <m label="Russian" percent="10" color="red" /> 
@@ -137,7 +137,7 @@ foo
 </data>
 </donut>
 </item>
-<item col="0" row="6" colSpan="5" rowSpan="3" >
+<item col="0" row="5" colSpan="5" rowSpan="3" >
            <table border-type="line" border-fg="gray" columnSpacing="8" columnWidth="8,4,14,4,25" data-headers="Language,time,DuoLingo level,ease,status" fg="white" height="30%" interactive="false" keys="False" label="Details" width="30%" selectedBg="None" selectedFg="None" > 
             <data-data>
             Russian,1 mo,6,10%,{red-fg} caveperson
@@ -157,7 +157,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10;  [35m[1mChief of Counter-bullshit operations[0m @[33mGandi.net[0m: October 2013 - December 2015 (San Francisco) &#10;        [35m[1mLevel 1 Support Representative[0m @[33mGandi.net[0m: February 2012 - October 2013 (Remote/Lawrence, KS)) &#10; [35m[1mFederal Student Aid question answerer[0m @[33mVangent, Inc[0m: 2010 - 2011 (Lawrence, KS) &#10;  &#10;  &#10; [35mPrevious positions[0m: See LinkedIn profile &#10;  &#10;  &#10; [32mSee next slide for details on my most recent position.[0m
+		[37m [0m &#10;  [35m[1mChief of Counter-bullshit operations[0m @[33mGandi.net[0m: October 2013 - December 2015 (San Francisco) &#10;        [35m[1mLevel 1 Support Representative[0m @[33mGandi.net[0m: February 2012 - October 2013 (Remote/Lawrence, KS)) &#10; [35m[1mFederal Student Aid question answerer[0m @[33mVangent, Inc[0m: 2010 - 2011 (Lawrence, KS) &#10;  &#10;  &#10; [34mPrevious positions[0m: See LinkedIn profile &#10; [34mDetails on most recent position[0m: See next slide
 
 
         </markdown>
@@ -171,7 +171,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10;  &#10; I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've seen the inside of several jail cells. I tried to burn a bra once but it wouldn't catch. &#10;  &#10; I've organized underground newspapers, backyard boxing leagues and protests, as well as several successful dinner parties. &#10;  &#10; If working for your company will help me expand this section, please reach out ASAP.
+		[37m [0m &#10; I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've  &#10; seen the inside of several jail cells. I tried to burn a bra once but it wouldn't catch. &#10;  &#10; I've organized underground newspapers, backyard boxing leagues and protests,  &#10; as well as several successful dinner parties. &#10;  &#10; If working for your company will help me expand this section, please reach out ASAP.
 
 
         </markdown>
@@ -233,7 +233,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10; My name is AJ, and I like to code. &#10;  &#10; Say hi: &#10; - [aj@soulshake.net](aj@soulshake.net) &#10; - [https://github.com/soulshake](https://github.com/soulshake)  &#10; - [https://twitter.com/s0ulshake](https://twitter.com/s0ulshake) &#10; - [https://www.linkedin.com/in/ajbowen](https://www.linkedin.com/in/ajbowen) &#10;  &#10; For more info, see: &#10; http://blog.soulshake.net/2016/04/command-line-resume/
+		[37m [0m &#10; My name is AJ, and I like to code. &#10;  &#10; Say hi: &#10;                  [31mSite[0m  [36msoulshake.net[0m &#10;                 [33mEmail[0m  [36maj@soulshake.net[0m &#10;                [32mGithub[0m  [36mhttps://github.com/soulshake[0m &#10;               [34mTwitter[0m  [36mhttps://twitter.com/s0ulshake[0m &#10;              [35mLinkedIn[0m  [36mhttps://www.linkedin.com/in/ajbowen[0m &#10;  &#10; For more info, see: &#10; http://blog.soulshake.net/2016/04/command-line-resume/ &#10;  &#10; Thanks!
 
 
         </markdown>
