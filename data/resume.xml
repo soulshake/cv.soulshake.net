@@ -6,7 +6,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Hi, I'm [31mAJ[0m.  &#10; I'm a [33mPython developer[0m with a strong interest in [32mAPIs[0m, [34mCLIs[0m, and [35msubverting the dominant paradigm[0m.  &#10; This is my resume. &#10;  &#10; ╒════════════════════════════════════════════════════════════════════════════════════════════╕ &#10; │                                                                                            │ &#10; │  To view all slides, run:                                                                  │ &#10; │                                                                                            │ &#10; │    $ [32m[1mp=0; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done[0m     │ &#10; │                                                                                            │ &#10; │  (press enter to move to next slide; press Ctrl+C to exit)                                 │ &#10; │                                                                                            │ &#10; ╘════════════════════════════════════════════════════════════════════════════════════════════╛ &#10;  &#10;   Contents:                                                                                &#10;     0. This screen                                                                         &#10;     1. Skills                                                                              &#10;     2. Experience                                                                          &#10;     3. Languages                                                                           &#10;     4. About me                                                                            &#10;     5. Contact                                                                             &#10;                                                                                            &#10;   To view a specific slide:                                                                &#10;                                                                                            &#10;     $ [32mcurl -N cv.soulshake/3/\?cols=$((COLUMNS))[0m                                           &#10;                                                                                           
+		[37m [0m &#10;                                   Hi, I'm AJ.                                    &#10;                I'm a Python developer with a strong interest in                  &#10;                 [32mAPIs[0m, [34mCLIs[0m and [35msubverting the dominant paradigm[0m.                 &#10;                                This is my resume.                                &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=0; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done[0m &#10;  &#10;  (press enter to move to next slide; press Ctrl+C to exit) &#10;  &#10;   Contents: &#10;     0. This screen &#10;     1. Skills &#10;     2. Experience &#10;     3. Languages &#10;     4. About me &#10;     5. Contact &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake/3/\?cols=$((COLUMNS))[0m
 
 
         </markdown>
@@ -17,13 +17,13 @@
 </page>
 
 <page>
-<item col="0" row="0" colSpan="3" rowSpan="3">
+<item col="0" row="0" colSpan="3" rowSpan="4">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="[37mOverview[0m" border-fg="gray"> 
 
 
 	<markdown>
 
-		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; State               [33m[2m[7mINACTIVE[0m &#10; Location            [32mBerlin, Germany[0m &#10; Mobility            [32mFlexible[0m
+		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mBerlin, Germany[0m &#10; Employment State    [33m[2m[7mINACTIVE[0m &#10; Employment Status   [33m[2mSearch in progress...[0m &#10; Mobility            [32mFlexible (fully containerized)[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
 
 
         </markdown>
@@ -51,7 +51,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Race                   [32m[1mHybrid Software Engineer[0m[0m &#10; Alignment              [32mChaotic Good[0m &#10; Empathy                [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Willpower              [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Creativity             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Typing speed           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Idealism               [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Curiosity              [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Punctuality            [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Willingness to  &#10;   relocate to  [32m[0m &#10;   San Francisco        [31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m
+		[37m [0m &#10; Race                [32m[1mHybrid Software Engineer[0m[0m &#10; Alignment           [32mChaotic Good[0m &#10; Empathy             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Willpower           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Creativity          [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Typing speed        [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Idealism            [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Curiosity           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Punctuality         [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Willingness to  &#10;   relocate to  [32m[0m &#10;   San Francisco     [31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m
 
 
         </markdown>
@@ -73,6 +73,27 @@
 </markdown>
 
     </item>
+<item col="0" row="8" colSpan="6" rowSpan="2" >
+<gauge percent="72" label="Employment Progress" stroke="green" border-type="line" border-fg="gray" >
+foo
+</gauge>
+</item>
+</page>
+
+<page>
+<item col="0" row="0" colSpan="7" rowSpan="5" >
+           <table border-type="line" border-fg="gray" columnSpacing="10" columnWidth="21,7,6,70" data-headers="Autodidact Process,Cpu (%),Memory,Comment" fg="green" height="30%" interactive="true" keys="true" label="Active Processes" width="30%" selectedBg="blue" selectedFg="white" > 
+            <data-data>
+            German,12,13,Host 'Berlin' unresponsive; trying again
+            Docker,15,26,Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself
+            node.js,5,16,Parent process 'frontend' is dirty
+            Ruby,1,6.2,Scheduled
+            ClubOps,17,36.2,Berghain: 4 localhost: 0
+            Deployment automation,12,8.7,Onscreen
+            blog.soulshake.net,3,12.5,Partially deployed
+            </data-data>
+         </table>
+     </item>
 </page>
 
 <page>
@@ -82,7 +103,7 @@
 
 
     </item>
-<item col="0" row="4" colSpan="2.30769230769" rowSpan="4">
+<item col="0" row="4" colSpan="4" rowSpan="4">
 <bar barWidth="9" label="Other Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="Lockpicking,Learning,People" data-data="3,7,8" />
 
 
@@ -91,19 +112,19 @@
 </page>
 
 <page>
-    <item col="0" row="0" colSpan="12" rowSpan="6" label="Human languages" >
-<donut radius="20" spacing="1.2"  border-type="line" border-fg="gray" label="Human languages" >
+    <item col="0" row="0" colSpan="15" rowSpan="6" label="Human languages" >
+<donut radius="14" spacing="2"  border-type="line" border-fg="gray" label="Human languages" >
 <data>
-<m color="red" percent="20" label="Russian" yPadding="9.5" arcWidth="13" remainColor="magenta" spacing="1.2"/>
-<m color="yellow" percent="30" label="German" yPadding="9.5" arcWidth="13" remainColor="yellow" spacing="1.2"/>
-<m color="green" percent="110" label="English" yPadding="9.5" arcWidth="13" remainColor="yellow" spacing="1.2"/>
-<m color="blue" percent="90" label="French" yPadding="9.5" arcWidth="13" remainColor="yellow" spacing="1.2"/>
-<m color="magenta" percent="45" label="Spanish" yPadding="9.5" arcWidth="13" remainColor="yellow" spacing="1.2"/>
+<m color="red" percent="20" label="Russian" /> 
+<m color="yellow" percent="30" label="German" /> 
+<m color="magenta" percent="35" label="Spanish" /> 
+<m color="blue" percent="89" label="French" /> 
+<m color="green" percent="100" label="English" /> 
 </data>
 </donut>
 </item>
 <item col="0" row="6" colSpan="4" rowSpan="3" >
-           <table fg="white" width="30%" height="30%" border-type="line" border-fg="gray" columnSpacing="8" columnWidth="8,4,14,4,25" data-headers="Language,time,DuoLingo level,ease,status" interactive="false" label="Details" > 
+           <table border-type="line" border-fg="gray" columnSpacing="8" columnWidth="8,4,14,4,25" data-headers="Language,time,DuoLingo level,ease,status" fg="white" height="30%" interactive="false" keys="False" label="Details" width="30%" selectedBg="None" selectedFg="None" > 
             <data-data>
             English,>10y,99,99%,{green-fg} native speaker
             French,>10y,82,89%,{green-fg} fluent
@@ -117,13 +138,13 @@
 </page>
 
 <page>
-<item col="0" row="0" colSpan="8" rowSpan="8">
+<item col="0" row="0" colSpan="6" rowSpan="3">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Professional Experience" border-fg="gray"> 
 
 
 	<markdown>
 
-		[37m [0m[35m[1mChief of Counter-bullshit operations[0m[0m, Gandi.net     |   October 2013 to December 2015, San Francisco &#10; [33mAKA developer advocate, technical community manager, support automation specialist, chaos monkey &#10; [0m &#10; I interacted with various tech communities, online and at industry events, &#10; letting developers know we exist, helping them make the most of Gandi's domain, &#10; SSL and hosting APIs, and communicating their feedback to our technical team. &#10; Internally, I worked with engineers, product managers and support to improve &#10; Gandi's APIs, web interface, documentation and open source presence. &#10;  &#10; Job responsibilities included: &#10;  &#10; * [1mOutreach[0m, both online and in person (at tech conferences and &#10; industry events), helping existing and prospective customers to make the most of Gandi's products (domain names, SSL certs, hosting, and the corresponding APIs); &#10; * [1mLocalization[0m: Technical and marketing communications (product releases, newsletters, announcement, outages); &#10; * [1mDocumentation[0m: Creating and editing tutorials and docs &#10; * [1mCommunication[0m: Helping shape Gandi's voice our blog posts, newsletters and social media interactions, organize events and manage our supported projects. &#10; * [1mCommunity[0m: Cultivating a [thriving and enthusiastic community](https://twitter.com/gandibar/favorites). &#10; * [1mSpecial projects[0m: Being ready for anything. &#10;  &#10;  &#10; [35m[1mSupport representative[0m[0m, Gandi.net    | February 2012 to October 2013, Lawrence, KS &#10;  &#10; My original role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain names, DNS, SSL certificates and basic hosting. My curiosity and interest in this role led me to specialize in more technical hosting issues, while helping to hire, train and mentor new employees. My French language and community-related skills led me to move to San Francisco to take on an official evangelism role in 2013. &#10;  &#10; [35m[1mPrevious positions[0m[0m: See LinkedIn profile
+		[37m [0m &#10;  [35m[1mChief of Counter-bullshit operations[0m @[33mGandi.net[0m: October 2013 - December 2015 (San Francisco) &#10;        [35m[1mLevel 1 Support Representative[0m @[33mGandi.net[0m: February 2012 - October 2013 (Remote/Lawrence, KS)) &#10; [35m[1mFederal Student Aid question answerer[0m @[33mVangent, Inc[0m: 2010 - 2011 (Lawrence, KS) &#10;  &#10;  &#10; [35mPrevious positions[0m: See LinkedIn profile &#10;  &#10;  &#10; [32mSee next slide for details on my most recent position.[0m
 
 
         </markdown>
@@ -131,13 +152,13 @@
 </markdown>
 
     </item>
-<item col="0" row="8" colSpan="6" rowSpan="3">
+<item col="0" row="3" colSpan="6" rowSpan="3">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Unprofessional Experience" border-fg="gray"> 
 
 
 	<markdown>
 
-		I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've seen the inside of several jail cells. I tried to burn a bra once but it wouldn't catch. &#10;  &#10; I've organized underground newspapers, backyard boxing leagues and protests, as well as several successful dinner parties. &#10;  &#10; If working for your company will help me expand this section, please reach out ASAP.
+		[37m [0m &#10;  &#10; I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've seen the inside of several jail cells. I tried to burn a bra once but it wouldn't catch. &#10;  &#10; I've organized underground newspapers, backyard boxing leagues and protests, as well as several successful dinner parties. &#10;  &#10; If working for your company will help me expand this section, please reach out ASAP.
 
 
         </markdown>
@@ -154,7 +175,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Employer       [32mGandi.net[0m &#10; Location       [32mSan Francisco, CA[0m &#10; Dates          [32mFebruary 2012 to December 2015[0m &#10; 2013-2015      [33m[1m[7mChief of counter-bullshit operations[0m &#10; A.K.A.         [32mDeveloper advocate &#10;                     API evangelist &#10;                     Technical community manager &#10;                     Chaos monkey &#10;                     Emergency communication strategist &#10;                     Open source champion &#10;                     Automation specialist &#10;                     Special projects &#10;                     QA intern &#10;                     Workshop administrator &#10;                     Swag dealer[0m &#10; 2012-2013      [33m[1m[7mLevel 1 Support Agent[0m &#10; A.K.A.         [32mSupport ticket answerer person &#10;                     Documentation tweaker &#10;                     Bug hunter &#10;                     Twitter person &#10;                     Question asker[0m
+		[37m [0m &#10; Employer       [32mGandi.net[0m &#10; Location       [32mSan Francisco, CA[0m &#10; Dates          [32mFebruary 2012 to December 2015[0m &#10; 2013-2015      [33m[1m[7mChief of counter-bullshit operations[0m &#10; A.K.A.         [32m[33mDeveloper advocate[0m &#10;                     [33mAPI evangelist[0m &#10;                     [33mTechnical community manager[0m &#10;                     [33mChaos monkey[0m &#10;                     [33mEmergency PR strategist[0m &#10;                     [33mOpen source champion[0m &#10;                     [33mAutomation specialist[0m &#10;                     [33mSpecial projects[0m &#10;                     [33mQA intern[0m &#10;                     [33mWorkshop administrator[0m &#10;                     [33mSwag dealer[0m[0m &#10; 2012-2013      [33m[1m[7mLevel 1 Support Agent[0m &#10; A.K.A.         [32m[33mSupport ticket answerer person[0m &#10;                     [33mDocumentation tweaker[0m &#10;                     [33mBug hunter[0m &#10;                     [33mTwitter person[0m &#10;                     [33mQuestion asker[0m[0m
 
 
         </markdown>
@@ -168,7 +189,7 @@
 
 	<markdown>
 
-		[37m [0m &#10;  &#10; I interacted with various tech communities, online and at industry events, &#10; connecting with developers and helping them make the most of Gandi's domain, &#10; SSL and hosting APIs. &#10;  &#10; I was the primary technical contact for Gandi resellers in the U.S., escalating &#10; to the CTO where appropriate. &#10;  &#10; Internally, I worked with engineers, product managers and support to improve &#10; Gandi's APIs, web interface, documentation and open source presence based &#10; on feedback collected from the community. &#10;  &#10; I shaped much of Gandi's voice via blog posts, newsletters and social media &#10; interactions. I created, edited and localized a wide variety of technical &#10; documentation, emergency communications and product communications. &#10;  &#10; I guided and managed Gandi's supported initiatives and open source projects, &#10; organizing various campaigns and partnerships for our mutual benefit. &#10;  &#10; I tested and documented a huge number of Gandi's products and features. &#10;  &#10; Above all, I was ready for anything, which usually happened at least once a day. &#10;  &#10;  &#10; 
+		[37m [0m &#10;  &#10; I interacted with various tech communities, online and at industry events, &#10; connecting with developers and helping them make the most of Gandi's domain, &#10; SSL and hosting APIs. &#10;  &#10; I was the primary technical contact for Gandi resellers in the U.S., escalating &#10; to the CTO where appropriate. &#10;  &#10; Internally, I worked with engineers, product managers and support to improve &#10; Gandi's APIs, web interface, documentation and open source presence based &#10; on feedback collected from the community. &#10;  &#10; I shaped much of Gandi's voice via blog posts, newsletters and social media &#10; interactions. I created, edited and localized a wide variety of technical &#10; documentation, emergency communications and product communications. &#10;  &#10; I guided and managed Gandi's supported initiatives and open source projects, &#10; organizing various campaigns and partnerships for our mutual benefit. &#10;  &#10; I tested and documented a huge number of Gandi's products and features. &#10;  &#10; Mostly: I was ready for anything, which usually happened at least twice a week. &#10;  &#10;  &#10; 
 
 
         </markdown>
@@ -182,7 +203,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; My original role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain names, DNS, SSL certs and basic hosting.  &#10;  &#10; My curiosity and interest in this role led me to specialize in more technical hosting issues, while helping to hire, train and mentor new employees, edit blog posts, and generally pitch in anywhere I could be helpful. &#10;  &#10; This versatility led me to be promoted to a so-called Community Manager role in our new San Francisco office. &#10;  &#10; From the time I was hired (near the beginning of Gandi's expansion into the U.S.) to the time I left, I had played a role in nearly every aspect of our growth in the United States.
+		[37m [0m &#10; My original role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain names, DNS, SSL certs and basic hosting. &#10;  &#10;  &#10; My curiosity and interest in this role led me to specialize in more technical hosting issues, while helping to hire, train and mentor new employees, edit blog posts, and generally pitch in anywhere I could be helpful. &#10;  &#10;  &#10; This versatility led me to be promoted to a so-called Community Manager role in our new San Francisco office. &#10;  &#10;  &#10; From the time I was hired (near the beginning of Gandi's expansion into the U.S.) to the time I left, I had played a role in nearly every aspect of our growth in the United States. &#10;     
 
 
         </markdown>
@@ -193,7 +214,7 @@
 </page>
 
 <page>
-<item col="0" row="0" colSpan="3" rowSpan="5">
+<item col="0" row="0" colSpan="4" rowSpan="5">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Is this thing on?" border-fg="gray"> 
 
 
