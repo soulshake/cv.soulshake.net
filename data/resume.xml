@@ -1,12 +1,26 @@
 <document>
 <page>
-<item col="0" row="0" colSpan="5" rowSpan="9">
+<item col="0" row="0" colSpan="5" rowSpan="3.5">
+       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="" border-fg="gray"> 
+
+
+	<markdown>
+
+		                                       .                                         &#10;                                   Hi, I'm AJ.                                    &#10;                I'm a Python developer with a strong interest in                  &#10;                 [32mAPIs[0m, [34mCLIs[0m and [35msubverting the dominant paradigm[0m.                 &#10;                                This is my resume.                                &#10;                                                                                  &#10;            Note: this is primarily intended for command-line addicts.            &#10;              A more conventional version can be found on LinkedIn.              
+
+
+        </markdown>
+
+</markdown>
+
+    </item>
+<item col="0" row="3.5" colSpan="5" rowSpan="9">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="The very professional resume of A.J. Bowen" border-fg="gray"> 
 
 
 	<markdown>
 
-		[37m [0m &#10;                                   Hi, I'm AJ.                                    &#10;                I'm a Python developer with a strong interest in                  &#10;                 [32mAPIs[0m, [34mCLIs[0m and [35msubverting the dominant paradigm[0m.                 &#10;                                This is my resume.                                &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=0; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done[0m &#10;  &#10;  (press enter to move to next slide; press Ctrl+C to exit) &#10;  &#10;   Contents: &#10;     0. This screen &#10;     1. Overview &#10;     2. Active processes &#10;     3. Skills &#10;     4. Languages &#10;     5. Experience &#10;     6. Experience (details) &#10;     7. About &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake/3/\?cols=$((COLUMNS))[0m
+		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=0; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done[0m &#10;  &#10;  (press enter to move to next slide; press Ctrl+C to exit) &#10;  &#10;   Contents: &#10;     0. This screen &#10;     1. Overview &#10;     2. Active processes &#10;     3. Skills &#10;     4. Languages &#10;     5. Experience &#10;     6. Experience (details) &#10;     7. About &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake/3/\?cols=$((COLUMNS))[0m
 
 
         </markdown>
