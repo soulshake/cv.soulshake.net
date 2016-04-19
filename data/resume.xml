@@ -6,7 +6,7 @@
 
 	<markdown>
 
-		[37m [0m &#10;                                   Hi, I'm AJ.                                    &#10;                I'm a Python developer with a strong interest in                  &#10;                 [32mAPIs[0m, [34mCLIs[0m and [35msubverting the dominant paradigm[0m.                 &#10;                                This is my resume.                                &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=0; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done[0m &#10;  &#10;  (press enter to move to next slide; press Ctrl+C to exit) &#10;  &#10;   Contents: &#10;     0. This screen &#10;     1. Skills &#10;     2. Experience &#10;     3. Languages &#10;     4. About me &#10;     5. Contact &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake/3/\?cols=$((COLUMNS))[0m
+		[37m [0m &#10;                                   Hi, I'm AJ.                                    &#10;                I'm a Python developer with a strong interest in                  &#10;                 [32mAPIs[0m, [34mCLIs[0m and [35msubverting the dominant paradigm[0m.                 &#10;                                This is my resume.                                &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=0; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done[0m &#10;  &#10;  (press enter to move to next slide; press Ctrl+C to exit) &#10;  &#10;   Contents: &#10;     0. This screen &#10;     1. Overview &#10;     2. Active processes &#10;     3. Skills &#10;     4. Languages &#10;     5. Experience &#10;     6. Experience (details) &#10;     7. About &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake/3/\?cols=$((COLUMNS))[0m
 
 
         </markdown>
@@ -23,7 +23,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mBerlin, Germany[0m &#10; Employment State    [33m[2m[7mINACTIVE[0m &#10; Employment Status   [33m[2mSearch in progress...[0m &#10; Mobility            [32mFlexible (fully containerized)[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
+		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mBerlin, Germany[0m &#10; Employment State    [33m[2m[7mINACTIVE[0m &#10; Employment Status   [33m[2mSearch in progress...[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
 
 
         </markdown>
@@ -37,7 +37,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Python              [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; XML-RPC             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; REST                [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Linux               [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Bash                [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Git                 [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; SQL                 [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; GoLang              [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Ruby                [31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; C                   [31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; C++                 [31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m
+		[37m [0m &#10; Python           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; XML-RPC          [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; REST             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Linux            [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Bash             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Git              [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; SQL              [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; GoLang           [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Ruby             [31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; C                [31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; C++              [31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m
 
 
         </markdown>
@@ -51,7 +51,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Race                [32m[1mHybrid Software Engineer[0m[0m &#10; Alignment           [32mChaotic Good[0m &#10; Empathy             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Willpower           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Creativity          [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Typing speed        [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Idealism            [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Curiosity           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Punctuality         [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Willingness to  &#10;   relocate to  [32m[0m &#10;   San Francisco     [31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m
+		[37m [0m &#10; Race             [32m[1mHybrid Software Engineer[0m[0m &#10; Alignment        [32mChaotic Good[0m &#10; Empathy          [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Willpower        [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Creativity       [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Typing speed     [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Idealism         [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Curiosity        [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Punctuality      [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Willingness to  &#10;   relocate to  [32m[0m &#10;   San Francisco  [31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m
 
 
         </markdown>
@@ -81,16 +81,16 @@ foo
 </page>
 
 <page>
-<item col="0" row="0" colSpan="7" rowSpan="5" >
-           <table border-type="line" border-fg="gray" columnSpacing="10" columnWidth="21,7,6,70" data-headers="Autodidact Process,Cpu (%),Memory,Comment" fg="green" height="30%" interactive="true" keys="true" label="Active Processes" width="30%" selectedBg="blue" selectedFg="white" > 
+<item col="0" row="0" colSpan="8" rowSpan="5" >
+           <table border-type="line" border-fg="gray" columnSpacing="6" columnWidth="21,7,6,70" data-headers="Autodidact Process,Cpu (%),Memory,Comment" fg="green" height="30%" interactive="true" keys="true" label="Active Processes" width="10%" selectedBg="blue" selectedFg="white" > 
             <data-data>
             German,12,13,Host 'Berlin' unresponsive; trying again
             Docker,15,26,Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself
             node.js,5,16,Parent process 'frontend' is dirty
-            Ruby,1,6.2,Scheduled
             ClubOps,17,36.2,Berghain: 4 localhost: 0
             Deployment automation,12,8.7,Onscreen
-            blog.soulshake.net,3,12.5,Partially deployed
+            blog.soulshake.net,3,12.5,Deployed in progress
+            Ruby,1,6.2,Scheduled
             </data-data>
          </table>
      </item>
@@ -115,23 +115,22 @@ foo
     <item col="0" row="0" colSpan="15" rowSpan="6" label="Human languages" >
 <donut radius="14" spacing="2"  border-type="line" border-fg="gray" label="Human languages" >
 <data>
-<m color="red" percent="20" label="Russian" /> 
-<m color="yellow" percent="30" label="German" /> 
-<m color="magenta" percent="35" label="Spanish" /> 
+<m color="red" percent="10" label="Russian" /> 
+<m color="yellow" percent="24" label="German" /> 
+<m color="green" percent="99" label="English" /> 
 <m color="blue" percent="89" label="French" /> 
-<m color="green" percent="100" label="English" /> 
+<m color="magenta" percent="60" label="Spanish" /> 
 </data>
 </donut>
 </item>
-<item col="0" row="6" colSpan="4" rowSpan="3" >
+<item col="0" row="6" colSpan="5" rowSpan="3" >
            <table border-type="line" border-fg="gray" columnSpacing="8" columnWidth="8,4,14,4,25" data-headers="Language,time,DuoLingo level,ease,status" fg="white" height="30%" interactive="false" keys="False" label="Details" width="30%" selectedBg="None" selectedFg="None" > 
             <data-data>
+            Russian,1 mo,6,10%,{red-fg} caveperson
+            German,2 mo,11,24%,{yellow-fg} rather clumsy
             English,>10y,99,99%,{green-fg} native speaker
-            French,>10y,82,89%,{green-fg} fluent
-            German,2 mo,18,39%,{yellow-fg} rather clumsy
-            Spanish,n/a,17,29%,{blue-fg} passive
-            Russian,1 mo,11,15%,{red-fg} caveperson
-            Arabic,n/a,8,3%,{red-fg} don't ask
+            French,>10y,82,89%,{blue-fg} fluent
+            Spanish,n/a,10,60%,{magenta-fg} passive
             </data-data>
          </table>
      </item>
@@ -175,7 +174,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10; Employer       [32mGandi.net[0m &#10; Location       [32mSan Francisco, CA[0m &#10; Dates          [32mFebruary 2012 to December 2015[0m &#10; 2013-2015      [33m[1m[7mChief of counter-bullshit operations[0m &#10; A.K.A.         [32m[33mDeveloper advocate[0m &#10;                     [33mAPI evangelist[0m &#10;                     [33mTechnical community manager[0m &#10;                     [33mChaos monkey[0m &#10;                     [33mEmergency PR strategist[0m &#10;                     [33mOpen source champion[0m &#10;                     [33mAutomation specialist[0m &#10;                     [33mSpecial projects[0m &#10;                     [33mQA intern[0m &#10;                     [33mWorkshop administrator[0m &#10;                     [33mSwag dealer[0m[0m &#10; 2012-2013      [33m[1m[7mLevel 1 Support Agent[0m &#10; A.K.A.         [32m[33mSupport ticket answerer person[0m &#10;                     [33mDocumentation tweaker[0m &#10;                     [33mBug hunter[0m &#10;                     [33mTwitter person[0m &#10;                     [33mQuestion asker[0m[0m
+		[37m [0m &#10; Employer       [32mGandi.net \o/[0m &#10; Location       [32mSan Francisco, CA[0m &#10; Dates          [32mFebruary 2012 to December 2015[0m &#10; 2013-2015      [33m[1m[7mCounter-bullshit operations[0m &#10; A.K.A.         [32m[33mDeveloper advocate[0m &#10;                     [33mAPI evangelist[0m &#10;                     [33mTechnical community manager[0m &#10;                     [33mChaos monkey[0m &#10;                     [33mEmergency PR strategist[0m &#10;                     [33mOpen source champion[0m &#10;                     [33mAutomation specialist[0m &#10;                     [33mSpecial projects[0m &#10;                     [33mQA intern[0m &#10;                     [33mWorkshop administrator[0m &#10;                     [33mSwag dealer[0m[0m &#10; 2012-2013      [33m[1m[7mLevel 1 Support Agent[0m &#10; A.K.A.         [32m[33mSupport ticket answerer person[0m &#10;                     [33mDocumentation tweaker[0m &#10;                     [33mBug hunter[0m &#10;                     [33mTwitter person[0m &#10;                     [33mQuestion asker[0m[0m
 
 
         </markdown>
@@ -189,7 +188,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10;  &#10; I interacted with various tech communities, online and at industry events, &#10; connecting with developers and helping them make the most of Gandi's domain, &#10; SSL and hosting APIs. &#10;  &#10; I was the primary technical contact for Gandi resellers in the U.S., escalating &#10; to the CTO where appropriate. &#10;  &#10; Internally, I worked with engineers, product managers and support to improve &#10; Gandi's APIs, web interface, documentation and open source presence based &#10; on feedback collected from the community. &#10;  &#10; I shaped much of Gandi's voice via blog posts, newsletters and social media &#10; interactions. I created, edited and localized a wide variety of technical &#10; documentation, emergency communications and product communications. &#10;  &#10; I guided and managed Gandi's supported initiatives and open source projects, &#10; organizing various campaigns and partnerships for our mutual benefit. &#10;  &#10; I tested and documented a huge number of Gandi's products and features. &#10;  &#10; Mostly: I was ready for anything, which usually happened at least twice a week. &#10;  &#10;  &#10; 
+		[37m [0m &#10;  &#10; I interacted with various tech communities, online and at industry events, &#10; connecting with developers and helping them make the most of Gandi's domain, &#10; SSL and hosting APIs. &#10;  &#10; I was the primary technical contact for Gandi resellers in the U.S., &#10; escalating to the CTO where appropriate. &#10;  &#10; Internally, I worked with engineers, product managers and support to improve &#10; Gandi's APIs, web interface, documentation and open source presence based &#10; on feedback collected from the community. &#10;  &#10; I shaped much of Gandi's voice via blog posts, newsletters and social media &#10; interactions. I created, edited and localized a wide variety of technical &#10; documentation, emergency communications and product communications. &#10;  &#10; I guided and managed Gandi's supported initiatives and open source projects, &#10; organizing various campaigns and partnerships for our mutual benefit. &#10;  &#10; I tested and documented a huge number of Gandi's products and features. &#10;  &#10; Mostly: I was ready for anything, which usually happened at least twice a &#10; week. &#10;  &#10;  &#10; 
 
 
         </markdown>
@@ -203,7 +202,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10; My original role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain names, DNS, SSL certs and basic hosting. &#10;  &#10;  &#10; My curiosity and interest in this role led me to specialize in more technical hosting issues, while helping to hire, train and mentor new employees, edit blog posts, and generally pitch in anywhere I could be helpful. &#10;  &#10;  &#10; This versatility led me to be promoted to a so-called Community Manager role in our new San Francisco office. &#10;  &#10;  &#10; From the time I was hired (near the beginning of Gandi's expansion into the U.S.) to the time I left, I had played a role in nearly every aspect of our growth in the United States. &#10;     
+		[37m [0m &#10; My initial role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain &#10; names, DNS, SSL certs and basic hosting. &#10;  &#10;  &#10; My curiosity and interest in this role led me to specialize in more technical hosting issues, while helping to hire, &#10; train and mentor new employees, edit blog posts, and generally pitch in anywhere I could be helpful. &#10;  &#10;  &#10; This versatility led me to be promoted to a so-called Community Manager role in our new San Francisco office. &#10;  &#10;  &#10; From the time I was hired (near the beginning of Gandi's expansion into the U.S.) to the time I left, I had played a &#10; role in nearly every aspect of our growth in the United States. &#10;     
 
 
         </markdown>
@@ -221,20 +220,6 @@ foo
 	<markdown>
 
 		[37m [0m &#10; My name is AJ, and I like to code. &#10;  &#10; Say hi: &#10; - [aj@soulshake.net](aj@soulshake.net) &#10; - [https://github.com/soulshake](https://github.com/soulshake)  &#10; - [https://twitter.com/s0ulshake](https://twitter.com/s0ulshake) &#10; - [https://www.linkedin.com/in/ajbowen](https://www.linkedin.com/in/ajbowen) &#10;  &#10; For more info, see: &#10; http://blog.soulshake.net/2016/04/command-line-resume/
-
-
-        </markdown>
-
-</markdown>
-
-    </item>
-<item col="0" row="5" colSpan="3" rowSpan="6">
-       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Things I love entirely too much*" border-fg="gray"> 
-
-
-	<markdown>
-
-		[31m &#10;       .....           ..... &#10;   ,ad8PPPP88b,     ,d88PPPP8ba, &#10;  d8P"      "Y8b, ,d8P"      "Y8b &#10; dP'  APIs     "8a8"     IPAs  `Yd &#10; 8(  brains      "    CLIs      )8 &#10; I8   humans and other animals  8I &#10;  Yb,  rainbows    squirrels  ,dP &#10;   "8a,  chaos   surprises  ,a8" &#10;     "8a,  you (yes, you) ,a8" &#10;       "Yba    ASCII    adP" &#10;         'Y8a (obvs.) a8P' &#10;           '88,     ,88' &#10;             "8b   d8" &#10;              "8b d8" &#10;               '888' &#10;                 " &#10;     [0m[2m &#10;  *JK. One can never love these things too much.[0m
 
 
         </markdown>
