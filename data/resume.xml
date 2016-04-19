@@ -227,13 +227,13 @@ foo
 </page>
 
 <page>
-<item col="0" row="0" colSpan="4" rowSpan="5">
+<item col="0" row="0" colSpan="4" rowSpan="6">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Is this thing on?" border-fg="gray"> 
 
 
 	<markdown>
 
-		[37m [0m &#10; My name is AJ, and I like to code. &#10;  &#10; Say hi: &#10;                  [31mSite[0m  [36msoulshake.net[0m &#10;                 [33mEmail[0m  [36maj@soulshake.net[0m &#10;                [32mGithub[0m  [36mhttps://github.com/soulshake[0m &#10;               [34mTwitter[0m  [36mhttps://twitter.com/s0ulshake[0m &#10;              [35mLinkedIn[0m  [36mhttps://www.linkedin.com/in/ajbowen[0m &#10;  &#10; For more info, see: &#10; http://blog.soulshake.net/2016/04/command-line-resume/ &#10;  &#10; Thanks!
+		[37m [0m &#10; Say hi: &#10;                  [31mSite[0m  [36msoulshake.net[0m &#10;                 [33mEmail[0m  [36maj@soulshake.net[0m &#10;                [32mGithub[0m  [36mhttps://github.com/soulshake[0m &#10;               [34mTwitter[0m  [36mhttps://twitter.com/s0ulshake[0m &#10;              [35mLinkedIn[0m  [36mhttps://www.linkedin.com/in/ajbowen[0m &#10;  &#10; For more info, see: &#10;  &#10; [36mhttp://blog.soulshake.net/2016/04/command-line-resume/[0m &#10; [37m [0m &#10; [37m [0m &#10;                    Thanks! &#10; [37m [0m &#10;                    Love, AJ
 
 
         </markdown>
