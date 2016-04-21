@@ -8,8 +8,7 @@ wopr:
     restart: on-failure
 
 nginx:
-    image: 'soulshake/nginx:latest'
-    container_name: cv-nginx
+    image: 'soulshake/cv.soulshake.net:latest'
     ports:
       - "80:80"
     links:
