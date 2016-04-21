@@ -8,14 +8,9 @@ wopr:
     restart: on-failure
 
 nginx:
-    image: nginx
+    image: 'soulshake/nginx:latest'
     container_name: cv-nginx
     ports:
       - "80:80"
     links:
       - "wopr"
-    volumes:
-      - ./nginx/nginx.conf/:/etc/nginx/nginx.conf
-      #- ./mime-types:/etc/nginx/mime.types
-      - ./nginx/www:/data/www
-
