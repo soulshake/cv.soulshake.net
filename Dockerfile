@@ -9,6 +9,8 @@ WORKDIR /wopr
 RUN npm install
 
 EXPOSE 1337
+EXPOSE 80
+
 COPY entrypoint.sh /entrypoint.sh
 
 # Some envvars are needed to correctly render the graphics
@@ -17,7 +19,7 @@ ENV TERM=xterm-256color
 
 # Copy /data directory; this can also be mounted at runtime and changes will be reloaded live
 RUN mkdir /data
-COPY data /data
+#COPY data /data
 
 WORKDIR /wopr/server
 ENTRYPOINT /entrypoint.sh
