@@ -1,4 +1,21 @@
 wopr:
-  image: 'soulshake/cv.soulshake.net:latest'
-  ports:
-    - '1337'
+    image: 'soulshake/wopr:latest'
+    ports:
+        - "1337:80"
+    target_num_containers: 1
+    autoredeploy: true
+    autodestroy: on-success
+    restart: on-failure
+
+nginx:
+    image: nginx
+    container_name: cv-nginx
+    ports:
+      - "80:80"
+    links:
+      - "wopr"
+    volumes:
+      - ./nginx/nginx.conf/:/etc/nginx/nginx.conf
+      #- ./mime-types:/etc/nginx/mime.types
+      - ./nginx/www:/data/www
+
