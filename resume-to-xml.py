@@ -1,21 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# how would i describe myself: http://bashooka.com/inspiration/30-great-examples-of-creative-cv-resume-design/
-# troublemaker <=> innovator
-# complainer <=> constantly gnawing desire to improve things
-# abrasive, aggressive <=> efficient communicator
-# digital hoarder
-# Applied security
-#skill_names = ["Being obstinate", "and opinionated when it matters and flexible when it doesn't"]
-
-# doing things quickly < doing things well
-# being right < reaching higher truths
-# maybe 'watch' command for updating dashboards?
-"""
-Maybe first page should be short version for everything else
-because usually i'd recommend a 1 or 2 page resume
-
-"""
 
 from __future__ import print_function
 from collections import OrderedDict
@@ -24,35 +8,9 @@ from widgets import *
 import click
 from tabulate import tabulate
 
+# For some reason the first line sometimes gets formatted weird
+# This invisible placeholder seems to be a functional workaround
 placeholder = click.style(u" ", fg='white')
-
-def things_i_love():
-    # things i love entirely too much
-    # hat tip to Norman Veilleux/Ryan Harding for the heart
-    label = "Things I love entirely too much*"
-    heart = u"""
-      .....           .....
-  ,ad8PPPP88b,     ,d88PPPP8ba,
- d8P"      "Y8b, ,d8P"      "Y8b
-dP'  APIs     "8a8"     IPAs  `Yd
-8(  brains      "    CLIs      )8
-I8   humans and other animals  8I
- Yb,  rainbows    squirrels  ,dP
-  "8a,  chaos   surprises  ,a8"
-    "8a,  you (yes, you) ,a8"
-      "Yba    ASCII    adP"
-        'Y8a (obvs.) a8P'
-          '88,     ,88'
-            "8b   d8"
-             "8b d8"
-              '888'
-                "
-    """
-    heart = click.style(heart, fg='red')
-    heart += click.style("\n *JK. One can never love these things too much.", dim=True)
-    ret = Markdown(colSpan=3, rowSpan=6, data=heart, col=0, row=0, label=label)
-    return ret
-
 
 def processes_table():
     table = {
@@ -75,9 +33,9 @@ def processes_table():
               ["German", 12, 13, "Host 'Berlin' unresponsive; trying again"],
               ["Docker", 15, 26, "Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself"],
               ["node.js", 5, 16, "Parent process 'frontend' is dirty"],
-              ["ClubOps", 17, 36.2, "Berghain: 4 localhost: 0"],
+              #["ClubOps", 17, 36.2, "Berghain: 4 localhost: 0"],
               ["Deployment automation", 12, 8.7, "Onscreen"],
-              ["blog.soulshake.net", 3, 12.5, "Deployed in progress"],
+              ["blog.soulshake.net", 3, 12.5, "Deployment in progress"],
               ["Ruby", 1, 6.2, "Scheduled"],
               ],
     }
@@ -117,6 +75,35 @@ def languages_table():
     return languages
 
 
+def looking_for():
+    label="What am I looking for?"
+    ret = placeholder + """
+
+My ideal role would probably involve some combination of the following:
+
+  - writing useful tools (libraries, CLIs) that improve efficiency,
+  - playing with APIs, connecting services, making mashups and integrations,
+  - automating all the things,
+  - documenting all the things,
+  - making the world better, one way or another
+
+Right now some of the more abstract tools* I'm equipped with are:
+
+  - an incorrigible curiosity,
+  - a sort of fierce empathy,
+  - an incorruptible rage at injustice,
+  - a relentless stubborn determination when faced with a problem or a mystery,
+  - an obsession with well-made things and awesome documentation,
+  - an endless supply of ideas and hypotheses,
+  - a tiny bit of a bunch of other things, due to the aforementioned curiosity,
+  - an apparent intuition for seeing causal relationships in the "big picture"
+
+
+\* several of these qualities have gotten me into trouble at some point, so YMMV.
+    """
+    ret = Markdown(colSpan=6, rowSpan=8, data=ret, col=3, row=3, label=label)
+    return ret
+
 def contact():
     rows = []
     rows.append([click.style("Site", fg='red'), "soulshake.net"])
@@ -131,19 +118,17 @@ def contact():
 
     contact = ([
               placeholder,
-              "My name is AJ, and I like to code.",
-              "",
               "Say hi:",
               table,
-                "",
               "For more info, see:",
-              "http://blog.soulshake.net/2016/04/command-line-resume/",
+              click.style("http://blog.soulshake.net/2016/04/command-line-resume/", fg='cyan'),
+                "                   Thanks!",
+                "                   Love, AJ"
                 "",
-                "Thanks!",
               ])
-    contact = "\n".join(contact)
+    contact = "\n\n".join(contact)
     label = "Is this thing on?"
-    about = Markdown(colSpan=4, rowSpan=5, data=contact, col=3, row=3, label=label)
+    about = Markdown(colSpan=4, rowSpan=6, data=contact, col=3, row=3, label=label)
     return about
 
 def overview():
@@ -280,6 +265,7 @@ def awards():
         "Teaching grant (Haiti): Spring 2008",
         "Topeka Credit Union Scholarship: 2004",
         "Mater Dei scholarship: 2004, 2005, 2006",
+        "Most improved in beginner motorcycle class: 2005",
         "Hardest worker, SHHS Track team: 2000",
         ]
     ret = Markdown(colSpan=4, rowSpan=4, data=ret, col=0, row=0, label="Awards")
@@ -309,24 +295,27 @@ def intro():
     return ret
 
 def toc():
+    """
+    u"   {}".format(click.style("p=1; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done", fg='green', bold=True)),
+    u"",
+    u" (press enter to move to next slide; press Ctrl+C to exit)",
+    u"",
+    u"  Contents:",
+    u"    0. This screen",
+    u"    1. Overview",
+    u"    2. Active processes",
+    u"    3. Skills",
+    u"    4. Languages",
+    u"    5. Experience",
+    u"    6. Experience (details)",
+    u"    7. About",
+    """
 
     ret = [
         placeholder,
         u"",
         u" To view all slides, run:",
-        u"   {}".format(click.style("p=0; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done", fg='green', bold=True)),
-        u"",
-        u" (press enter to move to next slide; press Ctrl+C to exit)",
-        u"",
-        u"  Contents:",
-        u"    0. This screen",
-        u"    1. Overview",
-        u"    2. Active processes",
-        u"    3. Skills",
-        u"    4. Languages",
-        u"    5. Experience",
-        u"    6. Experience (details)",
-        u"    7. About",
+        u"   {}".format(click.style("p=0; while [ $p -lt 8 ]; do curl -N cv.soulshake.net/$((p++)); read; done", fg='green', bold=True)),
         u"",
         u"  To view a specific slide:",
         u"    {}".format(click.style("curl -N cv.soulshake/3/\?cols=$((COLUMNS))", fg='green')),
@@ -503,10 +492,9 @@ if __name__ == "__main__":
         [[languages_donuts()], [languages_table()]],
         [[professional_experience()], [other_experience()]],
         [[exp_gandi(), exp_gandi_details()], [exp_gandi_tldr()]],
+        [[looking_for()]],
         [[contact()]],
-        #, [things_i_love()]],
         #[[other_experience()]],
-        #[[spedometer()], [things_i_love()]], # works, but dumb
         #[[skills_stacked_chart()]], # stacked bar chart, doesn't work
         #[[skills_line_chart()]], # dumb line graph thing
     ]

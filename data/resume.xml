@@ -20,7 +20,7 @@
 
 	<markdown>
 
-		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=0; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done[0m &#10;  &#10;  (press enter to move to next slide; press Ctrl+C to exit) &#10;  &#10;   Contents: &#10;     0. This screen &#10;     1. Overview &#10;     2. Active processes &#10;     3. Skills &#10;     4. Languages &#10;     5. Experience &#10;     6. Experience (details) &#10;     7. About &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake/3/\?cols=$((COLUMNS))[0m
+		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=0; while [ $p -lt 8 ]; do curl -N cv.soulshake.net/$((p++)); read; done[0m &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake/3/\?cols=$((COLUMNS))[0m
 
 
         </markdown>
@@ -79,7 +79,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Global Awareness Certification: 2010 &#10; Harley S Nelson scholar: 2009 &#10; Undergraduate Research Award: 2009 &#10; Award for excellence in FREN 450: 2009 &#10; KU Honor Roll: 2007, 2008, 2009 &#10; Teaching grant (Haiti): Spring 2008 &#10; Topeka Credit Union Scholarship: 2004 &#10; Mater Dei scholarship: 2004, 2005, 2006 &#10; Hardest worker, SHHS Track team: 2000
+		[37m [0m &#10; Global Awareness Certification: 2010 &#10; Harley S Nelson scholar: 2009 &#10; Undergraduate Research Award: 2009 &#10; Award for excellence in FREN 450: 2009 &#10; KU Honor Roll: 2007, 2008, 2009 &#10; Teaching grant (Haiti): Spring 2008 &#10; Most improved in Harley David class: 2005 &#10; Topeka Credit Union Scholarship: 2004 &#10; Mater Dei scholarship: 2004, 2005, 2006 &#10; Hardest worker, SHHS Track team: 2000
 
 
         </markdown>
@@ -101,9 +101,8 @@ foo
             German,12,13,Host 'Berlin' unresponsive; trying again
             Docker,15,26,Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself
             node.js,5,16,Parent process 'frontend' is dirty
-            ClubOps,17,36.2,Berghain: 4 localhost: 0
             Deployment automation,12,8.7,Onscreen
-            blog.soulshake.net,3,12.5,Deployed in progress
+            blog.soulshake.net,3,12.5,Deployment in progress
             Ruby,1,6.2,Scheduled
             </data-data>
          </table>
@@ -227,13 +226,30 @@ foo
 </page>
 
 <page>
+<item col="0" row="0" colSpan="6" rowSpan="8">
+       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="What am I looking for?" border-fg="gray"> 
+
+
+	<markdown>
+
+		[37m [0m &#10;  &#10; My ideal role would probably involve some combination of the following: &#10;  &#10;   - writing useful tools (libraries, CLIs) that improve efficiency, &#10;   - playing with APIs, connecting services, making mashups and integrations, &#10;   - automating all the things, &#10;   - documenting all the things, &#10;   - making the world better, one way or another &#10;  &#10; Right now some of the more abstract tools* I'm equipped with are: &#10;  &#10;   - an incorrigible curiosity, &#10;   - a sort of fierce empathy, &#10;   - an incorruptible rage at injustice, &#10;   - a relentless stubborn determination when faced with a problem or a mystery, &#10;   - an obsession with well-made things and awesome documentation, &#10;   - an endless supply of ideas and hypotheses, &#10;   - a tiny bit of a bunch of other things, due to the aforementioned curiosity, &#10;   - an apparent intuition for seeing causal relationships in the "big picture" &#10;  &#10;  &#10; \* several of these qualities have gotten me into trouble at some point, so YMMV. &#10;     
+
+
+        </markdown>
+
+</markdown>
+
+    </item>
+</page>
+
+<page>
 <item col="0" row="0" colSpan="4" rowSpan="6">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Is this thing on?" border-fg="gray"> 
 
 
 	<markdown>
 
-		[37m [0m &#10; Say hi: &#10;                  [31mSite[0m  [36msoulshake.net[0m &#10;                 [33mEmail[0m  [36maj@soulshake.net[0m &#10;                [32mGithub[0m  [36mhttps://github.com/soulshake[0m &#10;               [34mTwitter[0m  [36mhttps://twitter.com/s0ulshake[0m &#10;              [35mLinkedIn[0m  [36mhttps://www.linkedin.com/in/ajbowen[0m &#10;  &#10; For more info, see: &#10;  &#10; [36mhttp://blog.soulshake.net/2016/04/command-line-resume/[0m &#10; [37m [0m &#10; [37m [0m &#10;                    Thanks! &#10; [37m [0m &#10;                    Love, AJ
+		[37m [0m &#10;  &#10; Say hi: &#10;  &#10;                  [31mSite[0m  [36msoulshake.net[0m &#10;                 [33mEmail[0m  [36maj@soulshake.net[0m &#10;                [32mGithub[0m  [36mhttps://github.com/soulshake[0m &#10;               [34mTwitter[0m  [36mhttps://twitter.com/s0ulshake[0m &#10;              [35mLinkedIn[0m  [36mhttps://www.linkedin.com/in/ajbowen[0m &#10;  &#10; For more info, see: &#10;  &#10; [36mhttp://blog.soulshake.net/2016/04/command-line-resume/[0m &#10;  &#10;                    Thanks! &#10;  &#10;                    Love, AJ
 
 
         </markdown>
