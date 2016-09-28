@@ -30,13 +30,13 @@ def processes_table():
     data = {
         "headers": ["Autodidact Process", "Cpu (%)", "Memory", "Comment"],
         "rows": [
+              ["Job search", 19, 15.1, "Attempting to choose next adventure"],
               ["German", 12, 13, "Host 'Berlin' unresponsive; trying again"],
               ["Docker", 15, 26, "Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself"],
               ["node.js", 5, 16, "Parent process 'frontend' is dirty"],
-              #["ClubOps", 17, 36.2, "Berghain: 4 localhost: 0"],
               ["Deployment automation", 12, 8.7, "Onscreen"],
               ["blog.soulshake.net", 3, 12.5, "Deployment in progress"],
-              ["Ruby", 1, 6.2, "Scheduled"],
+              ["Ruby/Rails", 8, 6.2, "Recovering"],
               ],
     }
 
@@ -60,7 +60,7 @@ def languages_table():
         "headers": ["Language", "time", "DuoLingo level", "ease", "status"],
         "rows": [
                 ["Russian", "1 mo", 6, "10%", "{red-fg} caveperson"],
-                ["German", "2 mo", 11, "24%", "{yellow-fg} rather clumsy"],
+                ["German", "2 mo", 13, "24%", "{yellow-fg} rather clumsy"],
                 ["English", ">10y", 99, "99%", "{green-fg} native speaker"],
                 ["French", ">10y", 82, "89%", "{blue-fg} fluent"],
                 ["Spanish", "n/a", 10, "60%", "{magenta-fg} passive"],
@@ -136,7 +136,7 @@ def overview():
     about_me = ([
         placeholder,
         "Name".ljust(20) + click.style("AJ Bowen", fg='green', bold=True),
-        "Location".ljust(20) + click.style("Berlin", fg='green'),
+        "Location".ljust(20) + click.style("Kansas City", fg='green'),
         "Employment State".ljust(20) + click.style("INACTIVE", dim=True, fg='yellow', reverse=True),
         "Employment Status".ljust(20) + click.style("Search in progress...", dim=True, fg='yellow'),
         "Mobility".ljust(20) + click.style("Flexible", fg='green'),
@@ -173,7 +173,7 @@ def weapons():
     d["Git"] = 12
     d["SQL"] = 10
     d["GoLang"] = 7
-    d["Ruby"] = 5
+    d["Ruby/Rails"] = 8
     d["C"] = 5
     d["C++"] = 3
 
@@ -233,8 +233,9 @@ def professional_experience():
     blurb = [placeholder]
 
     positions = [
+        ["DevOps Engineer", "Voteraide (volunteer)", "May 2016", "September 2016", "Remote"],
         ["Chief of Counter-bullshit operations", "Gandi.net", "October 2013", "December 2015", "San Francisco"],
-        ["Level 1 Support Representative", "Gandi.net", "February 2012", "October 2013", "Remote/Lawrence, KS)"],
+        ["Level 1+ Support Representative", "Gandi.net", "February 2012", "October 2013", "Remote/Lawrence, KS)"],
         ["Federal Student Aid question answerer", "Vangent, Inc", "2010", "2011", "Lawrence, KS"],
     ]
 
@@ -315,7 +316,7 @@ def toc():
         placeholder,
         u"",
         u" To view all slides, run:",
-        u"   {}".format(click.style("p=0; while [ $p -lt 8 ]; do curl -N cv.soulshake.net/$((p++)); read; done", fg='green', bold=True)),
+        u"   {}".format(click.style("p=1; while [ $p -lt 9 ]; do curl -N cv.soulshake.net/$((p++)); read; done", fg='green', bold=True)),
         u"",
         u"  To view a specific slide:",
         u"    {}".format(click.style("curl -N cv.soulshake/3/\?cols=$((COLUMNS))", fg='green')),
@@ -351,7 +352,7 @@ def exp_gandi():
                 ]
     d["A.K.A."] = [click.style(x, fg='yellow') for x in d["A.K.A."]]
 
-    d["2012-2013"] = "Level 1 Support Agent"
+    d["2012-2013"] = "Level 1+ Support Agent"
     d["A.K.A. "] = [
                  "Support ticket answerer person",
                  "Documentation tweaker",
@@ -444,7 +445,7 @@ def skills_bar_chart():
     data = OrderedDict()
     data["Python"] = 9.5
     data["Bash"] = 5.5
-    data["GoLang"] = 2
+    data["Breakery"] = 2
     data["DNS"] = 6
     data["Docker"] = 7
     data["Linux"] = 4
@@ -475,7 +476,7 @@ def employment_progress():
     colSpan = 6
     rowSpan = 2
     data = {
-        "percent": 72,
+        "percent": 89,
         "fill": "yellow",
         "stroke": "green",
     }

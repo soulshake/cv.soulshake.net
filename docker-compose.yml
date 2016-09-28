@@ -1,6 +1,6 @@
 wopr:
-    #build: .
-    image: soulshake/wopr:latest
+    build: .
+    #image: soulshake/wopr:latest
     #image: soulshake/cv.soulshake.net:latest
     restart: always
     container_name: cv-wopr

@@ -6,6 +6,7 @@ import sys
 import click
 """
 This library is intended to generate XML suitable for being served by a wopr server.
+
 # Error: no such widget: undefined --> forgot to specify item colSpan etc
 """
 
