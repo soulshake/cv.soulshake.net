@@ -1,6 +1,6 @@
 # My CV
 
-This repo contains the source code and Dockerfile for [cv.soulshake.net](cv.soulshake.net).
+This repo contains the source code and Dockerfile for [cv.soulshake.net](http://cv.soulshake.net).
 
 It serves a command-line version of my resume using [wopr](https://github.com/yaronn/wopr), node.js, Docker and the Docker Cloud.
 
