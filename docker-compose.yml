@@ -1,25 +1,18 @@
 wopr:
     build: .
-    #image: soulshake/wopr:latest
-    #image: soulshake/cv.soulshake.net:latest
-    restart: always
-    container_name: cv-wopr
-    volumes:
-        - ./data:/data
-    expose:
-        - "1337"
+    #volumes:
+        #- ./data:/data
     ports:
         - "1337:80"
 
 
 nginx:
-    image: nginx
-    container_name: cv-nginx
+    build: nginx
     ports:
       - "80:80"
     links:
       - "wopr"
-    volumes:
-      - ./nginx/nginx.conf/:/etc/nginx/nginx.conf
+    #volumes:
+      #- ./nginx/nginx.conf/:/etc/nginx/nginx.conf
       #- ./mime-types:/etc/nginx/mime.types
-      - ./nginx/www:/data/www
+      #- ./nginx/www:/data/www

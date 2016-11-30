@@ -18,7 +18,6 @@ ENV LANG=en_US.utf8
 ENV TERM=xterm-256color
 
 # Copy /data directory; this can also be mounted at runtime and changes will be reloaded live
-RUN mkdir /data
 COPY data /data
 
 WORKDIR /wopr/server
