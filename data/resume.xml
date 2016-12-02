@@ -37,7 +37,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mKansas City[0m &#10; Employment State    [33m[2m[7mINACTIVE[0m &#10; Employment Status   [33m[2mSearch in progress...[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
+		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mKansas City[0m &#10; Employment State    [32m[2m[7mACTIVE[0m &#10; Employment Status   [33m[2mOnboarding in progress...[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
 
 
         </markdown>
@@ -98,7 +98,7 @@ foo
 <item col="0" row="0" colSpan="8" rowSpan="5" >
            <table border-type="line" border-fg="gray" columnSpacing="6" columnWidth="21,7,6,70" data-headers="Autodidact Process,Cpu (%),Memory,Comment" fg="green" height="30%" interactive="true" keys="true" label="Active Processes" width="10%" selectedBg="blue" selectedFg="white" > 
             <data-data>
-            Job search,19,15.1,Attempting to choose next adventure
+            Job search,19,15.1,Complete
             German,12,13,Host 'Berlin' unresponsive; trying again
             Docker,15,26,Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself
             node.js,5,16,Parent process 'frontend' is dirty
@@ -130,7 +130,7 @@ foo
 <donut  arcWidth="3" border-type="line" border-fg="gray" label="Human languages" radius="20" yPadding="5" remainColor="cyan" spacing="1" >
 <data>
 <m label="Russian" percent="10" color="red" /> 
-<m label="German" percent="24" color="yellow" /> 
+<m label="German" percent="28" color="yellow" /> 
 <m label="English" percent="99" color="green" /> 
 <m label="French" percent="89" color="blue" /> 
 <m label="Spanish" percent="60" color="magenta" /> 
@@ -141,7 +141,7 @@ foo
            <table border-type="line" border-fg="gray" columnSpacing="8" columnWidth="8,4,14,4,25" data-headers="Language,time,DuoLingo level,ease,status" fg="white" height="30%" interactive="false" keys="False" label="Details" width="30%" selectedBg="None" selectedFg="None" > 
             <data-data>
             Russian,1 mo,6,10%,{red-fg} caveperson
-            German,2 mo,13,24%,{yellow-fg} rather clumsy
+            German,6 mo,13,24%,{yellow-fg} rather clumsy
             English,>10y,99,99%,{green-fg} native speaker
             French,>10y,82,89%,{blue-fg} fluent
             Spanish,n/a,10,60%,{magenta-fg} passive
