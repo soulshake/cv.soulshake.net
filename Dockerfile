@@ -8,8 +8,8 @@ RUN git clone https://github.com/yaronn/wopr.git
 WORKDIR /wopr
 RUN npm install
 
-EXPOSE 1337
 EXPOSE 80
+ENV PORT 80
 
 COPY entrypoint.sh /entrypoint.sh
 
