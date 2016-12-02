@@ -30,7 +30,7 @@ def processes_table():
     data = {
         "headers": ["Autodidact Process", "Cpu (%)", "Memory", "Comment"],
         "rows": [
-              ["Job search", 19, 15.1, "Attempting to choose next adventure"],
+              ["Job search", 19, 15.1, "Complete"],
               ["German", 12, 13, "Host 'Berlin' unresponsive; trying again"],
               ["Docker", 15, 26, "Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself"],
               ["node.js", 5, 16, "Parent process 'frontend' is dirty"],
@@ -47,7 +47,7 @@ def processes_table():
 def languages_donuts():
     data = OrderedDict({})
     data["Russian"] = [10, "red"]
-    data["German"] = [24, "yellow"]
+    data["German"] = [28, "yellow"]
     data["English"] = [99, "green"]
     data["French"] = [89, "blue"]
     data["Spanish"] = [60, "magenta"]
@@ -60,7 +60,7 @@ def languages_table():
         "headers": ["Language", "time", "DuoLingo level", "ease", "status"],
         "rows": [
                 ["Russian", "1 mo", 6, "10%", "{red-fg} caveperson"],
-                ["German", "2 mo", 13, "24%", "{yellow-fg} rather clumsy"],
+                ["German", "6 mo", 13, "24%", "{yellow-fg} rather clumsy"],
                 ["English", ">10y", 99, "99%", "{green-fg} native speaker"],
                 ["French", ">10y", 82, "89%", "{blue-fg} fluent"],
                 ["Spanish", "n/a", 10, "60%", "{magenta-fg} passive"],
@@ -137,8 +137,8 @@ def overview():
         placeholder,
         "Name".ljust(20) + click.style("AJ Bowen", fg='green', bold=True),
         "Location".ljust(20) + click.style("Kansas City", fg='green'),
-        "Employment State".ljust(20) + click.style("INACTIVE", dim=True, fg='yellow', reverse=True),
-        "Employment Status".ljust(20) + click.style("Search in progress...", dim=True, fg='yellow'),
+        "Employment State".ljust(20) + click.style("ACTIVE", dim=True, fg='green', reverse=True),
+        "Employment Status".ljust(20) + click.style("Onboarding in progress...", dim=True, fg='yellow'),
         "Mobility".ljust(20) + click.style("Flexible", fg='green'),
         "Nerdery Level".ljust(20) + click.style("CRITICAL", fg='red', reverse=True),
         ])
@@ -233,6 +233,7 @@ def professional_experience():
     blurb = [placeholder]
 
     positions = [
+        ["Solutions Engineer", "Convox", "October 2016", "present", "Remote"],
         ["DevOps Engineer", "Voteraide (volunteer)", "May 2016", "September 2016", "Remote"],
         ["Chief of Counter-bullshit operations", "Gandi.net", "October 2013", "December 2015", "San Francisco"],
         ["Level 1+ Support Representative", "Gandi.net", "February 2012", "October 2013", "Remote/Lawrence, KS)"],
@@ -246,7 +247,7 @@ def professional_experience():
             click.style(position[1], fg="yellow").rjust(13),
             position[2],
             position[3],
-            position[4].ljust(10),
+            position[4],
         ))
 
     blurb.append("\n")
