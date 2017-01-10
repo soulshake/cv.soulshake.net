@@ -1,7 +1,9 @@
-wopr:
-    build: .
-    ports:
-      - "80:80"
-    environment:
-      PORT: "80"
-    command: /src/bin/wopr
+version: "2"
+services:
+  wopr:
+      build: .
+      ports:
+        - "80:80"
+      environment:
+        PORT: "80"
+      command: /src/bin/wopr
