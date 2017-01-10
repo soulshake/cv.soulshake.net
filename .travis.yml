@@ -5,7 +5,7 @@ services:
 
 before_install: |
   curl -O https://bin.equinox.io/c/jewmwFCp7w9/convox-stable-linux-amd64.tgz &&\
-  tar zxvf convox-stable-linux-amd64.tgz -C /usr/local/bin
+  sudo tar zxvf convox-stable-linux-amd64.tgz -C /usr/local/bin
 
 script:
   convox doctor
