@@ -6,22 +6,10 @@ This repo contains the source code and Dockerfile for [cv.soulshake.net](http://
 
 It serves a command-line version of my resume using [wopr](https://github.com/yaronn/wopr), node.js, Docker and the Docker Cloud.
 
-To view all slides, run:
+To view it, run:
 
 `````bash
-p=0; while [ $p -lt 9 ]; do curl -N cv.soulshake.net/$((p++)); read; done
-`````
-
-To view a specific slide, run:
-
-`````bash
-curl -N cv.soulshake/3/
-`````
-
-If the slides don't display correctly, try including URL parameters `cols`, `rows` or `terminal`:
-
-`````bash
-$> curl -N cv.soulshake.net/?cols=$((COLUMNS))&rows=$((LINES))&terminal=${TERM}
+curl cv.soulshake.net
 `````
 
 ## Tips
