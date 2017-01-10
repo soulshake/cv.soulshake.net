@@ -1,2 +1,3 @@
 Dockerfile
 *.swp
+.git
