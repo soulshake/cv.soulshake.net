@@ -1,4 +1,6 @@
-# My CV
+# The very professional Curriculum Vitae of AJ Bowen
+
+[![Build Status](https://travis-ci.org/soulshake/cv.soulshake.net.svg?branch=master)](https://travis-ci.org/soulshake/cv.soulshake.net)
 
 This repo contains the source code and Dockerfile for [cv.soulshake.net](http://cv.soulshake.net).
 
