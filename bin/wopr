@@ -11,5 +11,25 @@ sed -i "s;__dirname+'/../examples/sample.xml';'$OUR_FILE';" /wopr/server/server.
 OUR_URL="http://blog.soulshake.net/2016/04/command-line-resume/"
 sed -i "s;'https://github.com/yaronn/wopr';'$OUR_URL';" /wopr/server/server.js
 
-forever start --debug --verbose  --watch --watchDirectory /data --fifo server.js --port "80"
-forever logs -f server.js
+
+echo "DEVELOPMENT: $DEVELOPMENT"
+
+if [ "$DEVELOPMENT" == "true" ]; then
+    forever start \
+        --debug \
+        --verbose  \
+        --watch \
+        --watchDirectory /data \
+        --fifo server.js \
+        --port "80"
+    forever logs -f server.js
+else
+    forever start \
+        --debug \
+        --verbose  \
+        --fifo server.js \
+        --port "80"
+    forever logs -f server.js
+fi
+
+

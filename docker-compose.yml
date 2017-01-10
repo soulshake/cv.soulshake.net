@@ -4,3 +4,4 @@ wopr:
       - "80:80"
     environment:
       PORT: "80"
+    command: /src/bin/wopr
