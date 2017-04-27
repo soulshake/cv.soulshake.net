@@ -171,7 +171,7 @@ def weapons():
     d["Python"] = 14
     d["XML-RPC"] = 14
     d["REST"] = 12
-    d["Linux"] = 12
+    d["Linux"] = 13
     d["Bash"] = 12
     d["Git"] = 12
     d["SQL"] = 10
@@ -458,10 +458,10 @@ def skills_bar_chart():
     data = OrderedDict()
     data["Python"] = 9.5
     data["Bash"] = 8.5
-    data["AWS"] = 8
+    data["AWS"] = 7.5
     data["DNS"] = 9
     data["Docker"] = 9
-    data["Linux"] = 4
+    data["Linux"] = 8
     data["Automation"] = 8
     colSpan = 6
     rowSpan = 4
