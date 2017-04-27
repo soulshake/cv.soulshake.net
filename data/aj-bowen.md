@@ -2,87 +2,126 @@ AJ Bowen
 ========
  
 -------------------     ----------------------------
-                                    aj@soulshake.net
-San Francisco, CA                         @s0ulshake
-USA                                     415-900-9201
+200 W 5th st                        aj@soulshake.net
+Kansas City, MO                           @s0ulshake
+USA                                  +1 785.554.3723
 -------------------     ----------------------------
  
-Experience
+Summary
+-------
+
+My adventures so far this have led me to some degree of competency in:
+
+- French, Spanish, Russian, German, and a bit of Haitian Creole 
+- the federal student aid system, Medicare, running shoes, labor law, genealogy, forensic analysis of collections of old photographs, linguistic and anthropological cogitation, mysteries in general, brains, hydroponic gardening, crocheting, boating, raspberry pi, blues and jazz piano, humans and other animals 
+- Linux, Docker and friends, AWS, Golang, Python, Ruby, APIs, CLIs, DNS, git, sql, and various other tools useful in the perpetual pursuit of making the machines dance.
+
+I enjoy finding a good reason to experiment with tools I haven't used before. Other particularly interesting tasks have included writing scripts to deploy hordes of clustered EC2 VMs for Docker orchestration workshops, cobbling services together into a useful CLI for colleagues in support, and automating my own job wherever possible, which is how I started learning to code in the first place.
+
+Though I can appreciate a well-designed abstraction, I love learning more about the lower level aspects of the systems we rely on. I'd be especially excited to dig more into networking, filesystems and kernels.
+
+For more, run:  **`$ curl cv.soulshake.net`**
+
+Professional Experience
 ----------
  
-**Technical community manager, Gandi.net**
+**Solutions Engineer, [Convox](https://convox.com/)**
+
+Convox is an open source solution with the mission of making it easy to deploy production applications in containers. 
+
+My primary responsibilities were to:
+
+* guide clients through the process of converting their application code and infrastructure for Docker and AWS
+* create example applications to illustrate best practices and common patterns
+* provide on-call support
+* create great [documentation](https://github.com/convox/site/graphs/contributors)
+
+I learned Go in order to make considerable [code](https://github.com/convox/rack/graphs/contributors) contributions, including dynamic bash autocompletion, support for new AWS regions, and various bugfixes and incremental improvements.
+
+**Engineer, Voteraide**
+
+The Voteraide project aims to provide a direct line between constituents and their elected officials at [mytiller.com](https://www.mytiller.com/).
+
+As a senior engineer on this project, I:
+
+* learned Ruby and Rails from scratch to address major issues with the application
+* developed continuous integration, testing and deployment processes
+* automated time-consuming manual processes of retrieving and transforming voter registration data
+* identified and proposed solutions to bottlenecks and shortcomings in the previously testless, manual deployment workflow
+
+
+**Technical evangelist, [Gandi.net](https://www.gandi.net/)** (part 2)
 
 Job responsibilities included:
 
-* **evangelism**: online and in person (at tech conferences and industry events), help existing and prospective
-  customers to make the most of Gandi's products (domain names, SSL certs, hosting, and the corresponding APIs);
-* **social media**: managing Gandi's presence (initially a French brand) on US and English-speaking channels;
-* **localization**: technical and marketing communications (product releases, newsletters, announcement, outages);
-* **hiring**: as one of our first US hires, I helped build a team (now 15 people) that is to become the company's
-  center of gravity
-* **documentation**:
-* **special projects**:
-
-Interact with various tech communities, online and at industry events, letting developers know we exist, 
-helping them make the most of Gandi's domain, SSL and hosting APIs, and communicating their feedback 
-to our technical team. Internally, I work with engineers, product managers and support to improve Gandi's 
-APIs, web interface, documentation and open source presence.
-
-Help shape Gandi's voice our blog posts, newsletters and social media interactions, organize events
+* **developer advocate**: Both online and in person (at tech conferences and industry events), I helped existing and prospective
+  customers to make the most of Gandi's products (domain names, SSL certs, hosting, and the corresponding APIs) and
+  communicated their feedback to our technical team
+* **partnerships**: Nourished collaborations with like-minded companies and projects
+* **localization**: Managed technical and marketing communications (product releases, newsletters, outages)
+* **documentation**: Made significant contributions to our documentation
+* **special projects**: Wrote example apps and CLI tools to help the support, marketing and corporate teams with manual tasks
+* **communications**: Helped shape Gandi's voice via our blog posts, newsletters and social media interactions, organize events
 and manage our supported projects.
 
-* Cultivated a [thriving and enthusiastic community](https://twitter.com/gandibar/favorites). 
+Internally, I worked with engineers, product managers and support to improve Gandi's 
+APIs, web interface, documentation and open source presence.
  
-**Support representative, Gandi.net**
+**Support representative, [Gandi.net](https://www.gandi.net/)** (part 1)
 
-My original role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain names, DNS, SSL certificates and basic hosting. My curiosity and interest in this role led me to specialize in more technical hosting issues, while helping to hire, train and mentor new employees. My French language and community-related skills led me to move to San Francisco to take on an official evangelism rolein 2013.
+My initial role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain names, DNS, SSL certificates and basic hosting. My curiosity and interest in this role led me to specialize in more technical hosting issues, while helping to hire, train and mentor new employees. My French language and community-related skills led me to move to San Francisco to take on an official evangelism role in 2013.
 
 **Previous positions**
 
-* Teacher and tutor
-* Federal Student Aid specialist
-* Office manager
+I've worked in call centers, kitchens, offices, stores and classrooms in 3 countries. I try to improve any system I find myself a part of.
 
 Technical Experience and other skills
 --------------------
  
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
+Docker orchestration workshop administrator
+:   I created [open source automation scripts] [ref] to deploy clusters of EC2 VMs for
+    use by attendees of Docker workshops. These scripts have been adopted by others for 
+    running their own workshops at conferences and companies around the world.
  
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
- 
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
- 
-Programming Languages and technologies
-:   I like to automate things.
+    Technologies used:
 
-    * **Python:** Contributions to the [Gandi CLI](cli.gandi.net).
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
+    * **Docker:** Naturally!
+    * **Bash:** The scripts are POSIX-compliant for maximum portability...
+    * **HTML, CSS:** ...and generate printable cards to hand out to attendees with VM connection info.
+    * **AWS:** The user just has to provide their own AWS API key.
  
-    * **Shell scripting:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
+[ref]: https://github.com/jpetazzo/orchestration-workshop
  
-    * **Docker:** Provided hosting infrasructure and helped administer Docker workshops for hundreds of people at mutiple tech conferences. 
+ 
+Programming Languages
+:   I really, really like automating things and developing internal tools to help my colleagues be more efficient. My primary toolbox includes, but is not limited to:
 
-    * Basic knowledge of **C**, **C++*, **Javascript**
+    * **Golang:** Backend, infrastructure, APIs, CLIs
+
+    * **Python:** Django, API clients, contributions to the [Gandi CLI](cli.gandi.net), various side projects (listed below)
  
-[ref]: https://github.com/githubuser/superlongprojectname
+    * **Ruby:** Contributed heavily to a Rails project at Voteraide (closed source, unfortunately)
+
+    * **Shell scripting:** bash is my first love and shell of choice.
  
+
+Projects
+:   Among the side projects I've worked on:
+
+    * [Startup Threads CLI](https://github.com/soulshake/startup-threads-cli): Order t-shirts from the command line
+    * [clink](https://github.com/soulshake/clink): Easily (if not foolhardily) run desktop applications in containers
+    * [cv.soulshake.net](https://github.com/soulshake/cv.soulshake.net): A fun hack to view my resume on the command line via `curl`
+    * [Hacker Typer, demo edition](https://github.com/soulshake/hacker-typer-demo-edition): A fun hack to avoid making typos during live demos
+    * [Fonos](https://github.com/soulshake/fonos), an open source Sonos clone using Raspberry Pi
+
+Talks
+:   I've given a few tiny talks, such as:
+
+    * [Your meetings are unbearable](https://www.devopsdays.org/events/2016-minneapolis/program/aj-bowen/): Cheat codes from Occupy
 
 Research
 :   I have a fondness for solving mysteries, which has manifested itself
-    in a passion for genealogy, private investigations and legal research.
+    in a passion for genealogy, private investigations, legal research and stubborn bug hunting.
 
 Activism
 :   I became involved in activism in 2012 thanks to the Occupy movement, which appealed to me due to its horizontal nature. It was there where I learned how to organize without leaders, handle delicate media situations gracefully, encrypt my communications, create partnerships with unexpected allies, and create maximum impact with limited resources.
@@ -91,18 +130,18 @@ Education
 ---------
  
 2010 
-:   **BA, French**, (honors); University of Kansas
- 
 :   **BA, Anthropology**; University of Kansas
+ 
+:   **BA, French**, (honors); University of Kansas
  
 2007
 :   **Diplôme d'études universitaires générales, Translation**; Université
 
     Catholique de l'Ouest (Angers, France)
  
-    *French, English, Spanish*
+    *French, English, Spanish, Arabic*
  
-Extra Section, Call it Whatever You Want
+Additional skills
 ----------------------------------------
  
 * Human Languages:
@@ -112,9 +151,3 @@ Extra Section, Call it Whatever You Want
      * German (elementary)
      * Russian (survival)
      * American Sign Language (beginner)
-
-* Interests:
-
-     * Humans
-
-* Other sort of impressive-sounding thing you did
