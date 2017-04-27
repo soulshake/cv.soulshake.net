@@ -3,14 +3,13 @@
 
 from __future__ import print_function
 from collections import OrderedDict
-import widgets
 from widgets import *
 import click
-from tabulate import tabulate
 
 # For some reason the first line sometimes gets formatted weird
 # This invisible placeholder seems to be a functional workaround
 placeholder = click.style(u" ", fg='white')
+
 
 def processes_table():
     table = {
@@ -55,6 +54,7 @@ def languages_donuts():
     ret = DonutChart(col=0, row=0, colSpan=15, rowSpan=5, label='Human languages', data=data)
     return ret
 
+
 def languages_table():
     data = {
         "headers": ["Language", "time", "DuoLingo level", "ease", "status"],
@@ -76,7 +76,7 @@ def languages_table():
 
 
 def looking_for():
-    label="What am I looking for?"
+    label = "What am I looking for?"
     ret = placeholder + """
 
 My ideal role would probably involve some combination of the following:
@@ -104,6 +104,7 @@ Right now some of the more abstract tools* I'm equipped with are:
     ret = Markdown(colSpan=6, rowSpan=8, data=ret, col=3, row=3, label=label)
     return ret
 
+
 def contact():
     rows = []
     rows.append([click.style("Site", fg='red'), "soulshake.net"])
@@ -122,14 +123,15 @@ def contact():
               table,
               "For more info, see:",
               click.style("http://blog.soulshake.net/2016/04/command-line-resume/", fg='cyan'),
-                "                   Thanks!",
-                "                   Love, AJ"
-                "",
+              "                   Thanks!",
+              "                   Love, AJ"
+              "",
               ])
     contact = "\n\n".join(contact)
     label = "Is this thing on?"
     about = Markdown(colSpan=4, rowSpan=6, data=contact, col=3, row=3, label=label)
     return about
+
 
 def overview():
     label = click.style("Overview", fg='white')
@@ -161,6 +163,7 @@ def scorebar(level, total=15, char=u"■ "):
     empty = empty_char * (total - level)
 
     return filled + empty
+
 
 def weapons():
     width = 17
@@ -214,18 +217,20 @@ def attributes():
 
     return attributes
 
+
 def other_experience():
     label = "Unprofessional Experience"
     blurb = [
         placeholder,
-"I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've ",
-"seen the inside of several jail cells. I tried to burn a bra once but it wouldn't catch.\n",
-"I've organized underground newspapers, backyard boxing leagues and protests, ",
-"as well as several successful dinner parties.\n",
-"If working for your company will help me expand this section, please reach out ASAP.",
+        "I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've ",
+        "seen the inside of several jail cells. I tried to burn a bra once but it wouldn't catch.\n",
+        "I've organized underground newspapers, backyard boxing leagues and protests, ",
+        "as well as several successful dinner parties.\n",
+        "If working for your company will help me expand this section, please reach out ASAP.",
     ]
     other_exp = Markdown(colSpan=6, rowSpan=3, data="\n".join(blurb), col=3, row=3, label=label)
     return other_exp
+
 
 def professional_experience():
     label = "Professional Experience"
@@ -233,7 +238,7 @@ def professional_experience():
     blurb = [placeholder]
 
     positions = [
-        ["Solutions Engineer", "Convox", "October 2016", "present", "Remote"],
+        ["Solutions Engineer", "Convox", "October 2016", "April 2017", "Remote"],
         ["DevOps Engineer", "Voteraide (volunteer)", "May 2016", "September 2016", "Remote"],
         ["Chief of Counter-bullshit operations", "Gandi.net", "October 2013", "December 2015", "San Francisco"],
         ["Level 1+ Support Representative", "Gandi.net", "February 2012", "October 2013", "Remote/Lawrence, KS)"],
@@ -256,6 +261,7 @@ def professional_experience():
     blurb = Markdown(colSpan=6, rowSpan=3, data=blurb, col=0, row=0, label=label)
     return blurb
 
+
 def awards():
     ret = [
         placeholder,
@@ -273,6 +279,7 @@ def awards():
     ret = Markdown(colSpan=4, rowSpan=4, data=ret, col=0, row=0, label="Awards")
     return ret
 
+
 def intro():
     intro = [
         click.style(".", dim=True),
@@ -288,13 +295,16 @@ def intro():
     intro = "\n".join(intro)
     intro = intro.replace("APIs", click.style("APIs", fg='green'))
     intro = intro.replace("CLIs", click.style("CLIs", fg='blue'))
-    intro = intro.replace("subverting the dominant paradigm", click.style("subverting the dominant paradigm", fg='magenta'))
+    intro = intro.replace("subverting the dominant paradigm",
+                          click.style("subverting the dominant paradigm",
+                                      fg='magenta'))
 
     colSpan = 5
     rowSpan = 3.5
 
     ret = Markdown(data=intro, colSpan=colSpan, rowSpan=rowSpan, label="")
     return ret
+
 
 def toc():
     """
@@ -330,6 +340,7 @@ def toc():
     ret = Markdown(data=ret, colSpan=colSpan, rowSpan=rowSpan, label="The very professional resume of A.J. Bowen")
     return ret
 
+
 def exp_gandi():
     label = "[Experience] Gandi.net"
     width = 15
@@ -340,17 +351,17 @@ def exp_gandi():
     d["Dates"] = "February 2012 to December 2015"
     d["2013-2015"] = "Counter-bullshit operations"
     d["A.K.A."] = ["Developer advocate",
-                "API evangelist",
-                "Technical community manager",
-                "Chaos monkey",
-                "Emergency PR strategist",
-                "Open source champion",
-                "Automation specialist",
-                "Special projects",
-                "QA intern",
-                "Workshop administrator",
-                "Swag dealer",
-                ]
+                   "API evangelist",
+                   "Technical community manager",
+                   "Chaos monkey",
+                   "Emergency PR strategist",
+                   "Open source champion",
+                   "Automation specialist",
+                   "Special projects",
+                   "QA intern",
+                   "Workshop administrator",
+                   "Swag dealer",
+                   ]
     d["A.K.A."] = [click.style(x, fg='yellow') for x in d["A.K.A."]]
 
     d["2012-2013"] = "Level 1+ Support Agent"
@@ -385,6 +396,7 @@ def exp_gandi():
 
     return ret
 
+
 def exp_gandi_tldr():
     blurb = """My initial role at Gandi was entry-level support: troubleshooting and explaining issues relating to domain
 names, DNS, SSL certs and basic hosting.\n\n
@@ -404,11 +416,10 @@ role in nearly every aspect of our growth in the United States.
 
     return ret
 
+
 def exp_gandi_details():
     label = "Details"
-    width = 20
 
-    d = OrderedDict({})
     blurb = """
 I interacted with various tech communities, online and at industry events,
 connecting with developers and helping them make the most of Gandi's domain,
@@ -442,6 +453,7 @@ week.\n\n
 
     return ret
 
+
 def skills_bar_chart():
     data = OrderedDict()
     data["Python"] = 9.5
@@ -455,6 +467,7 @@ def skills_bar_chart():
     rowSpan = 4
     barchart = BarChart(col=1, row=1, colSpan=colSpan, rowSpan=rowSpan, label="Computery Skills", data=data)
     return barchart
+
 
 def skills_other_bar_chart():
     data = OrderedDict()
@@ -471,6 +484,7 @@ def skills_other_bar_chart():
 
     ret = BarChart(col=1, row=1, colSpan=colSpan, rowSpan=rowSpan, label="Other Skills", data=data)
     return ret
+
 
 def employment_progress():
     # Note to self: Keep track of this and increment for each hit?
@@ -496,9 +510,9 @@ if __name__ == "__main__":
         [[exp_gandi(), exp_gandi_details()], [exp_gandi_tldr()]],
         [[looking_for()]],
         [[contact()]],
-        #[[other_experience()]],
-        #[[skills_stacked_chart()]], # stacked bar chart, doesn't work
-        #[[skills_line_chart()]], # dumb line graph thing
+        # [[other_experience()]],
+        # [[skills_stacked_chart()]], # stacked bar chart, doesn't work
+        # [[skills_line_chart()]], # dumb line graph thing
     ]
 
     pages = {}
@@ -519,4 +533,3 @@ if __name__ == "__main__":
 
     doc = Document(pages)
     print(doc.content.encode('utf-8'))
-
