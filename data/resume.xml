@@ -37,7 +37,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mKansas City[0m &#10; Employment State    [32m[2m[7mACTIVE[0m &#10; Employment Status   [33m[2mOnboarding in progress...[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
+		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mKansas City[0m &#10; Employment State    [33m[2m[7mINACTIVE[0m &#10; Employment Status   [33m[2mSearch in progress...[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
 
 
         </markdown>
@@ -51,7 +51,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Python           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; XML-RPC          [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; REST             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Linux            [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Bash             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Git              [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; SQL              [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; GoLang           [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Ruby/Rails       [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; C                [31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; C++              [31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m
+		[37m [0m &#10; Python           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; XML-RPC          [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; REST             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Linux            [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Bash             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Git              [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; SQL              [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; GoLang           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Ruby/Rails       [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; C                [31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; C++              [31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m
 
 
         </markdown>
@@ -98,7 +98,7 @@ foo
 <item col="0" row="0" colSpan="8" rowSpan="5" >
            <table border-type="line" border-fg="gray" columnSpacing="6" columnWidth="21,7,6,70" data-headers="Autodidact Process,Cpu (%),Memory,Comment" fg="green" height="30%" interactive="true" keys="true" label="Active Processes" width="10%" selectedBg="blue" selectedFg="white" > 
             <data-data>
-            Job search,19,15.1,Complete
+            Job search,79,25.1,In progress
             German,12,13,Host 'Berlin' unresponsive; trying again
             Docker,15,26,Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself
             node.js,5,16,Parent process 'frontend' is dirty
@@ -112,13 +112,13 @@ foo
 
 <page>
 <item col="0" row="0" colSpan="6" rowSpan="4">
-<bar barWidth="9" label="Computery Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="Python,Bash,Breakery,DNS,Docker,Linux,Automation" data-data="9.5,5.5,2,6,7,4,8" />
+<bar barWidth="9" label="Computery Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="Python,Bash,AWS,DNS,Docker,Linux,Automation" data-data="9.5,8.5,8,9,9,4,8" />
 
 
 
     </item>
 <item col="0" row="4" colSpan="6" rowSpan="4">
-<bar barWidth="9" label="Other Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="People,Learning,Singing,Chaos,Coloring,Genealogy,Lockpicking" data-data="8,7,1,6,5,9,3" />
+<bar barWidth="9" label="Other Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="People,Learning,Singing,Chaos,Coloring,Genealogy,Lockpicking" data-data="8,7,1,6,5,9,4" />
 
 
 
@@ -141,10 +141,10 @@ foo
            <table border-type="line" border-fg="gray" columnSpacing="8" columnWidth="8,4,14,4,25" data-headers="Language,time,DuoLingo level,ease,status" fg="white" height="30%" interactive="false" keys="False" label="Details" width="30%" selectedBg="None" selectedFg="None" > 
             <data-data>
             Russian,1 mo,6,10%,{red-fg} caveperson
-            German,6 mo,13,24%,{yellow-fg} rather clumsy
+            German,1y,13,39%,{yellow-fg} rather clumsy
             English,>10y,99,99%,{green-fg} native speaker
             French,>10y,82,89%,{blue-fg} fluent
-            Spanish,n/a,10,60%,{magenta-fg} passive
+            Spanish,n/a,10,40%,{magenta-fg} passive
             </data-data>
          </table>
      </item>
@@ -157,7 +157,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10;                  [35m[1m  Solutions Engineer[0m @[33mConvox[0m: October 2016 - present (Remote) &#10;                  [35m[1m     DevOps Engineer[0m @[33mVoteraide (volunteer)[0m: May 2016 - September 2016 (Remote) &#10;  [35m[1mChief of Counter-bullshit operations[0m @[33mGandi.net[0m: October 2013 - December 2015 (San Francisco) &#10;       [35m[1mLevel 1+ Support Representative[0m @[33mGandi.net[0m: February 2012 - October 2013 (Remote/Lawrence, KS)) &#10; [35m[1mFederal Student Aid question answerer[0m @[33mVangent, Inc[0m: 2010 - 2011 (Lawrence, KS) &#10;  &#10;  &#10; [34mPrevious positions[0m: See LinkedIn profile &#10; [34mDetails on most recent position[0m: See next slide
+		[37m [0m &#10;                  [35m[1m  Solutions Engineer[0m @[33mConvox[0m: October 2016 - April 2017 (Remote) &#10;                  [35m[1m     DevOps Engineer[0m @[33mVoteraide (volunteer)[0m: May 2016 - September 2016 (Remote) &#10;  [35m[1mChief of Counter-bullshit operations[0m @[33mGandi.net[0m: October 2013 - December 2015 (San Francisco) &#10;       [35m[1mLevel 1+ Support Representative[0m @[33mGandi.net[0m: February 2012 - October 2013 (Remote/Lawrence, KS)) &#10; [35m[1mFederal Student Aid question answerer[0m @[33mVangent, Inc[0m: 2010 - 2011 (Lawrence, KS) &#10;  &#10;  &#10; [34mPrevious positions[0m: See LinkedIn profile &#10; [34mDetails on recent positions[0m: See next slide
 
 
         </markdown>

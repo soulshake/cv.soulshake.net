@@ -29,7 +29,7 @@ def processes_table():
     data = {
         "headers": ["Autodidact Process", "Cpu (%)", "Memory", "Comment"],
         "rows": [
-              ["Job search", 19, 15.1, "Complete"],
+              ["Job search", 79, 25.1, "In progress"],
               ["German", 12, 13, "Host 'Berlin' unresponsive; trying again"],
               ["Docker", 15, 26, "Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself"],
               ["node.js", 5, 16, "Parent process 'frontend' is dirty"],
@@ -60,10 +60,10 @@ def languages_table():
         "headers": ["Language", "time", "DuoLingo level", "ease", "status"],
         "rows": [
                 ["Russian", "1 mo", 6, "10%", "{red-fg} caveperson"],
-                ["German", "6 mo", 13, "24%", "{yellow-fg} rather clumsy"],
+                ["German", "1y", 13, "39%", "{yellow-fg} rather clumsy"],
                 ["English", ">10y", 99, "99%", "{green-fg} native speaker"],
                 ["French", ">10y", 82, "89%", "{blue-fg} fluent"],
-                ["Spanish", "n/a", 10, "60%", "{magenta-fg} passive"],
+                ["Spanish", "n/a", 10, "40%", "{magenta-fg} passive"],
                 ],
         }
 
@@ -139,8 +139,8 @@ def overview():
         placeholder,
         "Name".ljust(20) + click.style("AJ Bowen", fg='green', bold=True),
         "Location".ljust(20) + click.style("Kansas City", fg='green'),
-        "Employment State".ljust(20) + click.style("ACTIVE", dim=True, fg='green', reverse=True),
-        "Employment Status".ljust(20) + click.style("Onboarding in progress...", dim=True, fg='yellow'),
+        "Employment State".ljust(20) + click.style("INACTIVE", dim=True, fg='yellow', reverse=True),
+        "Employment Status".ljust(20) + click.style("Search in progress...", dim=True, fg='yellow'),
         "Mobility".ljust(20) + click.style("Flexible", fg='green'),
         "Nerdery Level".ljust(20) + click.style("CRITICAL", fg='red', reverse=True),
         ])
@@ -175,7 +175,7 @@ def weapons():
     d["Bash"] = 12
     d["Git"] = 12
     d["SQL"] = 10
-    d["GoLang"] = 7
+    d["GoLang"] = 13
     d["Ruby/Rails"] = 8
     d["C"] = 5
     d["C++"] = 3
@@ -257,7 +257,7 @@ def professional_experience():
 
     blurb.append("\n")
     blurb.append(click.style("Previous positions", fg='blue') + ": See LinkedIn profile")
-    blurb.append(click.style("Details on most recent position", fg='blue') + ": See next slide")
+    blurb.append(click.style("Details on recent positions", fg='blue') + ": See next slide")
     blurb = Markdown(colSpan=6, rowSpan=3, data=blurb, col=0, row=0, label=label)
     return blurb
 
@@ -457,10 +457,10 @@ week.\n\n
 def skills_bar_chart():
     data = OrderedDict()
     data["Python"] = 9.5
-    data["Bash"] = 5.5
-    data["Breakery"] = 2
-    data["DNS"] = 6
-    data["Docker"] = 7
+    data["Bash"] = 8.5
+    data["AWS"] = 8
+    data["DNS"] = 9
+    data["Docker"] = 9
     data["Linux"] = 4
     data["Automation"] = 8
     colSpan = 6
@@ -477,7 +477,7 @@ def skills_other_bar_chart():
     data["Chaos"] = 6
     data["Coloring"] = 5
     data["Genealogy"] = 9
-    data["Lockpicking"] = 3
+    data["Lockpicking"] = 4
 
     colSpan = 6
     rowSpan = 4
