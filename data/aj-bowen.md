@@ -10,6 +10,8 @@ USA                                       @s0ulshake
 Summary
 -------
 
+**I'm a GoLang/Python/+ software engineer with a taste for ops.**
+
 My path so far has led me to some degree of competency in:
 
 - French, Spanish, Russian, German, and a bit of Haitian Creole 
@@ -30,7 +32,19 @@ aspects of the systems we rely on. I'd be especially excited to dig more into ne
 
 **For more, run:  `$ curl cv.soulshake.net`**
 
-  
+What I'm Looking For
+--------------------
+
+I am looking for a primarily **remote role**, though I am willing to travel as needed.
+
+**My ideal team:**
+
+- is at least 50% distributed _(though offices in Berlin, Paris, Montreal, Toronto, Kansas City, NYC, or San Francisco wouldn't hurt)_
+- is diverse, or working hard to get there
+- has a demonstrated committment to empowering their people to evolve
+- has a strong open source presence
+- is working on something of value to the world
+
 
 Professional Experience
 ----------
