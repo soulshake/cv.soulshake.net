@@ -29,13 +29,13 @@ def processes_table():
     data = {
         "headers": ["Autodidact Process", "Cpu (%)", "Memory", "Comment"],
         "rows": [
-              ["Job search", 79, 25.1, "In progress"],
               ["German", 12, 13, "Host 'Berlin' unresponsive; trying again"],
               ["Docker", 15, 26, "Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself"],
               ["node.js", 5, 16, "Parent process 'frontend' is dirty"],
               ["Deployment automation", 12, 8.7, "Onscreen"],
               ["blog.soulshake.net", 3, 12.5, "Deployment in progress"],
               ["Ruby/Rails", 8, 6.2, "Recovering"],
+              ["Job search", 0, 0, "Finished"],
               ],
     }
 
@@ -60,7 +60,7 @@ def languages_table():
         "headers": ["Language", "time", "DuoLingo level", "ease", "status"],
         "rows": [
                 ["Russian", "1 mo", 6, "10%", "{red-fg} caveperson"],
-                ["German", "1y", 13, "39%", "{yellow-fg} rather clumsy"],
+                ["German", "1y", 18, "45%", "{yellow-fg} rather clumsy"],
                 ["English", ">10y", 99, "99%", "{green-fg} native speaker"],
                 ["French", ">10y", 82, "89%", "{blue-fg} fluent"],
                 ["Spanish", "n/a", 10, "40%", "{magenta-fg} passive"],
@@ -79,7 +79,9 @@ def looking_for():
     label = "What am I looking for?"
     ret = placeholder + """
 
-My ideal role would probably involve some combination of the following:
+I'm pretty happy where I'm at right now.
+
+My ideal roles involve some combination of the following:
 
   - writing useful tools (libraries, CLIs) that improve efficiency,
   - playing with APIs, connecting services, making mashups and integrations,
@@ -138,9 +140,9 @@ def overview():
     about_me = ([
         placeholder,
         "Name".ljust(20) + click.style("AJ Bowen", fg='green', bold=True),
-        "Location".ljust(20) + click.style("Kansas City", fg='green'),
-        "Employment State".ljust(20) + click.style("INACTIVE", dim=True, fg='yellow', reverse=True),
-        "Employment Status".ljust(20) + click.style("Search in progress...", dim=True, fg='yellow'),
+        "Location".ljust(20) + click.style("Berlin", fg='green'),
+        "Employment State".ljust(20) + click.style("ACTIVE", dim=True, fg='green', reverse=True),
+        "Employment Status".ljust(20) + click.style("Onboarding...", dim=True, fg='yellow'),
         "Mobility".ljust(20) + click.style("Flexible", fg='green'),
         "Nerdery Level".ljust(20) + click.style("CRITICAL", fg='red', reverse=True),
         ])
@@ -238,6 +240,7 @@ def professional_experience():
     blurb = [placeholder]
 
     positions = [
+        ["Build Infrastructure Engineer", "Travis CI", "July 2017", "Present", "Berlin/Remote"],
         ["Solutions Engineer", "Convox", "October 2016", "April 2017", "Remote"],
         ["DevOps Engineer", "Voteraide (volunteer)", "May 2016", "September 2016", "Remote"],
         ["Chief of Counter-bullshit operations", "Gandi.net", "October 2013", "December 2015", "San Francisco"],
