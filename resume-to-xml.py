@@ -333,7 +333,7 @@ def toc():
         u"   {}".format(click.style("p=1; while [ $p -lt 9 ]; do curl -N cv.soulshake.net/$((p++)); read; done", fg='green', bold=True)),
         u"",
         u"  To view a specific slide:",
-        u"    {}".format(click.style("curl -N cv.soulshake/3/\?cols=$((COLUMNS))", fg='green')),
+        u"    {}".format(click.style("curl -N cv.soulshake.net/3/\?cols=$((COLUMNS))", fg='green')),
         ]
 
     colSpan = 5
