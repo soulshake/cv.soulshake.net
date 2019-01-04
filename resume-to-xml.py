@@ -60,7 +60,8 @@ def languages_table():
         "headers": ["Language", "time", "DuoLingo level", "ease", "status"],
         "rows": [
                 ["Russian", "1 mo", 6, "10%", "{red-fg} caveperson"],
-                ["German", "1y", 13, "39%", "{yellow-fg} rather clumsy"],
+                ["German", "2y", 15, "39%", "{yellow-fg} rather clumsy"],
+                ["Italian", "6 mo", 16, "15%", "{yellow-fg} I manage"],
                 ["English", ">10y", 99, "99%", "{green-fg} native speaker"],
                 ["French", ">10y", 82, "89%", "{blue-fg} fluent"],
                 ["Spanish", "n/a", 10, "40%", "{magenta-fg} passive"],
@@ -138,8 +139,8 @@ def overview():
     about_me = ([
         placeholder,
         "Name".ljust(20) + click.style("AJ Bowen", fg='green', bold=True),
-        "Location".ljust(20) + click.style("Kansas City", fg='green'),
-        "Employment State".ljust(20) + click.style("INACTIVE", dim=True, fg='yellow', reverse=True),
+        "Location".ljust(20) + click.style("Berlin and Kansas City", fg='green'),
+        "Employment State".ljust(20) + click.style("ACTIVE", dim=True, fg='green', reverse=True),
         "Employment Status".ljust(20) + click.style("Search in progress...", dim=True, fg='yellow'),
         "Mobility".ljust(20) + click.style("Flexible", fg='green'),
         "Nerdery Level".ljust(20) + click.style("CRITICAL", fg='red', reverse=True),
@@ -238,6 +239,7 @@ def professional_experience():
     blurb = [placeholder]
 
     positions = [
+        ["Infrastructure Engineer", "Travis CI", "July 2017", "Present", "Remote"],
         ["Solutions Engineer", "Convox", "October 2016", "April 2017", "Remote"],
         ["DevOps Engineer", "Voteraide (volunteer)", "May 2016", "September 2016", "Remote"],
         ["Chief of Counter-bullshit operations", "Gandi.net", "October 2013", "December 2015", "San Francisco"],

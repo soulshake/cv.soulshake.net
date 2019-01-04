@@ -37,7 +37,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mKansas City[0m &#10; Employment State    [33m[2m[7mINACTIVE[0m &#10; Employment Status   [33m[2mSearch in progress...[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
+		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mBerlin and Kansas City[0m &#10; Employment State    [32m[2m[7mACTIVE[0m &#10; Employment Status   [33m[2mSearch in progress...[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
 
 
         </markdown>
@@ -141,7 +141,8 @@ foo
            <table border-type="line" border-fg="gray" columnSpacing="8" columnWidth="8,4,14,4,25" data-headers="Language,time,DuoLingo level,ease,status" fg="white" height="30%" interactive="false" keys="False" label="Details" width="30%" selectedBg="None" selectedFg="None" > 
             <data-data>
             Russian,1 mo,6,10%,{red-fg} caveperson
-            German,1y,13,39%,{yellow-fg} rather clumsy
+            German,2y,15,39%,{yellow-fg} rather clumsy
+            Italian,6 mo,16,15%,{yellow-fg} I manage
             English,>10y,99,99%,{green-fg} native speaker
             French,>10y,82,89%,{blue-fg} fluent
             Spanish,n/a,10,40%,{magenta-fg} passive
@@ -157,7 +158,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10;                  [35m[1m  Solutions Engineer[0m @[33mConvox[0m: October 2016 - April 2017 (Remote) &#10;                  [35m[1m     DevOps Engineer[0m @[33mVoteraide (volunteer)[0m: May 2016 - September 2016 (Remote) &#10;  [35m[1mChief of Counter-bullshit operations[0m @[33mGandi.net[0m: October 2013 - December 2015 (San Francisco) &#10;       [35m[1mLevel 1+ Support Representative[0m @[33mGandi.net[0m: February 2012 - October 2013 (Remote/Lawrence, KS)) &#10; [35m[1mFederal Student Aid question answerer[0m @[33mVangent, Inc[0m: 2010 - 2011 (Lawrence, KS) &#10;  &#10;  &#10; [34mPrevious positions[0m: See LinkedIn profile &#10; [34mDetails on recent positions[0m: See next slide
+		[37m [0m &#10;               [35m[1mInfrastructure Engineer[0m @[33mTravis CI[0m: July 2017 - Present (Remote) &#10;                  [35m[1m  Solutions Engineer[0m @[33mConvox[0m: October 2016 - April 2017 (Remote) &#10;                  [35m[1m     DevOps Engineer[0m @[33mVoteraide (volunteer)[0m: May 2016 - September 2016 (Remote) &#10;  [35m[1mChief of Counter-bullshit operations[0m @[33mGandi.net[0m: October 2013 - December 2015 (San Francisco) &#10;       [35m[1mLevel 1+ Support Representative[0m @[33mGandi.net[0m: February 2012 - October 2013 (Remote/Lawrence, KS)) &#10; [35m[1mFederal Student Aid question answerer[0m @[33mVangent, Inc[0m: 2010 - 2011 (Lawrence, KS) &#10;  &#10;  &#10; [34mPrevious positions[0m: See LinkedIn profile &#10; [34mDetails on recent positions[0m: See next slide
 
 
         </markdown>

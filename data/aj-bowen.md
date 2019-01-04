@@ -10,7 +10,7 @@ USA                                       @s0ulshake
 Summary
 -------
 
-**I'm a GoLang/Python/+ software engineer with a taste for ops.**
+**I'm a Golang/Python/+ software engineer with a taste for ops.**
 
 My path so far has led me to some degree of competency in:
 
@@ -49,6 +49,11 @@ I am looking for a primarily **remote role**, though I am willing to travel as n
 Professional Experience
 ----------
  
+Infrastructure Engineer, [Travis CI](https://travis-ci.org/)
+
+:   Build and manage the cloud infrastructure on which Travis CI jobs are run.
+
+
 Solutions Engineer, [Convox](https://convox.com/)
 
 :   Convox is an open source solution with the mission of making it easy to deploy production applications in containers. 
