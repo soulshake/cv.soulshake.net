@@ -597,7 +597,7 @@ class Spedometer(Widget):
         "│                                                                                          │",
         "│  To view a specific slide:                                                               │",
         "│                                                                                          │",
-        "│    $ curl -N cv.soulshake/3                                                              │",
+        "│    $ curl -N cv.soulshake.net/3                                                          │",
         "│                                                                                          │",
         "│  Options (URL paramters):                                                                │",
         "│                                                                                          │",
