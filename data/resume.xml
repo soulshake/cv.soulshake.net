@@ -98,13 +98,13 @@ foo
 <item col="0" row="0" colSpan="8" rowSpan="5" >
            <table border-type="line" border-fg="gray" columnSpacing="6" columnWidth="21,7,6,70" data-headers="Autodidact Process,Cpu (%),Memory,Comment" fg="green" height="30%" interactive="true" keys="true" label="Active Processes" width="10%" selectedBg="blue" selectedFg="white" > 
             <data-data>
-            Job search,79,25.1,In progress
             German,12,13,Host 'Berlin' unresponsive; trying again
             Docker,15,26,Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself
             node.js,5,16,Parent process 'frontend' is dirty
             Deployment automation,12,8.7,Onscreen
             blog.soulshake.net,3,12.5,Deployment in progress
             Ruby/Rails,8,6.2,Recovering
+            Job search,0,25.1,Finished
             </data-data>
          </table>
      </item>
@@ -234,7 +234,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10;  &#10; My ideal role would probably involve some combination of the following: &#10;  &#10;   - writing useful tools (libraries, CLIs) that improve efficiency, &#10;   - playing with APIs, connecting services, making mashups and integrations, &#10;   - automating all the things, &#10;   - documenting all the things, &#10;   - making the world better, one way or another &#10;  &#10; Right now some of the more abstract tools* I'm equipped with are: &#10;  &#10;   - an incorrigible curiosity, &#10;   - a sort of fierce empathy, &#10;   - an incorruptible rage at injustice, &#10;   - a relentless stubborn determination when faced with a problem or a mystery, &#10;   - an obsession with well-made things and awesome documentation, &#10;   - an endless supply of ideas and hypotheses, &#10;   - a tiny bit of a bunch of other things, due to the aforementioned curiosity, &#10;   - an apparent intuition for seeing causal relationships in the "big picture" &#10;  &#10;  &#10; \* several of these qualities have gotten me into trouble at some point, so YMMV. &#10;     
+		[37m [0m &#10;  &#10; I'm pretty happy where I'm at right now. &#10;  &#10; My ideal roles involve some combination of the following: &#10;  &#10;   - writing useful tools (libraries, CLIs) that improve efficiency, &#10;   - playing with APIs, connecting services, making mashups and integrations, &#10;   - automating all the things, &#10;   - documenting all the things, &#10;   - making the world better, one way or another &#10;  &#10; Right now some of the more abstract tools* I'm equipped with are: &#10;  &#10;   - an incorrigible curiosity, &#10;   - a sort of fierce empathy, &#10;   - an incorruptible rage at injustice, &#10;   - a relentless stubborn determination when faced with a problem or a mystery, &#10;   - an obsession with well-made things and awesome documentation, &#10;   - an endless supply of ideas and hypotheses, &#10;   - a tiny bit of a bunch of other things, due to the aforementioned curiosity, &#10;   - an apparent intuition for seeing causal relationships in the "big picture" &#10;  &#10;  &#10; \* several of these qualities have gotten me into trouble at some point, so YMMV. &#10;     
 
 
         </markdown>

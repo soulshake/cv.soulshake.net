@@ -29,13 +29,13 @@ def processes_table():
     data = {
         "headers": ["Autodidact Process", "Cpu (%)", "Memory", "Comment"],
         "rows": [
-              ["Job search", 79, 25.1, "In progress"],
               ["German", 12, 13, "Host 'Berlin' unresponsive; trying again"],
               ["Docker", 15, 26, "Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself"],
               ["node.js", 5, 16, "Parent process 'frontend' is dirty"],
               ["Deployment automation", 12, 8.7, "Onscreen"],
               ["blog.soulshake.net", 3, 12.5, "Deployment in progress"],
               ["Ruby/Rails", 8, 6.2, "Recovering"],
+              ["Job search", 0, 0, "Finished"],
               ],
     }
 
@@ -59,12 +59,12 @@ def languages_table():
     data = {
         "headers": ["Language", "time", "DuoLingo level", "ease", "status"],
         "rows": [
-                ["Russian", "1 mo", 6, "10%", "{red-fg} caveperson"],
-                ["German", "2y", 15, "39%", "{yellow-fg} rather clumsy"],
+                ["Russian", "1y", 16, "10%", "{red-fg} caveperson"],
+                ["German", "2y", 187, "39%", "{yellow-fg} rather clumsy"],
                 ["Italian", "6 mo", 16, "15%", "{yellow-fg} I manage"],
-                ["English", ">10y", 99, "99%", "{green-fg} native speaker"],
-                ["French", ">10y", 82, "89%", "{blue-fg} fluent"],
-                ["Spanish", "n/a", 10, "40%", "{magenta-fg} passive"],
+                ["English", ">10y", 999, "99%", "{green-fg} native speaker"],
+                ["French", ">10y", 899, "89%", "{blue-fg} fluent"],
+                ["Spanish", "n/a", 94, "40%", "{magenta-fg} passive"],
                 ],
         }
 
@@ -80,7 +80,9 @@ def looking_for():
     label = "What am I looking for?"
     ret = placeholder + """
 
-My ideal role would probably involve some combination of the following:
+I'm pretty happy where I'm at right now.
+
+My ideal roles involve some combination of the following:
 
   - writing useful tools (libraries, CLIs) that improve efficiency,
   - playing with APIs, connecting services, making mashups and integrations,
@@ -239,7 +241,7 @@ def professional_experience():
     blurb = [placeholder]
 
     positions = [
-        ["Infrastructure Engineer", "Travis CI", "July 2017", "Present", "Remote"],
+        ["Infrastructure Engineer", "Travis CI", "July 2017", "Present", "Berlin/Remote"],
         ["Solutions Engineer", "Convox", "October 2016", "April 2017", "Remote"],
         ["DevOps Engineer", "Voteraide (volunteer)", "May 2016", "September 2016", "Remote"],
         ["Chief of Counter-bullshit operations", "Gandi.net", "October 2013", "December 2015", "San Francisco"],
@@ -332,7 +334,7 @@ def toc():
         u"   {}".format(click.style("p=1; while [ $p -lt 9 ]; do curl -N cv.soulshake.net/$((p++)); read; done", fg='green', bold=True)),
         u"",
         u"  To view a specific slide:",
-        u"    {}".format(click.style("curl -N cv.soulshake/3/\?cols=$((COLUMNS))", fg='green')),
+        u"    {}".format(click.style("curl -N cv.soulshake.net/3/\?cols=$((COLUMNS))", fg='green')),
         ]
 
     colSpan = 5
