@@ -1,0 +1,11 @@
+language: bash
+dist: xenial
+
+before_script:
+  - sudo docker info
+  - sudo ls -lahF /etc/docker
+  - ps -fp $(pidof dockerd)
+  - sudo docker pull alpine
+  - sudo docker info | grep -i mirror
+  - sudo cat /etc/docker/daemon.json
+
