@@ -8,7 +8,7 @@ import click
 
 # For some reason the first line sometimes gets formatted weird
 # This invisible placeholder seems to be a functional workaround
-placeholder = click.style(u" ", fg='white')
+placeholder = click.style(u" ", fg="white")
 
 
 def processes_table():
@@ -16,27 +16,32 @@ def processes_table():
         "border": {"type": "line", "fg": "cyan"},
         "columnSpacing": 6,
         "columnWidth": [16, 12, 12],
-        "fg": 'green',
-        "height": '30%',
-        "interactive": 'true',
-        "keys": 'true',
-        "label": 'Active Processes',
-        "selectedFg": 'white',
-        "selectedBg": 'blue',
-        "width": '10%',
+        "fg": "green",
+        "height": "30%",
+        "interactive": "true",
+        "keys": "true",
+        "label": "Active Processes",
+        "selectedFg": "white",
+        "selectedBg": "blue",
+        "width": "10%",
     }
 
     data = {
         "headers": ["Autodidact Process", "Cpu (%)", "Memory", "Comment"],
         "rows": [
-              ["German", 12, 13, "Host 'Berlin' unresponsive; trying again"],
-              ["Docker", 15, 26, "Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself"],
-              ["node.js", 5, 16, "Parent process 'frontend' is dirty"],
-              ["Deployment automation", 12, 8.7, "Onscreen"],
-              ["blog.soulshake.net", 3, 12.5, "Deployment in progress"],
-              ["Ruby/Rails", 8, 6.2, "Recovering"],
-              ["Job search", 0, 0, "Finished"],
-              ],
+            ["German", 12, 13, "Host 'Berlin' unresponsive; trying again"],
+            [
+                "Docker",
+                15,
+                26,
+                "Last command 'containerize-all-the-desktop-apps.sh' cannot stop itself",
+            ],
+            ["node.js", 5, 16, "Parent process 'frontend' is dirty"],
+            ["Deployment automation", 12, 8.7, "Onscreen"],
+            ["blog.soulshake.net", 3, 12.5, "Deployment in progress"],
+            ["Ruby/Rails", 8, 6.2, "Recovering"],
+            ["Job search", 0, 0, "Finished"],
+        ],
     }
 
     ret = Table(col=0, row=0, colSpan=8, rowSpan=5, data=data, **table)
@@ -51,7 +56,9 @@ def languages_donuts():
     data["French"] = [89, "blue"]
     data["Spanish"] = [60, "magenta"]
 
-    ret = DonutChart(col=0, row=0, colSpan=15, rowSpan=5, label='Human languages', data=data)
+    ret = DonutChart(
+        col=0, row=0, colSpan=15, rowSpan=5, label="Human languages", data=data
+    )
     return ret
 
 
@@ -59,18 +66,16 @@ def languages_table():
     data = {
         "headers": ["Language", "time", "DuoLingo level", "ease", "status"],
         "rows": [
-                ["Russian", "1y", 16, "10%", "{red-fg} caveperson"],
-                ["German", "2y", 187, "39%", "{yellow-fg} rather clumsy"],
-                ["Italian", "6 mo", 16, "15%", "{yellow-fg} I manage"],
-                ["English", ">10y", 999, "99%", "{green-fg} native speaker"],
-                ["French", ">10y", 899, "89%", "{blue-fg} fluent"],
-                ["Spanish", "n/a", 94, "40%", "{magenta-fg} passive"],
-                ],
-        }
-
-    table = {
-        "label": "Details",
+            ["Russian", "1y", 16, "10%", "{red-fg} caveperson"],
+            ["German", "2y", 187, "39%", "{yellow-fg} rather clumsy"],
+            ["Italian", "6 mo", 16, "15%", "{yellow-fg} I manage"],
+            ["English", ">10y", 999, "99%", "{green-fg} native speaker"],
+            ["French", ">10y", 899, "89%", "{blue-fg} fluent"],
+            ["Spanish", "n/a", 94, "40%", "{magenta-fg} passive"],
+        ],
     }
+
+    table = {"label": "Details"}
 
     languages = Table(col=2, row=2, colSpan=5, rowSpan=3, data=data, **table)
     return languages
@@ -78,7 +83,9 @@ def languages_table():
 
 def looking_for():
     label = "What am I looking for?"
-    ret = placeholder + """
+    ret = (
+        placeholder
+        + """
 
 I'm pretty happy where I'm at right now.
 
@@ -104,32 +111,36 @@ Right now some of the more abstract tools* I'm equipped with are:
 
 \* several of these qualities have gotten me into trouble at some point, so YMMV.
     """
+    )
     ret = Markdown(colSpan=6, rowSpan=8, data=ret, col=3, row=3, label=label)
     return ret
 
 
 def contact():
     rows = []
-    rows.append([click.style("Site", fg='red'), "soulshake.net"])
-    rows.append([click.style("Email", fg='yellow'), "aj@soulshake.net"])
-    rows.append([click.style("Github", fg='green'), "https://github.com/soulshake"])
-    rows.append([click.style("Twitter", fg='blue'), "https://twitter.com/s0ulshake"])
-    rows.append([click.style("LinkedIn", fg='magenta'), "https://www.linkedin.com/in/ajbowen"])
+    rows.append([click.style("Site", fg="red"), "soulshake.net"])
+    rows.append([click.style("Email", fg="yellow"), "aj@soulshake.net"])
+    rows.append([click.style("Github", fg="green"), "https://github.com/soulshake"])
+    rows.append([click.style("Twitter", fg="blue"), "https://twitter.com/s0ulshake"])
+    rows.append(
+        [click.style("LinkedIn", fg="magenta"), "https://www.linkedin.com/in/ajbowen"]
+    )
 
-    rows = [[row[0].rjust(30), click.style(row[1], fg='cyan')] for row in rows]
+    rows = [[row[0].rjust(30), click.style(row[1], fg="cyan")] for row in rows]
     rows = ["  ".join(row) for row in rows]
     table = "\n".join(rows)
 
-    contact = ([
-              placeholder,
-              "Say hi:",
-              table,
-              "For more info, see:",
-              click.style("http://blog.soulshake.net/2016/04/command-line-resume/", fg='cyan'),
-              "                   Thanks!",
-              "                   Love, AJ"
-              "",
-              ])
+    contact = [
+        placeholder,
+        "Say hi:",
+        table,
+        "For more info, see:",
+        click.style(
+            "http://blog.soulshake.net/2016/04/command-line-resume/", fg="cyan"
+        ),
+        "                   Thanks!",
+        "                   Love, AJ" "",
+    ]
     contact = "\n\n".join(contact)
     label = "Is this thing on?"
     about = Markdown(colSpan=4, rowSpan=6, data=contact, col=3, row=3, label=label)
@@ -137,16 +148,18 @@ def contact():
 
 
 def overview():
-    label = click.style("Overview", fg='white')
-    about_me = ([
+    label = click.style("Overview", fg="white")
+    about_me = [
         placeholder,
-        "Name".ljust(20) + click.style("AJ Bowen", fg='green', bold=True),
-        "Location".ljust(20) + click.style("Berlin and Kansas City", fg='green'),
-        "Employment State".ljust(20) + click.style("ACTIVE", dim=True, fg='green', reverse=True),
-        "Employment Status".ljust(20) + click.style("Search in progress...", dim=True, fg='yellow'),
-        "Mobility".ljust(20) + click.style("Flexible", fg='green'),
-        "Nerdery Level".ljust(20) + click.style("CRITICAL", fg='red', reverse=True),
-        ])
+        "Name".ljust(20) + click.style("AJ Bowen", fg="green", bold=True),
+        "Location".ljust(20) + click.style("Berlin and Kansas City", fg="green"),
+        "Employment State".ljust(20)
+        + click.style("ACTIVE", dim=True, fg="green", reverse=True),
+        "Employment Status".ljust(20)
+        + click.style("Search in progress...", dim=True, fg="yellow"),
+        "Mobility".ljust(20) + click.style("Flexible", fg="green"),
+        "Nerdery Level".ljust(20) + click.style("CRITICAL", fg="red", reverse=True),
+    ]
 
     about_me = "\n".join(about_me)
     about = Markdown(colSpan=4, rowSpan=4, data=about_me, col=3, row=3, label=label)
@@ -154,14 +167,14 @@ def overview():
 
 
 def scorebar(level, total=15, char=u"■ "):
-    fg = 'green'
-    if level <= total * .667:
-        fg = 'yellow'
-    if level <= total * .334:
-        fg = 'red'
+    fg = "green"
+    if level <= total * 0.667:
+        fg = "yellow"
+    if level <= total * 0.334:
+        fg = "red"
 
     fill_char = click.style(char, fg=fg)
-    empty_char = click.style(char, fg='white')
+    empty_char = click.style(char, fg="white")
     filled = fill_char * level
     empty = empty_char * (total - level)
 
@@ -187,7 +200,9 @@ def weapons():
     for key in d:
         ret.append(key.ljust(width) + scorebar(d[key]))
 
-    return Markdown(colSpan=4, rowSpan=4, data="\n".join(ret), col=0, row=6, label="Weapons")
+    return Markdown(
+        colSpan=4, rowSpan=4, data="\n".join(ret), col=0, row=6, label="Weapons"
+    )
 
 
 def attributes():
@@ -213,10 +228,12 @@ def attributes():
         if isinstance(attributes[key], int):
             ret.append(key.ljust(width) + scorebar(attributes[key]))
         else:
-            ret.append(key.ljust(width) + click.style(attributes[key], fg='green'))
+            ret.append(key.ljust(width) + click.style(attributes[key], fg="green"))
 
     ret = "\n".join(ret)
-    attributes = Markdown(colSpan=4, rowSpan=4, data=ret, col=3, row=3, label="Attributes")
+    attributes = Markdown(
+        colSpan=4, rowSpan=4, data=ret, col=3, row=3, label="Attributes"
+    )
 
     return attributes
 
@@ -231,7 +248,9 @@ def other_experience():
         "as well as several successful dinner parties.\n",
         "If working for your company will help me expand this section, please reach out ASAP.",
     ]
-    other_exp = Markdown(colSpan=6, rowSpan=3, data="\n".join(blurb), col=3, row=3, label=label)
+    other_exp = Markdown(
+        colSpan=6, rowSpan=3, data="\n".join(blurb), col=3, row=3, label=label
+    )
     return other_exp
 
 
@@ -241,27 +260,63 @@ def professional_experience():
     blurb = [placeholder]
 
     positions = [
-        ["Infrastructure Engineer", "Travis CI", "July 2017", "Present", "Berlin/Remote"],
+        [
+            "Infrastructure Engineer",
+            "Travis CI",
+            "July 2017",
+            "Present",
+            "Berlin/Remote",
+        ],
         ["Solutions Engineer", "Convox", "October 2016", "April 2017", "Remote"],
-        ["DevOps Engineer", "Voteraide (volunteer)", "May 2016", "September 2016", "Remote"],
-        ["Chief of Counter-bullshit operations", "Gandi.net", "October 2013", "December 2015", "San Francisco"],
-        ["Level 1+ Support Representative", "Gandi.net", "February 2012", "October 2013", "Remote/Lawrence, KS)"],
-        ["Federal Student Aid question answerer", "Vangent, Inc", "2010", "2011", "Lawrence, KS"],
+        [
+            "DevOps Engineer",
+            "Voteraide (volunteer)",
+            "May 2016",
+            "September 2016",
+            "Remote",
+        ],
+        [
+            "Chief of Counter-bullshit operations",
+            "Gandi.net",
+            "October 2013",
+            "December 2015",
+            "San Francisco",
+        ],
+        [
+            "Level 1+ Support Representative",
+            "Gandi.net",
+            "February 2012",
+            "October 2013",
+            "Remote/Lawrence, KS)",
+        ],
+        [
+            "Federal Student Aid question answerer",
+            "Vangent, Inc",
+            "2010",
+            "2011",
+            "Lawrence, KS",
+        ],
     ]
 
     for position in positions:
         position[0] = position[0].rjust(20)
-        blurb.append("{} @{}: {} - {} ({})".format(
-            click.style(position[0], fg="magenta", bold=True).rjust(50),
-            click.style(position[1], fg="yellow").rjust(13),
-            position[2],
-            position[3],
-            position[4],
-        ))
+        blurb.append(
+            "{} @{}: {} - {} ({})".format(
+                click.style(position[0], fg="magenta", bold=True).rjust(50),
+                click.style(position[1], fg="yellow").rjust(13),
+                position[2],
+                position[3],
+                position[4],
+            )
+        )
 
     blurb.append("\n")
-    blurb.append(click.style("Previous positions", fg='blue') + ": See LinkedIn profile")
-    blurb.append(click.style("Details on recent positions", fg='blue') + ": See next slide")
+    blurb.append(
+        click.style("Previous positions", fg="blue") + ": See LinkedIn profile"
+    )
+    blurb.append(
+        click.style("Details on recent positions", fg="blue") + ": See next slide"
+    )
     blurb = Markdown(colSpan=6, rowSpan=3, data=blurb, col=0, row=0, label=label)
     return blurb
 
@@ -279,7 +334,7 @@ def awards():
         "Mater Dei scholarship: 2004, 2005, 2006",
         "Most improved in beginner motorcycle class: 2005",
         "Hardest worker, SHHS Track team: 2000",
-        ]
+    ]
     ret = Markdown(colSpan=4, rowSpan=4, data=ret, col=0, row=0, label="Awards")
     return ret
 
@@ -287,21 +342,24 @@ def awards():
 def intro():
     intro = [
         click.style(".", dim=True),
-        "Hi, I'm {}.".format(click.style("AJ", fg='red')),
-        "I'm a {} with a strong interest in ".format(click.style("Python developer", fg='yellow')),
+        "Hi, I'm {}.".format(click.style("AJ", fg="red")),
+        "I'm a {} with a strong interest in ".format(
+            click.style("Python developer", fg="yellow")
+        ),
         "APIs, CLIs and subverting the dominant paradigm.",
         "This is my resume.",
         "",
         "Note: this is primarily intended for command-line addicts.",
-        "A more conventional version can be found on LinkedIn."
-        ]
+        "A more conventional version can be found on LinkedIn.",
+    ]
     intro = [click.unstyle(item).center(80) for item in intro]
     intro = "\n".join(intro)
-    intro = intro.replace("APIs", click.style("APIs", fg='green'))
-    intro = intro.replace("CLIs", click.style("CLIs", fg='blue'))
-    intro = intro.replace("subverting the dominant paradigm",
-                          click.style("subverting the dominant paradigm",
-                                      fg='magenta'))
+    intro = intro.replace("APIs", click.style("APIs", fg="green"))
+    intro = intro.replace("CLIs", click.style("CLIs", fg="blue"))
+    intro = intro.replace(
+        "subverting the dominant paradigm",
+        click.style("subverting the dominant paradigm", fg="magenta"),
+    )
 
     colSpan = 5
     rowSpan = 3.5
@@ -331,17 +389,30 @@ def toc():
         placeholder,
         u"",
         u" To view all slides, run:",
-        u"   {}".format(click.style("p=1; while [ $p -lt 9 ]; do curl -N cv.soulshake.net/$((p++)); read; done", fg='green', bold=True)),
+        u"   {}".format(
+            click.style(
+                "p=1; while [ $p -lt 9 ]; do curl -N cv.soulshake.net/$((p++)); read; done",
+                fg="green",
+                bold=True,
+            )
+        ),
         u"",
         u"  To view a specific slide:",
-        u"    {}".format(click.style("curl -N cv.soulshake.net/3/\?cols=$((COLUMNS))", fg='green')),
-        ]
+        u"    {}".format(
+            click.style("curl -N cv.soulshake.net/3/\?cols=$((COLUMNS))", fg="green")
+        ),
+    ]
 
     colSpan = 5
     rowSpan = 9
 
     ret = "\n".join(ret)
-    ret = Markdown(data=ret, colSpan=colSpan, rowSpan=rowSpan, label="The very professional resume of A.J. Bowen")
+    ret = Markdown(
+        data=ret,
+        colSpan=colSpan,
+        rowSpan=rowSpan,
+        label="The very professional resume of A.J. Bowen",
+    )
     return ret
 
 
@@ -354,38 +425,37 @@ def exp_gandi():
     d["Location"] = "San Francisco, CA"
     d["Dates"] = "February 2012 to December 2015"
     d["2013-2015"] = "Counter-bullshit operations"
-    d["A.K.A."] = ["Developer advocate",
-                   "API evangelist",
-                   "Technical community manager",
-                   "Chaos monkey",
-                   "Emergency PR strategist",
-                   "Open source champion",
-                   "Automation specialist",
-                   "Special projects",
-                   "QA intern",
-                   "Workshop administrator",
-                   "Swag dealer",
-                   ]
-    d["A.K.A."] = [click.style(x, fg='yellow') for x in d["A.K.A."]]
+    d["A.K.A."] = [
+        "Developer advocate",
+        "API evangelist",
+        "Technical community manager",
+        "Chaos monkey",
+        "Emergency PR strategist",
+        "Open source champion",
+        "Automation specialist",
+        "Special projects",
+        "QA intern",
+        "Workshop administrator",
+        "Swag dealer",
+    ]
+    d["A.K.A."] = [click.style(x, fg="yellow") for x in d["A.K.A."]]
 
     d["2012-2013"] = "Level 1+ Support Agent"
     d["A.K.A. "] = [
-                 "Support ticket answerer person",
-                 "Documentation tweaker",
-                 "Bug hunter",
-                 "Twitter person",
-                 "Question asker",
-                 ]
-    d["A.K.A. "] = [click.style(x, fg='yellow') for x in d["A.K.A. "]]
+        "Support ticket answerer person",
+        "Documentation tweaker",
+        "Bug hunter",
+        "Twitter person",
+        "Question asker",
+    ]
+    d["A.K.A. "] = [click.style(x, fg="yellow") for x in d["A.K.A. "]]
 
     ret = [placeholder]
     for key in d:
-        styles = {
-            "fg": "green"
-        }
+        styles = {"fg": "green"}
 
         if key in ["2013-2015", "2012-2013"]:
-            styles["fg"] = 'yellow'
+            styles["fg"] = "yellow"
             styles["reverse"] = True
             styles["bold"] = True
 
@@ -469,7 +539,14 @@ def skills_bar_chart():
     data["Automation"] = 8
     colSpan = 6
     rowSpan = 4
-    barchart = BarChart(col=1, row=1, colSpan=colSpan, rowSpan=rowSpan, label="Computery Skills", data=data)
+    barchart = BarChart(
+        col=1,
+        row=1,
+        colSpan=colSpan,
+        rowSpan=rowSpan,
+        label="Computery Skills",
+        data=data,
+    )
     return barchart
 
 
@@ -486,7 +563,9 @@ def skills_other_bar_chart():
     colSpan = 6
     rowSpan = 4
 
-    ret = BarChart(col=1, row=1, colSpan=colSpan, rowSpan=rowSpan, label="Other Skills", data=data)
+    ret = BarChart(
+        col=1, row=1, colSpan=colSpan, rowSpan=rowSpan, label="Other Skills", data=data
+    )
     return ret
 
 
@@ -494,13 +573,17 @@ def employment_progress():
     # Note to self: Keep track of this and increment for each hit?
     colSpan = 6
     rowSpan = 2
-    data = {
-        "percent": 89,
-        "fill": "yellow",
-        "stroke": "green",
-    }
-    ret = Gauge(col=0, row=0, colSpan=colSpan, rowSpan=rowSpan, label="Employment Progress", **data)
+    data = {"percent": 89, "fill": "yellow", "stroke": "green"}
+    ret = Gauge(
+        col=0,
+        row=0,
+        colSpan=colSpan,
+        rowSpan=rowSpan,
+        label="Employment Progress",
+        **data
+    )
     return ret
+
 
 if __name__ == "__main__":
 
@@ -536,4 +619,4 @@ if __name__ == "__main__":
         i += 1
 
     doc = Document(pages)
-    print(doc.content.encode('utf-8'))
+    print(doc.content.encode("utf-8"))
