@@ -184,6 +184,51 @@ foo
 
 <page>
 <item col="0" row="0" colSpan="3" rowSpan="7">
+       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="[Experience] Travis CI" border-fg="gray"> 
+
+
+	<markdown>
+
+		[37m [0m &#10; Employer       [32mTravis CI[0m &#10; Location       [32mBerlin, Germany (remote)[0m &#10; Dates          [32mJuly 2017 to May 2019[0m &#10; 2017-2019      [33m[1m[7mBuild infrastructure engineer[0m &#10; A.K.A.         [32m[33mDevOps[0m &#10;                     [33mEC2 specialist[0m &#10;                     [33mDocker specialist[0m &#10;                     [33mAutomation specialist[0m &#10;                     [33mChaos monkey[0m[0m
+
+
+        </markdown>
+
+</markdown>
+
+    </item>
+<item col="3" row="0" colSpan="4.5" rowSpan="7">
+       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Details" border-fg="gray"> 
+
+
+	<markdown>
+
+		Soon after joining Travis, I set out to become an expert on our EC2 / Docker-based infrastructure. As part of this effort, I: &#10;  &#10;  &#10; - noticed that our CPUs-per-job allocation didn't match what we we advertised in documentation and identified and fixed the relevant bug &#10;  &#10; - containerized numerous microservices &#10;  &#10; - made numerous improvements to EC2 scaling behavior in an effort to reduce spurious pager alerts &#10;  &#10; - built tools to detect and remove stalled EC2 instances, resulting in cost savings &#10;  &#10; - helped build tooling to benchmark instance performance as part of an effort to review overall EC2 costs &#10;  &#10;  &#10; I also helped drive efforts to identify and mitigate bitcoin mining and related abuse patterns, authoring a number of tools to help others identify and deal with these problems. &#10;  &#10;  &#10; I shared on-call responsibilities and was involved in resolving a number of difficult production incidents, as well as tracking down some most disruptive and evasive bugs. &#10; 
+
+
+        </markdown>
+
+</markdown>
+
+    </item>
+<item col="0" row="7" colSpan="7.5" rowSpan="4">
+       <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="TL;DR" border-fg="gray"> 
+
+
+	<markdown>
+
+		[37m [0m &#10;  &#10;     Travis CI has been an incredible place to work. I will be forever grateful for the experience of working with one of the most amazing groups of humans ever. &#10;     
+
+
+        </markdown>
+
+</markdown>
+
+    </item>
+</page>
+
+<page>
+<item col="0" row="0" colSpan="3" rowSpan="7">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="[Experience] Gandi.net" border-fg="gray"> 
 
 

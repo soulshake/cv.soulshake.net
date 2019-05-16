@@ -416,6 +416,43 @@ def toc():
     return ret
 
 
+def exp_travis():
+    label = "[Experience] Travis CI"
+    width = 15
+    d = OrderedDict({})
+    d["Employer"] = "Travis CI"
+    d["Location"] = "Berlin, Germany (remote)"
+    d["Dates"] = "July 2017 to May 2019"
+    d["2017-2019"] = "Build infrastructure engineer"
+    d["A.K.A."] = [
+        "DevOps",
+        "EC2 specialist",
+        "Docker specialist",
+        "Automation specialist",
+        "Chaos monkey",
+    ]
+    d["A.K.A."] = [click.style(x, fg="yellow") for x in d["A.K.A."]]
+    ret = [placeholder]
+    for key in d:
+        styles = {"fg": "green"}
+
+        if key in ["2017-2019"]:
+            styles["fg"] = "yellow"
+            styles["reverse"] = True
+            styles["bold"] = True
+
+        if isinstance(d[key], list):
+            d[key] = "\n".join(["{}{}".format(" ".ljust(20), x) for x in d[key]])
+            d[key] = d[key][20:]
+
+        ret.append(key.ljust(width) + click.style(d[key], **styles))
+
+    ret = "\n".join(ret)
+    ret = Markdown(colSpan=3, rowSpan=7, data=ret, col=3, row=3, label=label)
+
+    return ret
+
+
 def exp_gandi():
     label = "[Experience] Gandi.net"
     width = 15
@@ -467,6 +504,48 @@ def exp_gandi():
 
     ret = "\n".join(ret)
     ret = Markdown(colSpan=3, rowSpan=7, data=ret, col=3, row=3, label=label)
+
+    return ret
+
+
+def exp_travis_tldr():
+    blurb = """
+Travis CI has been an incredible place to work. I will be forever grateful for the experience of working with one of the most
+amazing groups of humans ever.
+    """
+
+    label = "TL;DR"
+    ret = [placeholder]
+    ret.append(blurb)
+
+    ret = "\n".join(ret)
+    ret = Markdown(colSpan=7.5, rowSpan=4, data=ret, col=3, row=3, label=label)
+
+    return ret
+
+
+def exp_travis_details():
+    label = "Details"
+    blurb = """
+Soon after joining Travis, I set out to become an expert on our EC2 / Docker-based infrastructure. As part of this effort, I:\n\n
+- noticed that our CPUs-per-job allocation didn't match what we we advertised in documentation and identified and fixed the relevant bug\n
+- containerized numerous microservices\n
+- made numerous improvements to EC2 scaling behavior in an effort to reduce spurious pager alerts\n
+- built tools to detect and remove stalled EC2 instances, resulting in cost savings\n
+- helped build tooling to benchmark instance performance as part of an effort to review overall EC2 costs\n\n
+I also helped drive efforts to identify and mitigate bitcoin mining and related abuse patterns, authoring a number of tools to help others identify and deal with these problems.\n\n
+I shared on-call responsibilities and was involved in resolving a number of difficult production incidents, as well as tracking down some most disruptive and evasive bugs.
+"""
+
+    ret = [placeholder]
+    ret = []
+    ret.append(blurb)
+    from IPython import embed
+
+    # embed()
+
+    ret = "\n".join(ret)
+    ret = Markdown(colSpan=4.5, rowSpan=7, data=ret, col=3, row=3, label=label)
 
     return ret
 
@@ -594,6 +673,8 @@ if __name__ == "__main__":
         [[skills_bar_chart()], [skills_other_bar_chart()]],
         [[languages_donuts()], [languages_table()]],
         [[professional_experience()], [other_experience()]],
+        # [[exp_travis(), exp_travis_details()], [exp_travis_tldr()]],
+        [[exp_travis(), exp_travis_details()], [exp_travis_tldr()]],
         [[exp_gandi(), exp_gandi_details()], [exp_gandi_tldr()]],
         [[looking_for()]],
         [[contact()]],
@@ -611,6 +692,9 @@ if __name__ == "__main__":
         for row in page:
             col_x = 0
             for widget in row:
+                from IPython import embed
+
+                # embed()
                 widget.col = col_x
                 widget.row = row_y
                 pages[i].add_widget(widget)

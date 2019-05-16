@@ -4,7 +4,7 @@
 
 This repo contains the source code and Dockerfile for [cv.soulshake.net](http://cv.soulshake.net).
 
-It serves a command-line version of my resume using [wopr](https://github.com/yaronn/wopr), node.js, Docker and [Convox](https://convox.com).
+It serves a command-line version of my resume using [wopr](https://github.com/yaronn/wopr), node.js, Docker and Swarm.
 
 To view it, run:
 
@@ -14,7 +14,7 @@ curl cv.soulshake.net
 
 ## Tips
 
-  * Maximize the terminal before viewing the report for best viewing experience  
+  * Maximize the terminal before viewing the report for best viewing experience
   * If you <kbd>CTRL+C</kbd> in the middle or rendering your cursor might disappear. Restore it by running again and letting the render complete or with `$> echo '\033[?25h'`
   * Disable curl buffering with the -N flag.
 
