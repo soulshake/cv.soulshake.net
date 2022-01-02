@@ -20,7 +20,7 @@
 
 	<markdown>
 
-		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=1; while [ $p -lt 10 ]; do curl -N localhost:8080/$((p++)); read; done[0m &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N localhost:8080/3/\?cols=$((COLUMNS))[0m
+		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=1; while [ $p -lt 10 ]; do curl -N cv.soulshake.net/$((p++)); read; done[0m &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake.net/3/\?cols=$((COLUMNS))[0m
 
 
         </markdown>

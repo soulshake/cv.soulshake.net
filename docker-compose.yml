@@ -1,6 +1,7 @@
 version: "3"
 services:
   wopr:
+    image: soulshake/cv.soulshake.net
     build: .
     ports:
       - "${PORT:-80}:80"

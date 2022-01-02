@@ -19,3 +19,5 @@ curl cv.soulshake.net
   * Disable curl buffering with the -N flag.
 
 Created by AJ Bowen ([@s0ulshake](https://twitter.com/s0ulshake)). For details, see [this blog post](http://blog.soulshake.net/2016/04/command-line-resume/).
+
+Deployed via https://github.com/soulshake/soulshake.net
