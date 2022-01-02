@@ -6,7 +6,7 @@
 
 	<markdown>
 
-		                                       .                                         &#10;                                   Hi, I'm AJ.                                    &#10;                I'm a Python developer with a strong interest in                  &#10;                 [32mAPIs[0m, [34mCLIs[0m and [35msubverting the dominant paradigm[0m.                 &#10;                                This is my resume.                                &#10;                                                                                  &#10;            Note: this is primarily intended for command-line addicts.            &#10;              A more conventional version can be found on LinkedIn.              
+		                                   [30m.[0m                                    &#10;                                   Hi, I'm [31mAJ[0m.                                    &#10;            I'm a cloud architect and devops engineer specializing in             &#10;     [32mKubernetes[0m, [34minfrastructure as code[0m and [35msubverting the dominant paradigm[0m.     &#10;                                This is my resume.                                &#10;                                                                                  &#10;            Note: this is primarily intended for command-line addicts.            &#10;              A more conventional version can be found on LinkedIn.              
 
 
         </markdown>
@@ -14,13 +14,13 @@
 </markdown>
 
     </item>
-<item col="0" row="3.5" colSpan="5" rowSpan="9">
+<item col="0" row="3.5" colSpan="5" rowSpan="5">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="The very professional resume of A.J. Bowen" border-fg="gray"> 
 
 
 	<markdown>
 
-		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=1; while [ $p -lt 10 ]; do curl -N cv.soulshake.net/$((p++)); read; done[0m &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake.net/3/\?cols=$((COLUMNS))[0m
+		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=1; while [ $p -lt 10 ]; do curl -N localhost:8080/$((p++)); read; done[0m &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N localhost:8080/3/\?cols=$((COLUMNS))[0m
 
 
         </markdown>

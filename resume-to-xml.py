@@ -382,21 +382,22 @@ def awards():
 
 def intro():
     intro = [
-        click.style(".", dim=True),
-        "Hi, I'm {}.".format(click.style("AJ", fg="red")),
-        "I'm a {} with a strong interest in ".format(
-            click.style("Python developer", fg="yellow")
-        ),
-        "APIs, CLIs and subverting the dominant paradigm.",
+        click.style(".", fg="black"),
+        "Hi, I'm AJ.",
+        "I'm a cloud architect and devops engineer specializing in ",
+        "Kubernetes, infrastructure as code and subverting the dominant paradigm.",
         "This is my resume.",
         "",
         "Note: this is primarily intended for command-line addicts.",
         "A more conventional version can be found on LinkedIn.",
     ]
-    intro = [click.unstyle(item).center(80) for item in intro]
+    intro = [item.center(80) for item in intro]
     intro = "\n".join(intro)
-    intro = intro.replace("APIs", click.style("APIs", fg="green"))
-    intro = intro.replace("CLIs", click.style("CLIs", fg="blue"))
+    intro = intro.replace("AJ", click.style("AJ", fg="red"))
+    intro = intro.replace("Kubernetes", click.style("Kubernetes", fg="green"))
+    intro = intro.replace(
+        "infrastructure as code", click.style("infrastructure as code", fg="blue")
+    )
     intro = intro.replace(
         "subverting the dominant paradigm",
         click.style("subverting the dominant paradigm", fg="magenta"),
@@ -410,7 +411,7 @@ def intro():
 
 
 def toc():
-    domain = os.environ["DOMAIN"]  # , "cv.soulshake.net")
+    domain = os.environ.get("DOMAIN", "cv.soulshake.net")
     port = os.environ.get("PORT", 80)
     port = "" if port == 80 else f":{port}"
     #  statement = click.style(
@@ -428,7 +429,6 @@ def toc():
             placeholder,
             "",
             " To view all slides, run:",
-            #  f"   {statement}",
             "   {}".format(
                 click.style(
                     (
@@ -450,7 +450,7 @@ def toc():
     )
 
     colSpan = 5
-    rowSpan = 9
+    rowSpan = 5
 
     ret = Markdown(
         data=ret,
