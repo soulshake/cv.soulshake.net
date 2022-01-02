@@ -1,14 +1,24 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
 from collections import OrderedDict
-from widgets import *
+from widgets import (
+    BarChart,
+    Document,
+    DonutChart,
+    Gauge,
+    Markdown,
+    Page,
+    Table,
+)
 import click
+import os
 
 # For some reason the first line sometimes gets formatted weird
 # This invisible placeholder seems to be a functional workaround
-placeholder = click.style(u" ", fg="white")
+placeholder = click.style(" ", fg="white")
+#  placeholder = ""
 
 
 def processes_table():
@@ -50,14 +60,20 @@ def processes_table():
 
 def languages_donuts():
     data = OrderedDict({})
-    data["Russian"] = [10, "red"]
+    data["Russian"] = [11, "red"]
     data["German"] = [28, "yellow"]
     data["English"] = [99, "green"]
     data["French"] = [89, "blue"]
     data["Spanish"] = [60, "magenta"]
 
     ret = DonutChart(
-        col=0, row=0, colSpan=15, rowSpan=5, label="Human languages", data=data
+        col=0,
+        row=0,
+        colSpan=9,  # width of widgets, not of block
+        rowSpan=5,
+        label="Human languages",
+        spacing=0.2,
+        data=data,
     )
     return ret
 
@@ -67,11 +83,11 @@ def languages_table():
         "headers": ["Language", "time", "DuoLingo level", "ease", "status"],
         "rows": [
             ["Russian", "1y", 16, "10%", "{red-fg} caveperson"],
-            ["German", "2y", 187, "39%", "{yellow-fg} rather clumsy"],
-            ["Italian", "6 mo", 16, "15%", "{yellow-fg} I manage"],
+            ["German", "3y", 256, "39%", "{yellow-fg} rather clumsy"],
+            ["Italian", "2y", 71, "20%", "{yellow-fg} I manage"],
             ["English", ">10y", 999, "99%", "{green-fg} native speaker"],
             ["French", ">10y", 899, "89%", "{blue-fg} fluent"],
-            ["Spanish", "n/a", 94, "40%", "{magenta-fg} passive"],
+            ["Spanish", "n/a", 100, "40%", "{magenta-fg} passive"],
         ],
     }
 
@@ -86,33 +102,34 @@ def looking_for():
     ret = (
         placeholder
         + """
-
-I'm pretty happy where I'm at right now.
+I'm pretty happy where I'm at right now, but always open to hearing from teams who could
+use a hand making the world better.
 
 My ideal roles involve some combination of the following:
+- spotting and addressing unnecessary complexity and repetition,
+- automating manual processes so colleagues' brains are put to better use,
+- writing useful tools (reusable CI pipelines, libraries, CLIs) that improve efficiency,
+- documenting all the things,
+- making the world better, one way or another
 
-  - writing useful tools (libraries, CLIs) that improve efficiency,
-  - playing with APIs, connecting services, making mashups and integrations,
-  - automating all the things,
-  - documenting all the things,
-  - making the world better, one way or another
 
-Right now some of the more abstract tools* I'm equipped with are:
-
-  - an incorrigible curiosity,
-  - a sort of fierce empathy,
-  - an incorruptible rage at injustice,
-  - a relentless stubborn determination when faced with a problem or a mystery,
-  - an obsession with well-made things and awesome documentation,
-  - an endless supply of ideas and hypotheses,
-  - a tiny bit of a bunch of other things, due to the aforementioned curiosity,
-  - an apparent intuition for seeing causal relationships in the "big picture"
+Some of the more abstract tools* I'm equipped with are:
+- an incorrigible curiosity,
+- a sort of fierce empathy,
+- an obsession with well-made things and documentation,
+- an incorruptible rage at injustice,
+- a relentless determination when faced with a bug or mystery,
+- an endless supply of ideas and hypotheses,
+- a tiny bit of a bunch of other things, due to the aforementioned curiosity,
+- an intuition for seeing causal relationships in the "big picture"
 
 
 \* several of these qualities have gotten me into trouble at some point, so YMMV.
+
+AMA!
     """
     )
-    ret = Markdown(colSpan=6, rowSpan=8, data=ret, col=3, row=3, label=label)
+    ret = Markdown(colSpan=6, rowSpan=8.5, data=ret, col=3, row=3, label=label)
     return ret
 
 
@@ -125,6 +142,9 @@ def contact():
     rows.append(
         [click.style("LinkedIn", fg="magenta"), "https://www.linkedin.com/in/ajbowen"]
     )
+    rows.append(
+        [click.style("EphemeraSearch", fg="white"), "https://www.ephemerasearch.com"]
+    )
 
     rows = [[row[0].rjust(30), click.style(row[1], fg="cyan")] for row in rows]
     rows = ["  ".join(row) for row in rows]
@@ -134,16 +154,17 @@ def contact():
         placeholder,
         "Say hi:",
         table,
-        "For more info, see:",
+        "For more info on this CV, see:",
         click.style(
             "http://blog.soulshake.net/2016/04/command-line-resume/", fg="cyan"
         ),
+        click.style("https://github.com/soulshake/cv.soulshake.net", fg="cyan"),
         "                   Thanks!",
         "                   Love, AJ" "",
     ]
     contact = "\n\n".join(contact)
     label = "Is this thing on?"
-    about = Markdown(colSpan=4, rowSpan=6, data=contact, col=3, row=3, label=label)
+    about = Markdown(colSpan=4, rowSpan=7, data=contact, col=3, row=3, label=label)
     return about
 
 
@@ -156,7 +177,7 @@ def overview():
         "Employment State".ljust(20)
         + click.style("ACTIVE", dim=True, fg="green", reverse=True),
         "Employment Status".ljust(20)
-        + click.style("Search in progress...", dim=True, fg="yellow"),
+        + click.style("Freelancing", dim=True, fg="yellow"),
         "Mobility".ljust(20) + click.style("Flexible", fg="green"),
         "Nerdery Level".ljust(20) + click.style("CRITICAL", fg="red", reverse=True),
     ]
@@ -166,7 +187,7 @@ def overview():
     return about
 
 
-def scorebar(level, total=15, char=u"■ "):
+def scorebar(level, total=15, char="■ "):
     fg = "green"
     if level <= total * 0.667:
         fg = "yellow"
@@ -184,17 +205,16 @@ def scorebar(level, total=15, char=u"■ "):
 def weapons():
     width = 17
     d = OrderedDict({})
-    d["Python"] = 14
-    d["XML-RPC"] = 14
-    d["REST"] = 12
+    d["Terraform"] = 15
+    d["Kubernetes"] = 14
+    d["Python"] = 13
+    d["Bash"] = 13
     d["Linux"] = 13
-    d["Bash"] = 12
-    d["Git"] = 12
-    d["SQL"] = 10
-    d["GoLang"] = 13
-    d["Ruby/Rails"] = 8
-    d["C"] = 5
-    d["C++"] = 3
+    d["GNU Make"] = 12
+    d["Golang"] = 11
+    d["Javascript"] = 10
+    d["Postgres"] = 8
+    d["Machine learning"] = 7
 
     ret = [placeholder]
     for key in d:
@@ -242,10 +262,10 @@ def other_experience():
     label = "Unprofessional Experience"
     blurb = [
         placeholder,
-        "I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've ",
-        "seen the inside of several jail cells. I tried to burn a bra once but it wouldn't catch.\n",
-        "I've organized underground newspapers, backyard boxing leagues and protests, ",
-        "as well as several successful dinner parties.\n",
+        "I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've seen",
+        "the inside of several jail cells. I tried to burn a bra once but it wouldn't catch.\n",
+        "I've organized underground newspapers, backyard boxing leagues and protests, as well",
+        "as several successful dinner parties.\n",
         "If working for your company will help me expand this section, please reach out ASAP.",
     ]
     other_exp = Markdown(
@@ -261,19 +281,32 @@ def professional_experience():
 
     positions = [
         [
+            "Senior DevOps Engineer",
+            "Quantgene",
+            "September 2021",
+            "Present",
+            "Berlin (remote)",
+        ],
+        [
+            "DevOps Engineer",
+            "Beacon Biosignals",
+            "July 2020",
+            "September 2021",
+            "Berlin (remote)",
+        ],
+        [
             "Infrastructure Engineer",
             "Travis CI",
             "July 2017",
-            "Present",
-            "Berlin/Remote",
+            "May 2019",
+            "Berlin (remote)",
         ],
-        ["Solutions Engineer", "Convox", "October 2016", "April 2017", "Remote"],
         [
-            "DevOps Engineer",
-            "Voteraide (volunteer)",
-            "May 2016",
-            "September 2016",
-            "Remote",
+            "Solutions Engineer",
+            "Convox",
+            "October 2016",
+            "April 2017",
+            "Kansas City (remote)",
         ],
         [
             "Chief of Counter-bullshit operations",
@@ -287,7 +320,7 @@ def professional_experience():
             "Gandi.net",
             "February 2012",
             "October 2013",
-            "Remote/Lawrence, KS)",
+            "Lawrence, KS (remote)",
         ],
         [
             "Federal Student Aid question answerer",
@@ -300,13 +333,21 @@ def professional_experience():
 
     for position in positions:
         position[0] = position[0].rjust(20)
+        items = [
+            click.style(position[0], fg="magenta", bold=True).rjust(50),
+            click.style(position[1], fg="yellow").rjust(13),
+            position[2],
+            position[3],
+            click.style(position[4], fg="blue"),
+        ]
+        first_four_length = sum([len(x) for x in items[0:4]])
+        items.insert(
+            len(items) - 1, " ".rjust(100 - (first_four_length) + 21 - len(position[4]))
+        )
+        #  items.insert(len(items) - 1, first_four_length)
         blurb.append(
-            "{} @{}: {} - {} ({})".format(
-                click.style(position[0], fg="magenta", bold=True).rjust(50),
-                click.style(position[1], fg="yellow").rjust(13),
-                position[2],
-                position[3],
-                position[4],
+            "{} @{}: {} - {} {} {}".format(
+                *items,
             )
         )
 
@@ -369,44 +410,48 @@ def intro():
 
 
 def toc():
-    """
-    u"   {}".format(click.style("p=1; while true; do curl cv.soulshake.net/$((p++))\?cols=$((COLUMNS)); read; done", fg='green', bold=True)),
-    u"",
-    u" (press enter to move to next slide; press Ctrl+C to exit)",
-    u"",
-    u"  Contents:",
-    u"    0. This screen",
-    u"    1. Overview",
-    u"    2. Active processes",
-    u"    3. Skills",
-    u"    4. Languages",
-    u"    5. Experience",
-    u"    6. Experience (details)",
-    u"    7. About",
-    """
+    domain = os.environ["DOMAIN"]  # , "cv.soulshake.net")
+    port = os.environ.get("PORT", 80)
+    port = "" if port == 80 else f":{port}"
+    #  statement = click.style(
+    #  (
+    #  "p=1; while true; do "
+    #  f"curl {domain}{port}/"
+    #  "$((p++))\?cols=$((COLUMNS)); read; done"
+    #  ),
+    #  fg="green",
+    #  bold=True,
+    #  )
 
-    ret = [
-        placeholder,
-        u"",
-        u" To view all slides, run:",
-        u"   {}".format(
-            click.style(
-                "p=1; while [ $p -lt 9 ]; do curl -N cv.soulshake.net/$((p++)); read; done",
-                fg="green",
-                bold=True,
-            )
-        ),
-        u"",
-        u"  To view a specific slide:",
-        u"    {}".format(
-            click.style("curl -N cv.soulshake.net/3/\?cols=$((COLUMNS))", fg="green")
-        ),
-    ]
+    ret = "\n".join(
+        [
+            placeholder,
+            "",
+            " To view all slides, run:",
+            #  f"   {statement}",
+            "   {}".format(
+                click.style(
+                    (
+                        "p=1; while [ $p -lt 10 ]; do "
+                        f"curl -N {domain}{port}/$((p++)); read; done"
+                    ),
+                    fg="green",
+                    bold=True,
+                )
+            ),
+            "",
+            "  To view a specific slide:",
+            "    {}".format(
+                click.style(
+                    (f"curl -N {domain}{port}" "/3/\?cols=$((COLUMNS))"), fg="green"
+                )
+            ),
+        ]
+    )
 
     colSpan = 5
     rowSpan = 9
 
-    ret = "\n".join(ret)
     ret = Markdown(
         data=ret,
         colSpan=colSpan,
@@ -609,14 +654,13 @@ week.\n\n
 
 def skills_bar_chart():
     data = OrderedDict()
-    data["Python"] = 9.5
-    data["Bash"] = 8.5
-    data["AWS"] = 7.5
-    data["DNS"] = 9
-    data["Docker"] = 9
-    data["Linux"] = 8
-    data["Automation"] = 8
-    colSpan = 6
+    data["CI/CD"] = 9.5
+    data["Scripting"] = 9.3
+    data["Testing"] = 8.9
+    data["Orchestration"] = 9.1
+    data["Sysadmin"] = 8
+    data["Automation"] = 9.4
+    colSpan = 9
     rowSpan = 4
     barchart = BarChart(
         col=1,
@@ -624,6 +668,7 @@ def skills_bar_chart():
         colSpan=colSpan,
         rowSpan=rowSpan,
         label="Computery Skills",
+        barWidth=13,
         data=data,
     )
     return barchart
@@ -631,15 +676,15 @@ def skills_bar_chart():
 
 def skills_other_bar_chart():
     data = OrderedDict()
-    data["People"] = 8
+    data["People"] = 6.5
     data["Learning"] = 7
     data["Singing"] = 1
     data["Chaos"] = 6
     data["Coloring"] = 5
-    data["Genealogy"] = 9
+    data["Genealogy"] = 9.1
     data["Lockpicking"] = 4
 
-    colSpan = 6
+    colSpan = 9
     rowSpan = 4
 
     ret = BarChart(
@@ -659,7 +704,7 @@ def employment_progress():
         colSpan=colSpan,
         rowSpan=rowSpan,
         label="Employment Progress",
-        **data
+        **data,
     )
     return ret
 
@@ -703,4 +748,4 @@ if __name__ == "__main__":
         i += 1
 
     doc = Document(pages)
-    print(doc.content.encode("utf-8"))
+    print(doc.content)  # .encode("utf-8"))

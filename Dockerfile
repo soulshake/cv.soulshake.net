@@ -20,4 +20,4 @@ COPY data /data
 COPY bin/ /src/bin/
 
 WORKDIR /wopr/server
-CMD /src/bin/wopr
+CMD ["/src/bin/wopr"]

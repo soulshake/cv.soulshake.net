@@ -1,9 +1,13 @@
-version: "2"
+version: "3"
 services:
   wopr:
-      build: .
-      ports:
-        - "80:80"
-      environment:
-        PORT: "80"
-      command: /src/bin/wopr
+    build: .
+    ports:
+      - "${PORT:-80}:80"
+    environment:
+      PORT: "80"
+      DOMAIN: ${DOMAIN?} # :-cv.soulshake.net}
+    command: /src/bin/wopr
+    volumes:
+      - ./data:/data
+      - ./bin:/src/bin

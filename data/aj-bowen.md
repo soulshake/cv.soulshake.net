@@ -1,12 +1,12 @@
 AJ Bowen
 ========
- 
+
 -------------------     ----------------------------
 Kansas City, MO                     aj@soulshake.net
 USA                                       @s0ulshake
                                      +1 785.554.3723
 -------------------     ----------------------------
- 
+
 Summary
 -------
 
@@ -14,11 +14,11 @@ Summary
 
 My path so far has led me to some degree of competency in:
 
-- French, Spanish, Russian, German, and a bit of Haitian Creole 
+- French, Spanish, Russian, German, and a bit of Haitian Creole
 - the federal student aid industrial complex, Medicare, running shoes, labor law, genealogy, forensic analysis
     of collections of old photographs, linguistic and anthropological cogitation, mysteries in
     general, brains, lockpicking, hydroponic gardening, crocheting, boating, Raspberry Pi, blues and jazz piano,
-    humans and other animals 
+    humans and other animals
 - **Linux**, **Docker** and friends, **AWS**, **Golang**, **Python**, **Ruby**, **APIs**, **CLIs**,
     **DNS**, **git**, **SQL**, and various other tools useful in the perpetual pursuit of making the machines dance.
 
@@ -48,7 +48,7 @@ I am looking for a primarily **remote role**, though I am willing to travel as n
 
 Professional Experience
 ----------
- 
+
 Infrastructure Engineer, [Travis CI](https://travis-ci.org/)
 
 :   Build and manage the cloud infrastructure on which Travis CI jobs are run.
@@ -56,7 +56,7 @@ Infrastructure Engineer, [Travis CI](https://travis-ci.org/)
 
 Solutions Engineer, [Convox](https://convox.com/)
 
-:   Convox is an open source solution with the mission of making it easy to deploy production applications in containers. 
+:   Convox is an open source solution with the mission of making it easy to deploy production applications in containers.
 
     My primary responsibilities were to:
 
@@ -98,7 +98,7 @@ Technical evangelist, [Gandi.net](https://www.gandi.net/)
 
     Internally, I worked with engineers, product managers and support to improve Gandi's APIs, web
     interface, documentation and open source presence.
- 
+
 **Support I**, [Gandi.net](https://www.gandi.net/)
 
 :   My starting role at Gandi was entry-level support: troubleshooting and explaining issues relating to
@@ -113,7 +113,7 @@ Technical evangelist, [Gandi.net](https://www.gandi.net/)
 
 Technical Experience and other skills
 --------------------
- 
+
 Docker orchestration workshop admin
 :   Over the past two years, I've co-delivered Docker workshops at major industry conferences like
     OSCON, LinuxCon, QCON, and more. I developed [open source automation scripts] [ref]
@@ -125,19 +125,19 @@ Docker orchestration workshop admin
     **AWS EC2**, **HTML** and **CSS** (to generate printable instructions bearing dynamic connection information).
 
 [ref]: https://github.com/jpetazzo/orchestration-workshop
- 
- 
+
+
 Programming Languages
 :   I really, really like automating things and developing internal tools to help my colleagues be more efficient. My primary toolbox includes, but is not limited to:
 
     * **Golang:** Backend, infrastructure, APIs, CLIs
 
     * **Python:** Django, API clients, contributions to the [Gandi CLI](cli.gandi.net), various side projects (listed below)
- 
+
     * **Ruby:** Contributed heavily to a Rails project at Voteraide
 
     * **Shell scripting:** bash is my first love and shell of choice.
- 
+
 
 Projects
 :   Among the recent side projects I've worked on:
@@ -165,23 +165,23 @@ Activism
 
 Education
 ---------
- 
-2010 
+
+2010
 :   **BA, Anthropology**; University of Kansas
- 
+
 :   **BA, French**, (honors); University of Kansas
- 
+
 2007
 :   **DEUG Traduction** (Associates Degree in Translation),
     Université Catholique de l'Ouest (Angers, France)
- 
+
     *French, English, Spanish, Arabic*
- 
+
 Additional skills
 ----------------------------------------
- 
+
 * Human Languages:
- 
+
      * English (native speaker)
      * French (full professional fluency)
      * Spanish (conversational)

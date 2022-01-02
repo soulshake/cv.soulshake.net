@@ -20,7 +20,7 @@
 
 	<markdown>
 
-		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=1; while [ $p -lt 9 ]; do curl -N cv.soulshake.net/$((p++)); read; done[0m &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake.net/3/\?cols=$((COLUMNS))[0m
+		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=1; while [ $p -lt 10 ]; do curl -N localhost:8080/$((p++)); read; done[0m &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N localhost:8080/3/\?cols=$((COLUMNS))[0m
 
 
         </markdown>
@@ -37,7 +37,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mBerlin and Kansas City[0m &#10; Employment State    [32m[2m[7mACTIVE[0m &#10; Employment Status   [33m[2mSearch in progress...[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
+		[37m [0m &#10; Name                [32m[1mAJ Bowen[0m &#10; Location            [32mBerlin and Kansas City[0m &#10; Employment State    [32m[2m[7mACTIVE[0m &#10; Employment Status   [33m[2mFreelancing[0m &#10; Mobility            [32mFlexible[0m &#10; Nerdery Level       [31m[7mCRITICAL[0m
 
 
         </markdown>
@@ -51,7 +51,7 @@
 
 	<markdown>
 
-		[37m [0m &#10; Python           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; XML-RPC          [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; REST             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Linux            [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Bash             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Git              [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; SQL              [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; GoLang           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Ruby/Rails       [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; C                [31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; C++              [31m■ [0m[31m■ [0m[31m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m
+		[37m [0m &#10; Terraform        [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m &#10; Kubernetes       [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m &#10; Python           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Bash             [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; Linux            [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m &#10; GNU Make         [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Golang           [32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[32m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Javascript       [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Postgres         [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m &#10; Machine learning [33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[33m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m[37m■ [0m
 
 
         </markdown>
@@ -111,14 +111,14 @@ foo
 </page>
 
 <page>
-<item col="0" row="0" colSpan="6" rowSpan="4">
-<bar barWidth="9" label="Computery Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="Python,Bash,AWS,DNS,Docker,Linux,Automation" data-data="9.5,8.5,7.5,9,9,8,8" />
+<item col="0" row="0" colSpan="9" rowSpan="4">
+<bar barWidth="13" label="Computery Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="CI/CD,Scripting,Testing,Orchestration,Sysadmin,Automation" data-data="9.5,9.3,8.9,9.1,8,9.4" />
 
 
 
     </item>
-<item col="0" row="4" colSpan="6" rowSpan="4">
-<bar barWidth="9" label="Other Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="People,Learning,Singing,Chaos,Coloring,Genealogy,Lockpicking" data-data="8,7,1,6,5,9,4" />
+<item col="0" row="4" colSpan="9" rowSpan="4">
+<bar barWidth="9" label="Other Skills" barSpacing="1" xOffset="10" maxHeight="9" height="100%"  border-type="line" border-fg="gray" data-titles="People,Learning,Singing,Chaos,Coloring,Genealogy,Lockpicking" data-data="6.5,7,1,6,5,9.1,4" />
 
 
 
@@ -126,10 +126,10 @@ foo
 </page>
 
 <page>
-    <item col="0" row="0" colSpan="15" rowSpan="5" label="Human languages" >
-<donut  arcWidth="3" border-type="line" border-fg="gray" label="Human languages" radius="20" yPadding="5" remainColor="cyan" spacing="1" >
+    <item col="0" row="0" colSpan="9" rowSpan="5" label="Human languages">
+<donut  arcWidth="3" border-type="line" border-fg="gray" label="Human languages" radius="20" yPadding="5" remainColor="cyan" spacing="0.2" >
 <data>
-<m label="Russian" percent="10" color="red" /> 
+<m label="Russian" percent="11" color="red" /> 
 <m label="German" percent="28" color="yellow" /> 
 <m label="English" percent="99" color="green" /> 
 <m label="French" percent="89" color="blue" /> 
@@ -141,11 +141,11 @@ foo
            <table border-type="line" border-fg="gray" columnSpacing="8" columnWidth="8,4,14,4,25" data-headers="Language,time,DuoLingo level,ease,status" fg="white" height="30%" interactive="false" keys="False" label="Details" width="30%" selectedBg="None" selectedFg="None" > 
             <data-data>
             Russian,1y,16,10%,{red-fg} caveperson
-            German,2y,187,39%,{yellow-fg} rather clumsy
-            Italian,6 mo,16,15%,{yellow-fg} I manage
+            German,3y,256,39%,{yellow-fg} rather clumsy
+            Italian,2y,71,20%,{yellow-fg} I manage
             English,>10y,999,99%,{green-fg} native speaker
             French,>10y,899,89%,{blue-fg} fluent
-            Spanish,n/a,94,40%,{magenta-fg} passive
+            Spanish,n/a,100,40%,{magenta-fg} passive
             </data-data>
          </table>
      </item>
@@ -158,7 +158,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10;               [35m[1mInfrastructure Engineer[0m @[33mTravis CI[0m: July 2017 - Present (Berlin/Remote) &#10;                  [35m[1m  Solutions Engineer[0m @[33mConvox[0m: October 2016 - April 2017 (Remote) &#10;                  [35m[1m     DevOps Engineer[0m @[33mVoteraide (volunteer)[0m: May 2016 - September 2016 (Remote) &#10;  [35m[1mChief of Counter-bullshit operations[0m @[33mGandi.net[0m: October 2013 - December 2015 (San Francisco) &#10;       [35m[1mLevel 1+ Support Representative[0m @[33mGandi.net[0m: February 2012 - October 2013 (Remote/Lawrence, KS)) &#10; [35m[1mFederal Student Aid question answerer[0m @[33mVangent, Inc[0m: 2010 - 2011 (Lawrence, KS) &#10;  &#10;  &#10; [34mPrevious positions[0m: See LinkedIn profile &#10; [34mDetails on recent positions[0m: See next slide
+		[37m [0m &#10;                [35m[1mSenior DevOps Engineer[0m @[33mQuantgene[0m: September 2021 - Present                   [34mBerlin (remote)[0m &#10;                  [35m[1m     DevOps Engineer[0m @[33mBeacon Biosignals[0m: July 2020 - September 2021         [34mBerlin (remote)[0m &#10;               [35m[1mInfrastructure Engineer[0m @[33mTravis CI[0m: July 2017 - May 2019                       [34mBerlin (remote)[0m &#10;                  [35m[1m  Solutions Engineer[0m @[33mConvox[0m: October 2016 - April 2017                [34mKansas City (remote)[0m &#10;  [35m[1mChief of Counter-bullshit operations[0m @[33mGandi.net[0m: October 2013 - December 2015                 [34mSan Francisco[0m &#10;       [35m[1mLevel 1+ Support Representative[0m @[33mGandi.net[0m: February 2012 - October 2013         [34mLawrence, KS (remote)[0m &#10; [35m[1mFederal Student Aid question answerer[0m @[33mVangent, Inc[0m: 2010 - 2011                                [34mLawrence, KS[0m &#10;  &#10;  &#10; [34mPrevious positions[0m: See LinkedIn profile &#10; [34mDetails on recent positions[0m: See next slide
 
 
         </markdown>
@@ -172,7 +172,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10; I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've  &#10; seen the inside of several jail cells. I tried to burn a bra once but it wouldn't catch. &#10;  &#10; I've organized underground newspapers, backyard boxing leagues and protests,  &#10; as well as several successful dinner parties. &#10;  &#10; If working for your company will help me expand this section, please reach out ASAP.
+		[37m [0m &#10; I've danced myself into a trance in Berlin nightclubs and Haitian RaRas. I've seen &#10; the inside of several jail cells. I tried to burn a bra once but it wouldn't catch. &#10;  &#10; I've organized underground newspapers, backyard boxing leagues and protests, as well &#10; as several successful dinner parties. &#10;  &#10; If working for your company will help me expand this section, please reach out ASAP.
 
 
         </markdown>
@@ -203,7 +203,7 @@ foo
 
 	<markdown>
 
-		Soon after joining Travis, I set out to become an expert on our EC2 / Docker-based infrastructure. As part of this effort, I: &#10;  &#10;  &#10; - noticed that our CPUs-per-job allocation didn't match what we we advertised in documentation and identified and fixed the relevant bug &#10;  &#10; - containerized numerous microservices &#10;  &#10; - made numerous improvements to EC2 scaling behavior in an effort to reduce spurious pager alerts &#10;  &#10; - built tools to detect and remove stalled EC2 instances, resulting in cost savings &#10;  &#10; - helped build tooling to benchmark instance performance as part of an effort to review overall EC2 costs &#10;  &#10;  &#10; I also helped drive efforts to identify and mitigate bitcoin mining and related abuse patterns, authoring a number of tools to help others identify and deal with these problems. &#10;  &#10;  &#10; I shared on-call responsibilities and was involved in resolving a number of difficult production incidents, as well as tracking down some most disruptive and evasive bugs. &#10; 
+		 &#10; Soon after joining Travis, I set out to become an expert on our EC2 / Docker-based infrastructure. As part of this effort, I: &#10;  &#10;  &#10; - noticed that our CPUs-per-job allocation didn't match what we we advertised in documentation and identified and fixed the relevant bug &#10;  &#10; - containerized numerous microservices &#10;  &#10; - made numerous improvements to EC2 scaling behavior in an effort to reduce spurious pager alerts &#10;  &#10; - built tools to detect and remove stalled EC2 instances, resulting in cost savings &#10;  &#10; - helped build tooling to benchmark instance performance as part of an effort to review overall EC2 costs &#10;  &#10;  &#10; I also helped drive efforts to identify and mitigate bitcoin mining and related abuse patterns, authoring a number of tools to help others identify and deal with these problems. &#10;  &#10;  &#10; I shared on-call responsibilities and was involved in resolving a number of difficult production incidents, as well as tracking down some most disruptive and evasive bugs. &#10; 
 
 
         </markdown>
@@ -217,7 +217,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10;  &#10;     Travis CI has been an incredible place to work. I will be forever grateful for the experience of working with one of the most amazing groups of humans ever. &#10;     
+		[37m [0m &#10;  &#10; Travis CI has been an incredible place to work. I will be forever grateful for the experience of working with one of the most &#10; amazing groups of humans ever. &#10;     
 
 
         </markdown>
@@ -273,13 +273,13 @@ foo
 </page>
 
 <page>
-<item col="0" row="0" colSpan="6" rowSpan="8">
+<item col="0" row="0" colSpan="6" rowSpan="8.5">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="What am I looking for?" border-fg="gray"> 
 
 
 	<markdown>
 
-		[37m [0m &#10;  &#10; I'm pretty happy where I'm at right now. &#10;  &#10; My ideal roles involve some combination of the following: &#10;  &#10;   - writing useful tools (libraries, CLIs) that improve efficiency, &#10;   - playing with APIs, connecting services, making mashups and integrations, &#10;   - automating all the things, &#10;   - documenting all the things, &#10;   - making the world better, one way or another &#10;  &#10; Right now some of the more abstract tools* I'm equipped with are: &#10;  &#10;   - an incorrigible curiosity, &#10;   - a sort of fierce empathy, &#10;   - an incorruptible rage at injustice, &#10;   - a relentless stubborn determination when faced with a problem or a mystery, &#10;   - an obsession with well-made things and awesome documentation, &#10;   - an endless supply of ideas and hypotheses, &#10;   - a tiny bit of a bunch of other things, due to the aforementioned curiosity, &#10;   - an apparent intuition for seeing causal relationships in the "big picture" &#10;  &#10;  &#10; \* several of these qualities have gotten me into trouble at some point, so YMMV. &#10;     
+		[37m [0m &#10; I'm pretty happy where I'm at right now, but always open to hearing from teams who could &#10; use a hand making the world better. &#10;  &#10; My ideal roles involve some combination of the following: &#10; - spotting and addressing unnecessary complexity and repetition, &#10; - automating manual processes so colleagues' brains are put to better use, &#10; - writing useful tools (reusable CI pipelines, libraries, CLIs) that improve efficiency, &#10; - documenting all the things, &#10; - making the world better, one way or another &#10;  &#10;  &#10; Some of the more abstract tools* I'm equipped with are: &#10; - an incorrigible curiosity, &#10; - a sort of fierce empathy, &#10; - an obsession with well-made things and documentation, &#10; - an incorruptible rage at injustice, &#10; - a relentless determination when faced with a bug or mystery, &#10; - an endless supply of ideas and hypotheses, &#10; - a tiny bit of a bunch of other things, due to the aforementioned curiosity, &#10; - an intuition for seeing causal relationships in the "big picture" &#10;  &#10;  &#10; \* several of these qualities have gotten me into trouble at some point, so YMMV. &#10;  &#10; AMA! &#10;     
 
 
         </markdown>
@@ -290,13 +290,13 @@ foo
 </page>
 
 <page>
-<item col="0" row="0" colSpan="4" rowSpan="6">
+<item col="0" row="0" colSpan="4" rowSpan="7">
        <markdown style-paragraph="chalk.white" style-strong="chalk.cyan.underline" style-em="chalk.green" border-type="line" label="Is this thing on?" border-fg="gray"> 
 
 
 	<markdown>
 
-		[37m [0m &#10;  &#10; Say hi: &#10;  &#10;                  [31mSite[0m  [36msoulshake.net[0m &#10;                 [33mEmail[0m  [36maj@soulshake.net[0m &#10;                [32mGithub[0m  [36mhttps://github.com/soulshake[0m &#10;               [34mTwitter[0m  [36mhttps://twitter.com/s0ulshake[0m &#10;              [35mLinkedIn[0m  [36mhttps://www.linkedin.com/in/ajbowen[0m &#10;  &#10; For more info, see: &#10;  &#10; [36mhttp://blog.soulshake.net/2016/04/command-line-resume/[0m &#10;  &#10;                    Thanks! &#10;  &#10;                    Love, AJ
+		[37m [0m &#10;  &#10; Say hi: &#10;  &#10;                  [31mSite[0m  [36msoulshake.net[0m &#10;                 [33mEmail[0m  [36maj@soulshake.net[0m &#10;                [32mGithub[0m  [36mhttps://github.com/soulshake[0m &#10;               [34mTwitter[0m  [36mhttps://twitter.com/s0ulshake[0m &#10;              [35mLinkedIn[0m  [36mhttps://www.linkedin.com/in/ajbowen[0m &#10;        [37mEphemeraSearch[0m  [36mhttps://www.ephemerasearch.com[0m &#10;  &#10; For more info on this CV, see: &#10;  &#10; [36mhttp://blog.soulshake.net/2016/04/command-line-resume/[0m &#10;  &#10; [36mhttps://github.com/soulshake/cv.soulshake.net[0m &#10;  &#10;                    Thanks! &#10;  &#10;                    Love, AJ
 
 
         </markdown>
