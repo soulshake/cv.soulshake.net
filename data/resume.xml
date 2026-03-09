@@ -20,7 +20,7 @@
 
 	<markdown>
 
-		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=1; while [ $p -lt 10 ]; do curl -N localhost:8080/$((p++)); read; done[0m &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N localhost:8080/3/\?cols=$((COLUMNS))[0m
+		[37m [0m &#10;  &#10;  To view all slides, run: &#10;    [32m[1mp=1; while [ $p -lt 10 ]; do curl -N cv.soulshake.net/$((p++)); read; done[0m &#10;  &#10;   To view a specific slide: &#10;     [32mcurl -N cv.soulshake.net/3/\?cols=$((COLUMNS))[0m
 
 
         </markdown>
@@ -296,7 +296,7 @@ foo
 
 	<markdown>
 
-		[37m [0m &#10;  &#10; Say hi: &#10;  &#10;                  [31mSite[0m  [36msoulshake.net[0m &#10;                 [33mEmail[0m  [36maj@soulshake.net[0m &#10;                [32mGithub[0m  [36mhttps://github.com/soulshake[0m &#10;               [34mTwitter[0m  [36mhttps://twitter.com/s0ulshake[0m &#10;              [35mLinkedIn[0m  [36mhttps://www.linkedin.com/in/ajbowen[0m &#10;        [37mEphemeraSearch[0m  [36mhttps://www.ephemerasearch.com[0m &#10;  &#10; For more info on this CV, see: &#10;  &#10; [36mhttp://blog.soulshake.net/2016/04/command-line-resume/[0m &#10;  &#10; [36mhttps://github.com/soulshake/cv.soulshake.net[0m &#10;  &#10;                    Thanks! &#10;  &#10;                    Love, AJ
+		[37m [0m &#10;  &#10; Say hi: &#10;  &#10;                  [31mSite[0m  [36msoulshake.net[0m &#10;                 [33mEmail[0m  [36maj@soulshake.net[0m &#10;                [32mGithub[0m  [36mhttps://github.com/soulshake[0m &#10;               [34mTwitter[0m  [36mhttps://twitter.com/s0ulshake[0m &#10;              [36mWakatime[0m  [36mhttps://wakatime.com/@aj[0m &#10;              [35mLinkedIn[0m  [36mhttps://www.linkedin.com/in/ajbowen[0m &#10;        [37mEphemeraSearch[0m  [36mhttps://www.ephemerasearch.com[0m &#10;  &#10; For more info on this CV, see: &#10;  &#10; [36mhttp://blog.soulshake.net/2016/04/command-line-resume/[0m &#10;  &#10; [36mhttps://github.com/soulshake/cv.soulshake.net[0m &#10;  &#10;                    Thanks! &#10;  &#10;                    Love, AJ
 
 
         </markdown>

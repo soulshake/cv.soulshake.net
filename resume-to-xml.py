@@ -139,6 +139,7 @@ def contact():
     rows.append([click.style("Email", fg="yellow"), "aj@soulshake.net"])
     rows.append([click.style("Github", fg="green"), "https://github.com/soulshake"])
     rows.append([click.style("Twitter", fg="blue"), "https://twitter.com/s0ulshake"])
+    rows.append([click.style("Wakatime", fg="cyan"), "https://wakatime.com/@aj"])
     rows.append(
         [click.style("LinkedIn", fg="magenta"), "https://www.linkedin.com/in/ajbowen"]
     )
